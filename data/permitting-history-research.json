@@ -1,0 +1,503 @@
+{
+  "metadata": {
+    "title": "Transmission Project Permitting History Research",
+    "last_updated": "2026-03-21",
+    "methodology": "WebSearch-sourced; government sources prioritized; news sources flagged; unsourced claims excluded",
+    "researcher_notes": "Dates sourced from Federal Register notices, agency press releases, court dockets, and state regulatory filings. Some Section 106/NHPA details not publicly available in granular form for all projects."
+  },
+  "projects": [
+    {
+      "project_name": "Boardman to Hemingway Transmission Line (B2H)",
+      "operator": "Idaho Power (45%) / PacifiCorp (55%)",
+      "ferc_docket": "EC23-111-000",
+      "route": "Boardman OR to Hemingway substation near Boise ID (~300 miles)",
+      "status": "Approved; construction underway",
+      "events": [
+        {
+          "event": "BLM published Notice of Intent (NOI) to prepare an EIS for the B2H project.",
+          "date": "2008-09-12",
+          "agency": "Bureau of Land Management (BLM)",
+          "source": "Federal Register, 73 FR 53148, Sept. 12, 2008",
+          "source_url": "https://www.federalregister.gov/documents/2008/09/12/E8-21285/notice-of-intent-to-prepare-an-environmental-impact-statement-eis-for-the-boardman-hemingway-500",
+          "source_type": "government"
+        },
+        {
+          "event": "BLM and USFS published a Revised NOI re-initiating the NEPA scoping process with updated project information.",
+          "date": "2010-07-27",
+          "agency": "BLM / U.S. Forest Service (USFS)",
+          "source": "Federal Register, 75 FR 44008, July 27, 2010",
+          "source_url": "https://www.federalregister.gov/documents/2010/07/27/2010-18220/revised-notice-of-intent-to-prepare-an-environmental-impact-statement-for-the-proposed-boardman-to",
+          "source_type": "government"
+        },
+        {
+          "event": "EPA published Notice of Availability for the Draft EIS (DEIS) in the Federal Register, initiating a 90-day public comment period.",
+          "date": "2014-12-19",
+          "agency": "U.S. Environmental Protection Agency (EPA) / BLM",
+          "source": "Federal Register, 79 FR 75834, Dec. 19, 2014",
+          "source_url": "https://www.federalregister.gov/documents/2014/12/19/2014-29770/notice-of-availability-of-the-draft-environmental-impact-statement-and-land-use-plan-amendments-for",
+          "source_type": "government"
+        },
+        {
+          "event": "BLM published Notice of Availability for the Final EIS (FEIS) and Proposed Land Use Plan Amendments.",
+          "date": "2016-11-28",
+          "agency": "BLM",
+          "source": "Federal Register, 81 FR 85414, Nov. 28, 2016",
+          "source_url": "https://www.federalregister.gov/documents/2016/11/28/2016-28691/notice-of-availability-of-the-final-environmental-impact-statement-and-proposed-land-use-plan",
+          "source_type": "government"
+        },
+        {
+          "event": "BLM issued the Record of Decision (ROD) for the B2H project, authorizing right-of-way across federal lands.",
+          "date": "2017-11-17",
+          "agency": "BLM",
+          "source": "Federal Register, 82 FR 54379, Nov. 17, 2017",
+          "source_url": "https://www.federalregister.gov/documents/2017/11/17/2017-25013/notice-of-availability-of-the-record-of-decision-for-the-boardman-to-hemingway-transmission-line",
+          "source_type": "government"
+        },
+        {
+          "event": "Wallowa-Whitman National Forest published NOA for draft ROD and FEIS for the National Forest System lands portion of the project.",
+          "date": "2018-06-06",
+          "agency": "USDA Forest Service",
+          "source": "Federal Register, 83 FR 26100, June 6, 2018",
+          "source_url": "https://www.federalregister.gov/documents/2018/06/06/2018-12156/wallowa-whitman-national-forest-notice-of-availability-of-the-draft-record-of-decision-and-final",
+          "source_type": "government"
+        },
+        {
+          "event": "Idaho Power submitted Application for Site Certificate (ASC) to Oregon's Energy Facility Siting Council (EFSC).",
+          "date": "2018-10",
+          "date_precision": "month",
+          "agency": "Oregon EFSC / Oregon Department of Energy (ODOE)",
+          "source": "Oregon EFSC project page",
+          "source_url": "https://www.oregon.gov/energy/facilities-safety/facilities/Pages/B2H.aspx",
+          "source_type": "government"
+        },
+        {
+          "event": "ODOE issued Draft Proposed Order (DPO) recommending EFSC approve the ASC.",
+          "date": "2019-05",
+          "date_precision": "month",
+          "agency": "Oregon Department of Energy",
+          "source": "Oregon EFSC project page",
+          "source_url": "https://www.oregon.gov/energy/facilities-safety/facilities/Pages/B2H.aspx",
+          "source_type": "government"
+        },
+        {
+          "event": "Stop B2H Coalition, Greater Hells Canyon Council, and individual plaintiffs filed federal lawsuit (Case 2:19-cv-01822) challenging BLM's ROD under NEPA and FLPMA, citing inadequate sage grouse analysis and cumulative effects.",
+          "date": "2019-11-12",
+          "agency": "U.S. District Court, District of Oregon",
+          "source": "CourtListener docket, Case 2:19-cv-01822",
+          "source_url": "https://www.courtlistener.com/docket/16459239/stop-b2h-coalition-v-bureau-of-land-management/",
+          "source_type": "government"
+        },
+        {
+          "event": "ODOE issued Proposed Order and Notice of Contested Case for the Oregon Site Certificate.",
+          "date": "2020-07-02",
+          "agency": "Oregon Department of Energy / EFSC",
+          "source": "Oregon EFSC project page",
+          "source_url": "https://www.oregon.gov/energy/facilities-safety/facilities/Pages/B2H.aspx",
+          "source_type": "government"
+        },
+        {
+          "event": "Contested case proceedings began before EFSC regarding the Oregon Site Certificate.",
+          "date": "2020-08",
+          "date_precision": "month",
+          "agency": "Oregon EFSC",
+          "source": "Oregon EFSC project page",
+          "source_url": "https://www.oregon.gov/energy/facilities-safety/facilities/Pages/B2H.aspx",
+          "source_type": "government"
+        },
+        {
+          "event": "U.S. District Judge Michael Simon ruled in favor of BLM, denying plaintiffs' motion for summary judgment and granting BLM's motion. Court found NEPA analysis of sage grouse was adequate and grazing cumulative effects error was harmless.",
+          "date": "2021-08",
+          "date_precision": "month",
+          "agency": "U.S. District Court, District of Oregon (Judge Michael H. Simon)",
+          "source": "Capital Press, Aug. 2021; Justia Case Document 80",
+          "source_url": "https://law.justia.com/cases/federal/district-courts/oregon/ordce/2:2019cv01822/149297/80/",
+          "source_type": "government",
+          "notes": "Court found that declining sage grouse populations were not 'significantly new or different' from FEIS analysis. BLM's failure to consider grazing in cumulative effects was ruled 'harmless error.'"
+        },
+        {
+          "event": "Oregon EFSC voted to approve the Application for Site Certificate for the B2H project.",
+          "date": "2022-09-27",
+          "agency": "Oregon Energy Facility Siting Council (EFSC)",
+          "source": "Oregon Energy Info press release, Sept. 28, 2022",
+          "source_url": "https://energyinfo.oregon.gov/blog/2022/9/28/energy-facility-siting-council-approves-boardman-to-hemingway-transmission-line",
+          "source_type": "government"
+        },
+        {
+          "event": "EFSC issued the Second Amended Site Certificate for B2H.",
+          "date": "2024-08-23",
+          "agency": "Oregon EFSC",
+          "source": "Oregon EFSC project page",
+          "source_url": "https://www.oregon.gov/energy/facilities-safety/facilities/Pages/B2H.aspx",
+          "source_type": "government"
+        },
+        {
+          "event": "Environmental review and permitting process completed per FAST-41 Permitting Dashboard.",
+          "date": "2024-12-10",
+          "agency": "Federal Permitting Improvement Steering Council (FPISC)",
+          "source": "Permitting Dashboard (permits.performance.gov)",
+          "source_url": "https://www.permits.performance.gov/permitting-project/fast-41-covered-projects/boardman-hemingway-transmission-line",
+          "source_type": "government"
+        },
+        {
+          "event": "Landowners filed judicial review challenging ODOE's approval of changes to the site certificate fire plan conditions. Baker County Circuit Court Judge Matt Shirtcliff ruled in Idaho Power's favor, finding the project benefits electricity customers and condemnation authority remains valid.",
+          "date": "2026-02-20",
+          "agency": "Baker County Circuit Court, Oregon",
+          "source": "East Oregonian, Feb. 20, 2026",
+          "source_url": "https://eastoregonian.com/2026/02/20/judge-rules-in-idaho-powers-favor-in-b2h-case/",
+          "source_type": "news",
+          "flag": "NEWS SOURCE"
+        }
+      ],
+      "esa_issues": {
+        "summary": "Greater sage-grouse habitat impacts were the central ESA-adjacent issue (sage grouse is not ESA-listed but managed under BLM Resource Management Plans). Washington ground squirrel habitat was also analyzed in FEIS Exhibit P. Stop B2H Coalition challenged adequacy of sage grouse analysis; court upheld BLM's analysis in 2021.",
+        "key_species": ["Greater sage-grouse (Centrocercus urophasianus)", "Washington ground squirrel"],
+        "sources": [
+          {
+            "source": "Union County OR, Exhibit P Fish and Wildlife Habitat and Species",
+            "source_url": "https://unioncountyor.gov/wp-content/uploads/2016/01/16_Exhibit-P_Vegetation_main-to-Attachment-P-7.pdf",
+            "source_type": "government"
+          }
+        ]
+      },
+      "section_106_issues": {
+        "summary": "Section 106 consultation was conducted as part of the BLM/USFS NEPA process. Specific details of cultural resource surveys and SHPO consultations are addressed in the FEIS but granular consultation dates were not located in public search results.",
+        "sources": []
+      },
+      "state_permitting_conflicts": {
+        "summary": "Oregon EFSC siting process took over a decade (ASC filed Oct. 2018, approved Sept. 2022). A contested case proceeding ran from Aug. 2020 through the Sept. 2022 approval. Idaho Power has filed dozens of condemnation lawsuits against landowners who refused easements. PacifiCorp's shifting use plans (from Portland-area delivery to data center supply at Boardman) drew legal challenge to condemnation authority in 2026.",
+        "sources": [
+          {
+            "source": "Oregon EFSC project page",
+            "source_url": "https://www.oregon.gov/energy/facilities-safety/facilities/Pages/B2H.aspx",
+            "source_type": "government"
+          }
+        ]
+      },
+      "nepa_timeline_summary": {
+        "noi": "2008-09-12 (revised 2010-07-27)",
+        "deis": "2014-12-19",
+        "feis": "2016-11-28",
+        "rod": "2017-11-17",
+        "total_nepa_years": 9.2,
+        "notes": "NOI-to-ROD span of ~9 years. Project first proposed in 2006."
+      }
+    },
+    {
+      "project_name": "Champlain Hudson Power Express (CHPE)",
+      "operator": "Transmission Developers Inc. (TDI) / Blackstone",
+      "ferc_docket": "ER20-1214-000",
+      "route": "Quebec border to New York City (Astoria, Queens) (~339 miles, underground/underwater HVDC)",
+      "status": "Under construction; expected in-service May 2026",
+      "events": [
+        {
+          "event": "TDI submitted application to DOE Office of Electricity for a Presidential Permit to construct the cross-border transmission line.",
+          "date": "2010-01-25",
+          "agency": "U.S. Department of Energy, Office of Electricity",
+          "source": "DOE NEPA page, EIS-0447",
+          "source_url": "https://www.energy.gov/nepa/eis-0447-champlain-hudson-power-express-transmission-line-project-new-york",
+          "source_type": "government"
+        },
+        {
+          "event": "DOE published Notice of Intent (NOI) to prepare an EIS for the CHPE project.",
+          "date": "2010-06-18",
+          "agency": "U.S. Department of Energy",
+          "source": "Federal Register, 75 FR 34720, June 18, 2010",
+          "source_url": "https://www.energy.gov/oe/articles/application-presidential-permit-oe-docket-no-pp-362-champlain-hudson-notice-intent",
+          "source_type": "government"
+        },
+        {
+          "event": "Parties in the NY PSC Article VII proceeding (Case 10-T-0139) announced settlement of all issues.",
+          "date": "2012-02-24",
+          "agency": "New York State Public Service Commission (PSC)",
+          "source": "NY DPS Case 10-T-0139",
+          "source_url": "https://www3.dps.ny.gov/W/PSCWeb.nsf/0/EA5E00EA64A80B628525774A00679630",
+          "source_type": "government"
+        },
+        {
+          "event": "DOE published Amended NOI to modify EIS scope reflecting applicant-proposed route revisions.",
+          "date": "2012-04-30",
+          "agency": "U.S. Department of Energy",
+          "source": "Federal Register, 77 FR 25282, April 30, 2012",
+          "source_url": "https://www.federalregister.gov/documents/2012/04/30/2012-10304/amended-notice-of-intent-to-modify-the-scope-of-the-environmental-impact-statement-for-the-champlain",
+          "source_type": "government"
+        },
+        {
+          "event": "NY PSC granted CHPE a Certificate of Environmental Compatibility and Public Need under Article VII of the Public Service Law.",
+          "date": "2013-04-18",
+          "agency": "New York State Public Service Commission",
+          "source": "TDI press release; NY DPS Case 10-T-0139",
+          "source_url": "https://chpexpress.com/news/champlain-hudson-power-express-approved-by-new-york-state-public-service-commission/",
+          "source_type": "government"
+        },
+        {
+          "event": "DOE released the Draft EIS (DEIS) for the CHPE project. 45-day public comment period began (later extended 30 days to Jan. 15, 2014).",
+          "date": "2013-11-01",
+          "agency": "U.S. Department of Energy",
+          "source": "DOE NEPA page, EIS-0447",
+          "source_url": "https://www.energy.gov/nepa/eis-0447-champlain-hudson-power-express-transmission-line-project-new-york",
+          "source_type": "government"
+        },
+        {
+          "event": "DOE issued the Final EIS (FEIS) for the CHPE project.",
+          "date": "2014-08",
+          "date_precision": "month",
+          "agency": "U.S. Department of Energy",
+          "source": "DOE EIS-0447 FEIS Summary",
+          "source_url": "https://www.energy.gov/sites/default/files/2014/08/f18/EIS-0447-FEIS-Summary-2014.pdf",
+          "source_type": "government"
+        },
+        {
+          "event": "NOAA Fisheries (NMFS) completed initial ESA Section 7 consultation, concurring that the project was not likely to adversely affect shortnose sturgeon or Atlantic sturgeon.",
+          "date": "2014-09-18",
+          "agency": "NOAA Fisheries / NMFS",
+          "source": "NOAA concurrence letter, cited in 2021 reinitiation document",
+          "source_url": "https://chpexpress.com/wp-content/uploads/2021/04/2021.03.31_CHPE_NOAA-Concurrence_Presidential-Permit.pdf",
+          "source_type": "government"
+        },
+        {
+          "event": "DOE issued Record of Decision (ROD) granting Presidential Permit to CHPE Inc. for the cross-border transmission line.",
+          "date": "2014-10-01",
+          "agency": "U.S. Department of Energy",
+          "source": "Federal Register, 79 FR 59041, Oct. 1, 2014",
+          "source_url": "https://www.federalregister.gov/documents/2014/10/01/2014-23421/record-of-decision-for-issuing-a-presidential-permit-to-champlain-hudson-power-express-inc-for-the",
+          "source_type": "government"
+        },
+        {
+          "event": "U.S. Army Corps of Engineers issued Department of the Army permit under Section 10 of the Rivers and Harbors Act and Section 404 of the Clean Water Act, completing federal permitting.",
+          "date": "2015-03",
+          "date_precision": "month",
+          "agency": "U.S. Army Corps of Engineers",
+          "source": "TDI press release: 'CHPE Completes Federal Permitting Process'",
+          "source_url": "https://chpexpress.com/news/champlain-hudson-power-express-completes-federal-permitting-process/",
+          "source_type": "industry",
+          "flag": "INDUSTRY SOURCE - date approximate from press release"
+        },
+        {
+          "event": "Center for Biological Diversity and conservation/First Nations groups filed formal 60-day ESA notice letter to DOE alleging failure to reinitiate ESA consultation after critical habitat designation for Atlantic sturgeon in the Hudson River.",
+          "date": "2020-10-08",
+          "agency": "Center for Biological Diversity (directed at DOE)",
+          "source": "Center for Biological Diversity press release, Oct. 8, 2020",
+          "source_url": "https://biologicaldiversity.org/w/news/press-releases/regulators-warned-of-champlain-hudson-power-express-projects-environmental-impact-2020-10-08/",
+          "source_type": "industry",
+          "flag": "ADVOCACY ORG SOURCE",
+          "notes": "Atlantic sturgeon critical habitat in Hudson River was designated after the 2014 consultation, triggering reinitiation obligation under ESA Section 7."
+        },
+        {
+          "event": "DOE requested reinitiation of ESA Section 7 consultation with NOAA Fisheries regarding Atlantic sturgeon critical habitat.",
+          "date": "2020-12",
+          "date_precision": "month",
+          "agency": "DOE / NOAA Fisheries",
+          "source": "NOAA concurrence letter, March 31, 2021",
+          "source_url": "https://chpexpress.com/wp-content/uploads/2021/04/2021.03.31_CHPE_NOAA-Concurrence_Presidential-Permit.pdf",
+          "source_type": "government"
+        },
+        {
+          "event": "NOAA Fisheries issued updated concurrence on reinitiated consultation, finding project modifications (decreased cable length, additional HDD crossing south of Haverstraw Bay) do not introduce new effects; 2014 consultation conclusions remain valid.",
+          "date": "2021-03-31",
+          "agency": "NOAA Fisheries / NMFS",
+          "source": "NOAA concurrence letter, March 31, 2021",
+          "source_url": "https://chpexpress.com/wp-content/uploads/2021/04/2021.03.31_CHPE_NOAA-Concurrence_Presidential-Permit.pdf",
+          "source_type": "government"
+        },
+        {
+          "event": "Governor Hochul announced NYSERDA finalized Tier 4 renewable energy contract with HQUS for the CHPE project.",
+          "date": "2021-11-30",
+          "agency": "NYSERDA / Governor's Office",
+          "source": "NYSERDA press release, Nov. 30, 2021",
+          "source_url": "https://www.nyserda.ny.gov/About/Newsroom/2021-Announcements/2021-11-30-Clean-Path-NY-Champlain-Hudson-Power-Express-Renewable-Energy",
+          "source_type": "government"
+        },
+        {
+          "event": "NY PSC approved the CHPE Tier 4 contract.",
+          "date": "2022-04",
+          "date_precision": "month",
+          "agency": "New York Public Service Commission",
+          "source": "T&D World, April 2022",
+          "source_url": "https://www.tdworld.com/intelligent-undergrounding/article/21239197/ny-commission-approves-contracts-for-champlain-hudson-power-express-clean-path-transmission-projects",
+          "source_type": "news",
+          "flag": "NEWS SOURCE"
+        },
+        {
+          "event": "Construction of the CHPE project officially began.",
+          "date": "2022-11-30",
+          "agency": "TDI / CHPE LLC",
+          "source": "Governor Hochul press release; NYSERDA",
+          "source_url": "https://www.governor.ny.gov/news/governor-hochul-announces-start-construction-339-mile-champlain-hudson-power-express",
+          "source_type": "government"
+        },
+        {
+          "event": "Governor Hochul announced start of construction on the converter station at Astoria, Queens.",
+          "date": "2023-09-19",
+          "agency": "Governor's Office / NYSERDA",
+          "source": "NYSERDA press release, Sept. 19, 2023",
+          "source_url": "https://www.nyserda.ny.gov/About/Newsroom/2023-Announcements/2023-09-19-Governor-Hochul-Announces-Start-Of-Construction-On-Converter-Station-For-339-Mile",
+          "source_type": "government"
+        },
+        {
+          "event": "CHPE filed petition with NY DPS to reduce cable burial depth in Hudson River federal navigation channel from 15 feet to 9 feet separation, citing inconsistency between state certificate and Army Corps permit.",
+          "date": "2024-02-09",
+          "agency": "NY Department of Public Service",
+          "source": "NY DPS event notice",
+          "source_url": "https://dps.ny.gov/event/champlain-hudson-comments-due-champlain-hudson-power-express-petition-regarding-burial-depth",
+          "source_type": "government"
+        },
+        {
+          "event": "Fort Ticonderoga Ferry operator Jack Doyle sued CHPE seeking injunction to prevent construction near ferry corridor; case subsequently settled for $100,000 plus compensation for lost service days.",
+          "date": "2024-spring",
+          "date_precision": "season",
+          "agency": "State court (details not specified in source)",
+          "source": "North Country Public Radio, June 2024",
+          "source_url": "https://www.northcountrypublicradio.org/news/story/50004/20240617/here-s-the-deal-with-those-barges-on-lake-champlain",
+          "source_type": "news",
+          "flag": "NEWS SOURCE"
+        }
+      ],
+      "esa_issues": {
+        "summary": "Primary ESA concern: shortnose sturgeon and Atlantic sturgeon in the Hudson River. Initial Section 7 consultation (2014) found 'not likely to adversely affect.' After Atlantic sturgeon critical habitat was designated in the Hudson River post-2014, Center for Biological Diversity filed 60-day notice in Oct. 2020. DOE requested reinitiation Dec. 2020. NOAA Fisheries issued updated concurrence March 31, 2021, finding no new adverse effects.",
+        "key_species": ["Shortnose sturgeon (Acipenser brevirostrum)", "Atlantic sturgeon (Acipenser oxyrinchus) - New York Bight DPS"],
+        "sources": [
+          {
+            "source": "NOAA Fisheries concurrence letter, March 31, 2021",
+            "source_url": "https://chpexpress.com/wp-content/uploads/2021/04/2021.03.31_CHPE_NOAA-Concurrence_Presidential-Permit.pdf",
+            "source_type": "government"
+          },
+          {
+            "source": "Center for Biological Diversity press release, Oct. 8, 2020",
+            "source_url": "https://biologicaldiversity.org/w/news/press-releases/regulators-warned-of-champlain-hudson-power-express-projects-environmental-impact-2020-10-08/",
+            "source_type": "industry"
+          }
+        ]
+      },
+      "section_106_issues": {
+        "summary": "Section 106 consultation was conducted as part of DOE's EIS process (2010-2014). Specific SHPO consultation dates and cultural resource survey details were not located in publicly available search results. The project route through Lake Champlain and the Hudson River traverses areas of potential historic significance.",
+        "sources": []
+      },
+      "state_permitting_conflicts": {
+        "summary": "NY Article VII siting (Case 10-T-0139) was the primary state process. Settlement reached Feb. 2012; Certificate of Environmental Compatibility and Public Need granted April 2013. Burial depth conflict between state certificate (15 ft) and Army Corps permit (9 ft) in Hudson River federal navigation channel required 2024 PSC amendment petition. Riverkeeper initially supported but later opposed the project, arguing Canadian hydro dams produce carbon emissions.",
+        "sources": [
+          {
+            "source": "NY DPS Case 10-T-0139",
+            "source_url": "https://www3.dps.ny.gov/W/PSCWeb.nsf/0/EA5E00EA64A80B628525774A00679630",
+            "source_type": "government"
+          }
+        ]
+      },
+      "nepa_timeline_summary": {
+        "noi": "2010-06-18 (amended 2012-04-30)",
+        "deis": "2013-11-01",
+        "feis": "2014-08 (month)",
+        "rod": "2014-10-01",
+        "total_nepa_years": 4.3,
+        "notes": "NOI-to-ROD span of ~4.3 years. Relatively fast for a 339-mile project. Presidential Permit required due to cross-border nature."
+      }
+    },
+    {
+      "project_name": "Cross-Tie 500 kV Transmission Line",
+      "operator": "TransCanyon LLC (Pinnacle West Capital / Berkshire Hathaway Energy US Transmission)",
+      "route": "Clover substation (Juab County, UT) to Robinson Summit substation (White Pine County, NV) (~214 miles)",
+      "status": "Approved (ROD issued); DOE TFP contract terminated Nov. 2025",
+      "events": [
+        {
+          "event": "BLM published Notice of Intent (NOI) to prepare an EIS for the Cross-Tie 500-kV Transmission Project. Public scoping period opened.",
+          "date": "2022-05-02",
+          "agency": "Bureau of Land Management (BLM), Fillmore Field Office",
+          "source": "Federal Register, 87 FR 25656, May 2, 2022",
+          "source_url": "https://www.federalregister.gov/documents/2022/05/02/2022-09397/notice-of-intent-to-prepare-an-environmental-impact-statement-for-the-proposed-cross-tie-500-kv",
+          "source_type": "government"
+        },
+        {
+          "event": "Public scoping period closed (extended one day from May 31). BLM received 59 unique submittals with 416 discrete comments. Two virtual public meetings held May 17-18.",
+          "date": "2022-06-01",
+          "agency": "BLM",
+          "source": "Federal Register NOI; BLM scoping report",
+          "source_url": "https://www.federalregister.gov/documents/2022/05/02/2022-09397/notice-of-intent-to-prepare-an-environmental-impact-statement-for-the-proposed-cross-tie-500-kv",
+          "source_type": "government"
+        },
+        {
+          "event": "DOE announced first-round Transmission Facilitation Program (TFP) selections, including Cross-Tie for capacity contract negotiations (~$226 million).",
+          "date": "2023-10-20",
+          "agency": "U.S. Department of Energy, Grid Deployment Office",
+          "source": "DOE TFP Selections page",
+          "source_url": "https://www.energy.gov/gdo/transmission-facilitation-program-first-round-selections",
+          "source_type": "government"
+        },
+        {
+          "event": "BLM published Notice of Availability for the Draft EIS (DEIS) for the Cross-Tie project.",
+          "date": "2023-11-09",
+          "agency": "BLM",
+          "source": "Federal Register, 88 FR 77297, Nov. 9, 2023",
+          "source_url": "https://www.federalregister.gov/documents/2023/11/09/2023-24748/notice-of-availability-of-the-draft-environmental-impact-statement-for-the-cross-tie-500-kv",
+          "source_type": "government"
+        },
+        {
+          "event": "BLM published Notice of Availability for the Final EIS (FEIS) for the Cross-Tie project. 45-day protest period opened (ending Nov. 4, 2024). SUWA issued statement expressing disappointment that the line would carry fossil fuel electricity.",
+          "date": "2024-09-20",
+          "agency": "BLM",
+          "source": "Federal Register, 89 FR 77235, Sept. 20, 2024",
+          "source_url": "https://www.federalregister.gov/documents/2024/09/20/2024-21279/notice-of-availability-of-the-final-environmental-impact-statement-for-the-cross-tie-500-kv",
+          "source_type": "government"
+        },
+        {
+          "event": "FEIS protest period closed.",
+          "date": "2024-11-04",
+          "agency": "BLM",
+          "source": "Federal Register FEIS NOA",
+          "source_url": "https://www.federalregister.gov/documents/2024/09/20/2024-21279/notice-of-availability-of-the-final-environmental-impact-statement-for-the-cross-tie-500-kv",
+          "source_type": "government"
+        },
+        {
+          "event": "BLM and USFS issued Records of Decision for the Cross-Tie project, authorizing right-of-way across BLM lands in Utah and Nevada and Humboldt-Toiyabe National Forest Ely Ranger District.",
+          "date": "2024-12",
+          "date_precision": "month",
+          "agency": "BLM / USDA Forest Service",
+          "source": "BLM press release",
+          "source_url": "https://www.blm.gov/press-release/blm-and-forest-service-approve-cross-tie-transmission-project",
+          "source_type": "government",
+          "notes": "Exact ROD date is late December 2024 based on E&E News reporting (Jan. 5, 2025 article referencing 'last week'). ROD PDF filename includes '251218' suggesting Dec. 18, 2024."
+        },
+        {
+          "event": "TransCanyon submitted notice to terminate the Cross-Tie capacity contract facilitation agreement with DOE under the Transmission Facilitation Program.",
+          "date": "2025-11-04",
+          "agency": "DOE Grid Deployment Office / TransCanyon",
+          "source": "DOE TFP Selections page",
+          "source_url": "https://www.energy.gov/gdo/transmission-facilitation-program-selections",
+          "source_type": "government"
+        }
+      ],
+      "esa_issues": {
+        "summary": "Greater sage-grouse habitat management was a key environmental concern. The FEIS siting corridor was reduced in Nevada to remove locations outside designated utility corridors to conform with the Nevada and Northeastern California Greater Sage-Grouse Approved Resource Management Plan Amendment. Lek avoidance buffers apply in Greater Sage-Grouse habitat management areas. Specific USFWS Biological Opinion details were not located in public search results.",
+        "key_species": ["Greater sage-grouse (Centrocercus urophasianus)"],
+        "sources": [
+          {
+            "source": "BLM press release on project approval",
+            "source_url": "https://www.blm.gov/press-release/blm-and-forest-service-approve-cross-tie-transmission-project",
+            "source_type": "government"
+          }
+        ]
+      },
+      "section_106_issues": {
+        "summary": "The FEIS references cultural resource compliance requirements. Potential paleontological sites were also flagged. Specific SHPO consultation dates for Utah and Nevada were not located in publicly available search results.",
+        "sources": []
+      },
+      "state_permitting_conflicts": {
+        "summary": "No significant state permitting conflicts identified in search results. The route crosses primarily BLM and USFS federal lands (~173 of 214 miles federal). State lands comprise approximately 15 miles (UT) and 1 mile (NV). SUWA opposed the project on grounds it would carry fossil-fuel-generated electricity rather than renewables.",
+        "sources": [
+          {
+            "source": "SUWA statement on Cross-Tie FEIS, Sept. 20, 2024",
+            "source_url": "https://suwa.org/suwa-statement-on-the-proposed-cross-tie-500-kv-transmission-project-final-environmental-impact-statement-feis-9-20-24/",
+            "source_type": "industry",
+            "flag": "ADVOCACY ORG SOURCE"
+          }
+        ]
+      },
+      "nepa_timeline_summary": {
+        "noi": "2022-05-02",
+        "deis": "2023-11-09",
+        "feis": "2024-09-20",
+        "rod": "2024-12 (approx. Dec. 18, 2024)",
+        "total_nepa_years": 2.6,
+        "notes": "NOI-to-ROD span of ~2.6 years. Notably fast NEPA process. Project route is predominantly on federal land through sparsely populated areas."
+      }
+    }
+  ]
+}

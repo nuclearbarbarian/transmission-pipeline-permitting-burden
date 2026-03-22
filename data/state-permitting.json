@@ -1,0 +1,1410 @@
+{
+  "_metadata": {
+    "description": "State-level environmental permitting framework data from FAI State Permitting Playbook Parts 1 and 2. Covers 49 states (all except California).",
+    "source_urls": [
+      "https://thefai.org/"
+    ],
+    "access_date": "2026-03-21",
+    "jurisdiction": "49 U.S. states (California not covered)",
+    "known_gaps": [
+      "California not covered in either part",
+      "Part 1 does not include state permitting dashboard checklist (added in Part 2)",
+      "Dashboard data only available for Part 2 states (CO, CT, DE, HI, IL, ME, MD, MA, MI, NV, NJ, NM, NY, OR, RI, VT, WA)",
+      "Florida Section 404 assumption was in legal dispute at time of publication",
+      "Asterisked entries have qualifications explained in state-by-state analysis \u2014 simplified to true/false here with notes"
+    ],
+    "notes": "FAI is the Foundation for American Innovation, a policy think tank. Per Ultan sourcing standards, this is tier-4 (advocacy). However, the underlying data references primary government sources (state regulations, EPA approvals, SIPs) which are tier-1. The checklists are structured factual assessments, not advocacy claims. Part 1: Samuel Roland, June 2024. Part 2: Samuel Roland, November 2025."
+  },
+  "states": {
+    "AL": {
+      "name": "Alabama",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": false,
+        "general_permits": false
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 24
+      },
+      "endangered_species": {
+        "has_sesa": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "AK": {
+      "name": "Alaska",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": false,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 25
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "AZ": {
+      "name": "Arizona",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 7
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "AR": {
+      "name": "Arkansas",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 13
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "CO": {
+      "name": "Colorado",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true,
+        "notes": "PBR is exemption-based (APEN registration)"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 23
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": {
+        "has_dashboard": false,
+        "realtime_tracking": false
+      },
+      "source_part": 2
+    },
+    "CT": {
+      "name": "Connecticut",
+      "sepa": {
+        "has_sepa": true,
+        "used_often": true,
+        "includes_private_sector": false,
+        "major_exemptions": true
+      },
+      "clean_air": {
+        "pals_in_sip": false,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": false,
+        "notes": "Has premise-wide limits"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 15
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": true,
+        "critical_habitat": true,
+        "incidental_take_permit": true
+      },
+      "dashboard": {
+        "has_dashboard": false,
+        "realtime_tracking": false
+      },
+      "source_part": 2
+    },
+    "DE": {
+      "name": "Delaware",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": false
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 5
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": {
+        "has_dashboard": true,
+        "realtime_tracking": false
+      },
+      "source_part": 2
+    },
+    "FL": {
+      "name": "Florida",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": false
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 8,
+        "notes": "Section 404 assumption was granted 2020, revoked via legal challenge"
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "GA": {
+      "name": "Georgia",
+      "sepa": {
+        "has_sepa": true,
+        "used_often": false,
+        "includes_private_sector": false,
+        "major_exemptions": true
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true,
+        "notes": "PALs in SIP and use are qualified (*)"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 11
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "HI": {
+      "name": "Hawaii",
+      "sepa": {
+        "has_sepa": true,
+        "used_often": true,
+        "includes_private_sector": true,
+        "major_exemptions": true
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": false,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 12
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": true
+      },
+      "dashboard": {
+        "has_dashboard": true,
+        "realtime_tracking": false
+      },
+      "source_part": 2
+    },
+    "ID": {
+      "name": "Idaho",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 8
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "IL": {
+      "name": "Illinois",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true,
+        "notes": "Has lifetime permits; general permits qualified (*)"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 11
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": true,
+        "critical_habitat": true,
+        "incidental_take_permit": true,
+        "notes": "Critical habitat qualified (*)"
+      },
+      "dashboard": {
+        "has_dashboard": true,
+        "realtime_tracking": false
+      },
+      "source_part": 2
+    },
+    "IN": {
+      "name": "Indiana",
+      "sepa": {
+        "has_sepa": true,
+        "used_often": false,
+        "includes_private_sector": false,
+        "major_exemptions": true
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": true,
+        "pbr_registration": true,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 12
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "IA": {
+      "name": "Iowa",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 10
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "KS": {
+      "name": "Kansas",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": false,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": false,
+        "notes": "Has stone facilities expedited construction"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 6
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "KY": {
+      "name": "Kentucky",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": false
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 12
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "LA": {
+      "name": "Louisiana",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": true,
+        "pbr_registration": false,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 14
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "ME": {
+      "name": "Maine",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": false,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 10
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": true
+      },
+      "dashboard": {
+        "has_dashboard": true,
+        "realtime_tracking": false
+      },
+      "source_part": 2
+    },
+    "MD": {
+      "name": "Maryland",
+      "sepa": {
+        "has_sepa": true,
+        "used_often": false,
+        "includes_private_sector": false,
+        "major_exemptions": true
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 12
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": true,
+        "incidental_take_permit": true
+      },
+      "dashboard": {
+        "has_dashboard": false,
+        "realtime_tracking": false
+      },
+      "source_part": 2
+    },
+    "MA": {
+      "name": "Massachusetts",
+      "sepa": {
+        "has_sepa": true,
+        "used_often": true,
+        "includes_private_sector": true,
+        "major_exemptions": true
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": false,
+        "npdes_general_permits": 13
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": true,
+        "critical_habitat": true,
+        "incidental_take_permit": true
+      },
+      "dashboard": {
+        "has_dashboard": true,
+        "realtime_tracking": false
+      },
+      "source_part": 2
+    },
+    "MI": {
+      "name": "Michigan",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": false,
+        "pal_guidance": true,
+        "pbr_registration": false,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": true,
+        "npdes_authority": true,
+        "npdes_general_permits": 55
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": {
+        "has_dashboard": true,
+        "realtime_tracking": false
+      },
+      "source_part": 2
+    },
+    "MN": {
+      "name": "Minnesota",
+      "sepa": {
+        "has_sepa": true,
+        "used_often": true,
+        "includes_private_sector": true,
+        "major_exemptions": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": true,
+        "pbr_registration": true,
+        "general_permits": true,
+        "notes": "PAL guidance qualified (*); has capped permits"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 16
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": true,
+        "notes": "Critical habitat qualified (*)"
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "MS": {
+      "name": "Mississippi",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": false,
+        "general_permits": false,
+        "notes": "Has oil & gas multimedia permit"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 13
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "MO": {
+      "name": "Missouri",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": false
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 31
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "MT": {
+      "name": "Montana",
+      "sepa": {
+        "has_sepa": true,
+        "used_often": true,
+        "includes_private_sector": true,
+        "major_exemptions": false
+      },
+      "clean_air": {
+        "pals_in_sip": false,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": false
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 15
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "NE": {
+      "name": "Nebraska",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 8
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": true,
+        "critical_habitat": true,
+        "incidental_take_permit": false,
+        "notes": "ITP qualified (*)"
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "NV": {
+      "name": "Nevada",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": false,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 8
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": true
+      },
+      "dashboard": {
+        "has_dashboard": false,
+        "realtime_tracking": false
+      },
+      "source_part": 2
+    },
+    "NH": {
+      "name": "New Hampshire",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": false,
+        "general_permits": false,
+        "notes": "PALs in use qualified (*); has rock crushers, emergency generators"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": false,
+        "npdes_general_permits": 12,
+        "notes": "NPDES general permits count qualified (*)"
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": true,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "NJ": {
+      "name": "New Jersey",
+      "sepa": {
+        "has_sepa": false,
+        "notes": "Qualified (*) in Part 2"
+      },
+      "clean_air": {
+        "pals_in_sip": false,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": false,
+        "general_permits": true,
+        "notes": "PBR qualified (*)"
+      },
+      "clean_water": {
+        "section_404_assumption": true,
+        "npdes_authority": true,
+        "npdes_general_permits": 68
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false,
+        "notes": "Consultation and critical habitat qualified (*)"
+      },
+      "dashboard": {
+        "has_dashboard": true,
+        "realtime_tracking": true
+      },
+      "source_part": 2
+    },
+    "NM": {
+      "name": "New Mexico",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": false,
+        "npdes_general_permits": 7
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": true,
+        "notes": "ITP qualified (*)"
+      },
+      "dashboard": {
+        "has_dashboard": false,
+        "realtime_tracking": false
+      },
+      "source_part": 2
+    },
+    "NY": {
+      "name": "New York",
+      "sepa": {
+        "has_sepa": true,
+        "used_often": true,
+        "includes_private_sector": true,
+        "major_exemptions": true
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true,
+        "notes": "General permits qualified (*); PAL has 75% reduction after 5 years"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 7
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": true
+      },
+      "dashboard": {
+        "has_dashboard": true,
+        "realtime_tracking": false
+      },
+      "source_part": 2
+    },
+    "NC": {
+      "name": "North Carolina",
+      "sepa": {
+        "has_sepa": true,
+        "used_often": true,
+        "includes_private_sector": true,
+        "major_exemptions": true
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true,
+        "notes": "Has renewable permits"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 10
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false,
+        "notes": "Critical habitat and ITP qualified (*)"
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "ND": {
+      "name": "North Dakota",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": false,
+        "general_permits": true,
+        "notes": "PBR is oil & gas specific"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 10
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "OH": {
+      "name": "Ohio",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 17
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "OK": {
+      "name": "Oklahoma",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 16
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "OR": {
+      "name": "Oregon",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": false,
+        "pals_in_use": true,
+        "pal_guidance": true,
+        "pbr_registration": false,
+        "general_permits": true,
+        "notes": "PALs in SIP qualified (*); has PSEL program"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 19
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": true
+      },
+      "dashboard": {
+        "has_dashboard": true,
+        "realtime_tracking": false
+      },
+      "source_part": 2
+    },
+    "PA": {
+      "name": "Pennsylvania",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": false,
+        "general_permits": true,
+        "notes": "PALs in SIP qualified (*)"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 13
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "RI": {
+      "name": "Rhode Island",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": false,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": false,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 6
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false,
+        "notes": "SESA qualified (*)"
+      },
+      "dashboard": {
+        "has_dashboard": true,
+        "realtime_tracking": false
+      },
+      "source_part": 2
+    },
+    "SC": {
+      "name": "South Carolina",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true,
+        "notes": "PALs in SIP qualified (*)"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 14
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "SD": {
+      "name": "South Dakota",
+      "sepa": {
+        "has_sepa": true,
+        "used_often": false,
+        "includes_private_sector": false,
+        "major_exemptions": true
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": false,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 13
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "TN": {
+      "name": "Tennessee",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 7
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "TX": {
+      "name": "Texas",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": true,
+        "pbr_registration": true,
+        "general_permits": true,
+        "notes": "Has RAPs and flexible permits"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 17
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "UT": {
+      "name": "Utah",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": false,
+        "general_permits": false,
+        "notes": "PBR is oil & gas specific"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 10
+      },
+      "endangered_species": {
+        "has_sesa": false,
+        "notes": "SESA qualified (*)"
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "VT": {
+      "name": "Vermont",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": false,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": false
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 8
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": true,
+        "incidental_take_permit": true,
+        "notes": "Critical habitat qualified (*)"
+      },
+      "dashboard": {
+        "has_dashboard": true,
+        "realtime_tracking": true
+      },
+      "source_part": 2
+    },
+    "VA": {
+      "name": "Virginia",
+      "sepa": {
+        "has_sepa": true,
+        "used_often": true,
+        "includes_private_sector": true,
+        "major_exemptions": true,
+        "notes": "Private sector qualified (*)"
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": false,
+        "general_permits": true,
+        "notes": "Has exemptions and renewable PBR"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 15
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": true,
+        "notes": "Consultation and ITP qualified (*)"
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "WA": {
+      "name": "Washington",
+      "sepa": {
+        "has_sepa": true,
+        "used_often": true,
+        "includes_private_sector": true,
+        "major_exemptions": true
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": false,
+        "pal_guidance": true,
+        "pbr_registration": true,
+        "general_permits": true,
+        "notes": "PBR and general permits qualified (*)"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 15
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": false,
+        "critical_habitat": false,
+        "incidental_take_permit": false,
+        "notes": "Consultation and critical habitat qualified (*)"
+      },
+      "dashboard": {
+        "has_dashboard": true,
+        "realtime_tracking": true
+      },
+      "source_part": 2
+    },
+    "WV": {
+      "name": "West Virginia",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": false,
+        "pal_guidance": false,
+        "pbr_registration": false,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 13
+      },
+      "endangered_species": {
+        "has_sesa": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "WI": {
+      "name": "Wisconsin",
+      "sepa": {
+        "has_sepa": true,
+        "used_often": true,
+        "includes_private_sector": true,
+        "major_exemptions": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": true,
+        "general_permits": true
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 28
+      },
+      "endangered_species": {
+        "has_sesa": true,
+        "consultation": true,
+        "critical_habitat": false,
+        "incidental_take_permit": true
+      },
+      "dashboard": null,
+      "source_part": 1
+    },
+    "WY": {
+      "name": "Wyoming",
+      "sepa": {
+        "has_sepa": false
+      },
+      "clean_air": {
+        "pals_in_sip": true,
+        "pals_in_use": true,
+        "pal_guidance": false,
+        "pbr_registration": false,
+        "general_permits": false,
+        "notes": "General permits qualified (*)"
+      },
+      "clean_water": {
+        "section_404_assumption": false,
+        "npdes_authority": true,
+        "npdes_general_permits": 9
+      },
+      "endangered_species": {
+        "has_sesa": false
+      },
+      "dashboard": null,
+      "source_part": 1
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.DS_Store
+*.swp
+*.swo
+*~
+.claude/
+pipeline_permitting_research.md
+data/new-pipeline-entries.json
+data/new-pipeline-events.json

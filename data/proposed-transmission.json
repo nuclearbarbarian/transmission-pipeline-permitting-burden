@@ -1,0 +1,1268 @@
+{
+  "_metadata": {
+    "description": "Major proposed and recently completed interstate electric transmission projects in the United States",
+    "source_urls": [
+      "https://www.ferc.gov/electric-transmission",
+      "https://www.energy.gov/gdo/transmission-facilitation-program-selections",
+      "https://www.permits.performance.gov/"
+    ],
+    "access_date": "2026-03-21",
+    "jurisdiction": "United States \u2014 interstate and international interconnections",
+    "known_gaps": [
+      "MISO LRTP Tranche 1 (18 projects, $10.3B) not individually listed \u2014 mostly intrastate regulated utility builds",
+      "MISO LRTP Tranche 2.1 (24 projects, $21.8B, approved Dec 2024) not individually listed \u2014 same reason",
+      "SPP and PJM regional transmission expansion plans not individually listed",
+      "CAISO Transmission Plan projects not individually listed",
+      "Intrastate projects below ~$500M CAPEX generally excluded",
+      "DOE NIETC corridor designations noted as policy context but not mapped as individual projects"
+    ],
+    "notes": "FERC docket numbers may represent one of several proceedings per project (negotiated rate authority, compliance, PTO). MW capacity for HVAC lines is thermal/stability limit, not nameplate. For HVDC, MW is converter capacity. In-service dates are developer targets; large transmission projects historically experience 2-5 year delays. Coordinates are substation or county-level approximations, not survey-grade."
+  },
+  "projects": [
+    {
+      "id": "sunzia-transmission",
+      "name": "SunZia Southwest Transmission",
+      "operator": "Pattern Energy",
+      "docket": "FERC ER24-2117-000",
+      "status": "under-construction",
+      "in_service_year": 2026,
+      "origin": {
+        "description": "Lincoln County, NM (near Corona)",
+        "lat": 34.1012,
+        "lng": -105.6745
+      },
+      "destination": {
+        "description": "Pinal County, AZ (Pinal Central substation)",
+        "lat": 32.869,
+        "lng": -111.5527
+      },
+      "states": [
+        "NM",
+        "AZ"
+      ],
+      "length_miles": 550,
+      "capacity_mw": 3000,
+      "voltage_kv": 525,
+      "technology": "HVDC",
+      "project_type": "new_build",
+      "strategic_context": "Wind integration, interregional NM-AZ-CA transfer",
+      "region": "other",
+      "data_confidence": "high",
+      "confidence_note": "Construction 73% complete as of late 2025. FERC tariff accepted April 2025. FAST-41 designated.",
+      "permitting": {
+        "nepa_status": "completed",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": true
+      },
+      "sources": [
+        {
+          "name": "FERC eLibrary",
+          "docket": "ER24-2117-000",
+          "accessed": "2026-03-21"
+        },
+        {
+          "name": "Permitting Dashboard (FAST-41)",
+          "url": "https://www.permits.performance.gov/permitting-project/fast-41-covered-projects/sunzia-southwest-transmission-project",
+          "accessed": "2026-03-21"
+        }
+      ]
+    },
+    {
+      "id": "grain-belt-express",
+      "name": "Grain Belt Express",
+      "operator": "Invenergy",
+      "docket": "FERC ER24-59",
+      "status": "construction-pending",
+      "in_service_year": 2029,
+      "origin": {
+        "description": "Ford County, KS (southwest Kansas wind region)",
+        "lat": 37.68,
+        "lng": -99.89
+      },
+      "destination": {
+        "description": "Sullivan County, IN (PJM interconnection)",
+        "lat": 39.1,
+        "lng": -87.4
+      },
+      "states": [
+        "KS",
+        "MO",
+        "IL",
+        "IN"
+      ],
+      "length_miles": 800,
+      "capacity_mw": 5000,
+      "voltage_kv": 600,
+      "technology": "HVDC (Phase 1: 2,500 MW to MISO/MO; Phase 2: 2,500 MW to PJM/IN)",
+      "project_type": "new_build",
+      "strategic_context": "Interregional SPP-MISO-PJM; wind integration from Kansas",
+      "region": "midwest",
+      "data_confidence": "high",
+      "confidence_note": "All state approvals secured. DOE FEIS published. DOE loan terminated July 2025. Phase 1 construction anticipated 2026, operational Q1 2029. FAST-41 designated.",
+      "permitting": {
+        "nepa_status": "feis_published",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": true
+      },
+      "sources": [
+        {
+          "name": "FERC eLibrary",
+          "docket": "ER24-59",
+          "accessed": "2026-03-21"
+        },
+        {
+          "name": "Grain Belt Express project site",
+          "url": "https://grainbeltexpress.com/",
+          "accessed": "2026-03-21"
+        },
+        {
+          "name": "DOE EIS",
+          "url": "https://www.energy.gov/lpo/eis-0554-grain-belt-express-transmission-line",
+          "accessed": "2026-03-21"
+        }
+      ]
+    },
+    {
+      "id": "transwest-express",
+      "name": "TransWest Express",
+      "operator": "TransWest Express LLC (Anschutz Corporation)",
+      "docket": "FERC ER21-645-000",
+      "status": "under-construction",
+      "in_service_year": 2027,
+      "origin": {
+        "description": "Carbon County, WY (near Rawlins)",
+        "lat": 41.7558,
+        "lng": -107.259
+      },
+      "destination": {
+        "description": "Millard County, UT (IPP Substation) / Clark County, NV",
+        "lat": 35.8354,
+        "lng": -114.9983
+      },
+      "states": [
+        "WY",
+        "CO",
+        "UT",
+        "NV"
+      ],
+      "length_miles": 732,
+      "capacity_mw": 3000,
+      "voltage_kv": 600,
+      "technology": "HVDC (WY-UT, 405 mi, 3,000 MW) + HVAC (UT-NV, 327 mi, 1,500 MW)",
+      "project_type": "new_build",
+      "strategic_context": "Wind integration from WY to Desert Southwest/CAISO; connects Chokecherry-Sierra Madre wind farm",
+      "region": "other",
+      "data_confidence": "high",
+      "confidence_note": "100% ROW secured. Early construction started 2023. VSC HVDC technology change under study 2025.",
+      "permitting": {
+        "nepa_status": "completed",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "FERC eLibrary",
+          "docket": "ER21-645-000",
+          "accessed": "2026-03-21"
+        },
+        {
+          "name": "TransWest Express project site",
+          "url": "https://www.transwestexpress.net/",
+          "accessed": "2026-03-21"
+        }
+      ]
+    },
+    {
+      "id": "champlain-hudson-power-express",
+      "name": "Champlain Hudson Power Express",
+      "operator": "Transmission Developers Inc. (Blackstone)",
+      "docket": "FERC ER20-1214-000",
+      "status": "under-construction",
+      "in_service_year": 2026,
+      "origin": {
+        "description": "US-Canadian border, Lake Champlain (Hydro-Quebec)",
+        "lat": 45.01,
+        "lng": -73.34
+      },
+      "destination": {
+        "description": "Astoria, Queens, NYC (converter station)",
+        "lat": 40.77,
+        "lng": -73.89
+      },
+      "states": [
+        "NY"
+      ],
+      "length_miles": 339,
+      "capacity_mw": 1250,
+      "voltage_kv": 320,
+      "technology": "HVDC submarine/underground cable",
+      "project_type": "new_build",
+      "strategic_context": "Canadian hydropower import to NYC; supports NY CLCPA clean energy mandates",
+      "region": "other",
+      "data_confidence": "high",
+      "confidence_note": "All submarine cable laid as of Sept 2025. 84% excavation complete. Full operation spring 2026.",
+      "permitting": {
+        "nepa_status": "completed",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "FERC eLibrary",
+          "docket": "ER20-1214-000",
+          "accessed": "2026-03-21"
+        },
+        {
+          "name": "CHPE project site",
+          "url": "https://chpexpress.com/",
+          "accessed": "2026-03-21"
+        }
+      ]
+    },
+    {
+      "id": "necec",
+      "name": "New England Clean Energy Connect",
+      "operator": "NECEC Transmission LLC (Avangrid)",
+      "docket": "FERC EL21-6-000",
+      "status": "operational",
+      "in_service_year": 2026,
+      "origin": {
+        "description": "Beattie Township, ME (Canadian border, Hydro-Quebec)",
+        "lat": 45.5156,
+        "lng": -70.7207
+      },
+      "destination": {
+        "description": "Lewiston, ME (Merrill Road converter station)",
+        "lat": 44.2878,
+        "lng": -69.5635
+      },
+      "states": [
+        "ME"
+      ],
+      "length_miles": 145,
+      "capacity_mw": 1200,
+      "voltage_kv": 320,
+      "technology": "HVDC (54 mi new + 91 mi upgraded AC)",
+      "project_type": "new_build",
+      "strategic_context": "Canadian hydropower import to ISO-NE; MA Clean Energy Standard",
+      "region": "other",
+      "data_confidence": "high",
+      "confidence_note": "Commercial operation Jan 16, 2026. Survived Maine ballot referendum challenge.",
+      "permitting": {
+        "nepa_status": "completed",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "FERC eLibrary",
+          "docket": "EL21-6-000",
+          "accessed": "2026-03-21"
+        },
+        {
+          "name": "Avangrid press release",
+          "url": "https://www.avangrid.com/",
+          "accessed": "2026-03-21",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "soo-green-hvdc",
+      "name": "SOO Green HVDC Link",
+      "operator": "SOO Green HVDC Link ProjectCo (Copenhagen Infrastructure Partners / EnergyRe)",
+      "docket": "FERC ER20-1665",
+      "status": "construction-pending",
+      "in_service_year": 2029,
+      "origin": {
+        "description": "Mason City, IA (MISO interconnection)",
+        "lat": 43.15,
+        "lng": -93.2
+      },
+      "destination": {
+        "description": "Plano, IL (PJM interconnection, near Chicago)",
+        "lat": 41.66,
+        "lng": -88.54
+      },
+      "states": [
+        "IA",
+        "IL"
+      ],
+      "length_miles": 350,
+      "capacity_mw": 2100,
+      "voltage_kv": 525,
+      "technology": "HVDC underground along railroad ROW",
+      "project_type": "new_build",
+      "strategic_context": "Interregional MISO-PJM; first major underground HVDC in US",
+      "region": "midwest",
+      "data_confidence": "medium",
+      "confidence_note": "State approvals secured. Franchise agreements obtained Sept 2025. In-service estimates range 2029-2032 depending on source.",
+      "permitting": {
+        "nepa_status": "pending",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "FERC eLibrary",
+          "docket": "ER20-1665",
+          "accessed": "2026-03-21"
+        },
+        {
+          "name": "Utility Dive",
+          "url": "https://www.utilitydive.com/news/soo-green-transmission-iowa-illinois-pjm-miso/761080/",
+          "accessed": "2026-03-21",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "id": "cardinal-hickory-creek",
+      "name": "Cardinal-Hickory Creek",
+      "operator": "ATC / ITC Midwest / Dairyland Power Cooperative",
+      "docket": "USDA RUS (NEPA lead); WI PSC CPCN",
+      "status": "operational",
+      "in_service_year": 2024,
+      "origin": {
+        "description": "Hickory Creek Substation, Dubuque County, IA",
+        "lat": 42.5452,
+        "lng": -91.0183
+      },
+      "destination": {
+        "description": "Cardinal Substation, Dane County, WI",
+        "lat": 43.0915,
+        "lng": -89.5677
+      },
+      "states": [
+        "IA",
+        "WI"
+      ],
+      "length_miles": 102,
+      "capacity_mw": null,
+      "voltage_kv": 345,
+      "technology": "HVAC overhead",
+      "project_type": "new_build",
+      "strategic_context": "MISO MVP; 160 renewable generation projects dependent on this line",
+      "region": "midwest",
+      "data_confidence": "high",
+      "confidence_note": "In service Sept 26, 2024. Regulated utility project, no FERC merchant docket.",
+      "permitting": {
+        "nepa_status": "completed",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "Cardinal-Hickory Creek project site",
+          "url": "https://www.cardinal-hickorycreek.com/",
+          "accessed": "2026-03-21"
+        },
+        {
+          "name": "Dairyland Power press release",
+          "accessed": "2026-03-21",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "cross-tie-500kv",
+      "name": "Cross-Tie 500 kV Transmission Line",
+      "operator": "TransCanyon LLC (Pinnacle West / BHE US Transmission)",
+      "docket": "BLM ROW; DOE TFP (terminated)",
+      "status": "approved",
+      "in_service_year": 2028,
+      "origin": {
+        "description": "Clover Substation, Millard County, UT",
+        "lat": 39.784,
+        "lng": -111.8974
+      },
+      "destination": {
+        "description": "Robinson Summit Substation, White Pine County, NV",
+        "lat": 39.3578,
+        "lng": -115.1634
+      },
+      "states": [
+        "UT",
+        "NV"
+      ],
+      "length_miles": 214,
+      "capacity_mw": 1500,
+      "voltage_kv": 500,
+      "technology": "HVAC overhead",
+      "project_type": "new_build",
+      "strategic_context": "Interregional UT-NV connector; DOE Transmission Facilitation Program selection",
+      "region": "other",
+      "data_confidence": "high",
+      "confidence_note": "BLM and Forest Service RODs issued 2024. FEIS published Sept 2024. Construction expected Q1 2025.",
+      "permitting": {
+        "nepa_status": "rod_issued",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "BLM press release",
+          "url": "https://www.blm.gov/press-release/blm-and-forest-service-approve-cross-tie-transmission-project",
+          "accessed": "2026-03-21"
+        },
+        {
+          "name": "Federal Register FEIS notice",
+          "date": "2024-09-20"
+        }
+      ]
+    },
+    {
+      "id": "riosol-transmission",
+      "name": "RioSol Transmission",
+      "operator": "SouthWestern Power Group / NM Renewable Energy Transmission Authority",
+      "docket": "FERC ER24-1726-000",
+      "status": "proposed",
+      "in_service_year": 2029,
+      "origin": {
+        "description": "Lincoln County, NM (parallels SunZia)",
+        "lat": 34.1012,
+        "lng": -105.6745
+      },
+      "destination": {
+        "description": "Pinal County, AZ (Pinal Central area)",
+        "lat": 32.869,
+        "lng": -111.5527
+      },
+      "states": [
+        "NM",
+        "AZ"
+      ],
+      "length_miles": 550,
+      "capacity_mw": 1600,
+      "voltage_kv": 500,
+      "technology": "HVAC (parallel to SunZia HVDC)",
+      "project_type": "new_build",
+      "strategic_context": "Companion to SunZia; additional renewable capacity NM-AZ-CA",
+      "region": "other",
+      "data_confidence": "medium",
+      "confidence_note": "FERC approved capacity solicitation plan 2024. Open solicitation underway. Early development. In-service approximate.",
+      "permitting": {
+        "nepa_status": "pending",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "FERC eLibrary",
+          "docket": "ER24-1726-000",
+          "accessed": "2026-03-21"
+        },
+        {
+          "name": "Utility Dive",
+          "url": "https://www.utilitydive.com/news/ferc-capacity-solicitation-riosol-transmission-sunzia-pattern-nextera-lake-erie/720818/",
+          "accessed": "2026-03-21",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "id": "lake-erie-connector",
+      "name": "Lake Erie Connector",
+      "operator": "NextEra Energy Transmission",
+      "docket": "PP-412-1 (DOE Presidential Permit)",
+      "status": "construction-pending",
+      "in_service_year": 2030,
+      "origin": {
+        "description": "Nanticoke, Ontario, Canada",
+        "lat": 42.8,
+        "lng": -80.06
+      },
+      "destination": {
+        "description": "Erie County, PA",
+        "lat": 42.13,
+        "lng": -80.08
+      },
+      "states": [
+        "PA"
+      ],
+      "length_miles": 73,
+      "capacity_mw": 1000,
+      "voltage_kv": 320,
+      "technology": "HVDC submarine cable under Lake Erie",
+      "project_type": "new_build",
+      "strategic_context": "International Ontario-PJM interconnection; NIETC corridor designated",
+      "region": "appalachian",
+      "data_confidence": "medium",
+      "confidence_note": "Presidential permit issued Jan 2025. NIETC corridor advancing. No confirmed construction start. In-service year approximate.",
+      "permitting": {
+        "nepa_status": "pending",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "DOE Presidential Permit",
+          "url": "https://www.energy.gov/sites/default/files/2025-01/PP-412-1%20Lake%20Eerie%20Connector%20Transmission,%20LLC%20Presidential%20Permit%20Order.pdf",
+          "accessed": "2026-03-21"
+        },
+        {
+          "name": "NextEra project site",
+          "url": "https://www.nexteraenergytransmission.com/lake-erie-connector.html",
+          "accessed": "2026-03-21",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "southern-spirit",
+      "name": "Southern Spirit Transmission",
+      "operator": "Pattern Energy",
+      "docket": "FERC 137 FERC \u00b6 61,206",
+      "status": "construction-pending",
+      "in_service_year": 2029,
+      "origin": {
+        "description": "Rusk County, TX (East Texas)",
+        "lat": 32.1001,
+        "lng": -94.0412
+      },
+      "destination": {
+        "description": "Choctaw County, MS (Wolf Creek Substation)",
+        "lat": 33.2966,
+        "lng": -89.4253
+      },
+      "states": [
+        "TX",
+        "LA",
+        "MS"
+      ],
+      "length_miles": 320,
+      "capacity_mw": 3000,
+      "voltage_kv": 525,
+      "technology": "HVDC VSC bidirectional",
+      "project_type": "new_build",
+      "strategic_context": "ERCOT-Southeast interconnection; DOE TFP selection ($360M)",
+      "region": "gulf-coast",
+      "data_confidence": "medium",
+      "confidence_note": "FERC approved May 2024. DOE TFP selected. Louisiana eminent domain legislation is active siting risk. Construction target 2026, in-service late 2029.",
+      "permitting": {
+        "nepa_status": "pending",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "FERC order",
+          "docket": "FERC 137 FERC \u00b6 61,206",
+          "accessed": "2026-03-21"
+        },
+        {
+          "name": "Pattern Energy project site",
+          "url": "https://patternenergy.com/projects/southern-spirit-transmission/",
+          "accessed": "2026-03-21",
+          "source_type": "industry"
+        },
+        {
+          "name": "DOE TFP selections",
+          "url": "https://www.energy.gov/gdo/transmission-facilitation-program-selections",
+          "accessed": "2026-03-21"
+        }
+      ]
+    },
+    {
+      "id": "boardman-to-hemingway",
+      "name": "Boardman to Hemingway (B2H)",
+      "operator": "Idaho Power (45%) / PacifiCorp (55%)",
+      "docket": "FERC EC23-111-000",
+      "status": "approved",
+      "in_service_year": 2027,
+      "origin": {
+        "description": "Longhorn Substation, near Boardman, OR (Morrow County)",
+        "lat": 45.6859,
+        "lng": -119.9624
+      },
+      "destination": {
+        "description": "Hemingway Substation, Owyhee County, ID",
+        "lat": 43.3523,
+        "lng": -116.6607
+      },
+      "states": [
+        "OR",
+        "ID"
+      ],
+      "length_miles": 290,
+      "capacity_mw": 1000,
+      "voltage_kv": 500,
+      "technology": "HVAC overhead",
+      "project_type": "new_build",
+      "strategic_context": "Pacific Northwest to Idaho/Intermountain West; 19+ years in development",
+      "region": "other",
+      "data_confidence": "medium",
+      "confidence_note": "Multiple approvals secured. BLM cultural resource audit caused delays. In-service 2027 is optimistic. FAST-41 designated.",
+      "permitting": {
+        "nepa_status": "EIS",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": true
+      },
+      "sources": [
+        {
+          "name": "FERC eLibrary",
+          "docket": "EC23-111-000",
+          "accessed": "2026-03-21"
+        },
+        {
+          "name": "Idaho Power project site",
+          "url": "https://www.idahopower.com/energy-environment/energy/planning-and-electrical-projects/current-projects/boardman-to-hemingway/",
+          "accessed": "2026-03-21",
+          "source_type": "industry"
+        },
+        {
+          "name": "Permitting Dashboard (FAST-41)",
+          "url": "https://www.permits.performance.gov/permitting-project/fast-41-covered-projects/boardman-hemingway-transmission-line",
+          "accessed": "2026-03-21"
+        }
+      ]
+    },
+    {
+      "id": "southline-transmission",
+      "name": "Southline Transmission",
+      "operator": "Southline Transmission LLC (Hunt Power / Grid United)",
+      "docket": "BLM ROW; DOE TFP Round 1 & 2",
+      "status": "approved",
+      "in_service_year": 2027,
+      "origin": {
+        "description": "Hidalgo County, NM (near Lordsburg)",
+        "lat": 32.1156,
+        "lng": -106.855
+      },
+      "destination": {
+        "description": "Pima County, AZ (near Tucson)",
+        "lat": 32.5288,
+        "lng": -111.3741
+      },
+      "states": [
+        "NM",
+        "AZ"
+      ],
+      "length_miles": 175,
+      "capacity_mw": 748,
+      "voltage_kv": 345,
+      "technology": "HVAC overhead",
+      "project_type": "new_build",
+      "strategic_context": "Renewable energy from southern NM to AZ; DOE TFP Rounds 1 & 2",
+      "region": "other",
+      "data_confidence": "medium",
+      "confidence_note": "Fully permitted (NEPA, NM, AZ). Construction expected latter half 2025. Phase 1 possibly operational 2027. DOE TFP support.",
+      "permitting": {
+        "nepa_status": "completed",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "Southline project site",
+          "url": "https://southlinetransmission.com/",
+          "accessed": "2026-03-21",
+          "source_type": "industry"
+        },
+        {
+          "name": "DOE TFP selections",
+          "url": "https://www.energy.gov/gdo/transmission-facilitation-program-selections",
+          "accessed": "2026-03-21"
+        }
+      ]
+    },
+    {
+      "id": "cimarron-link",
+      "name": "Cimarron Link",
+      "operator": "Invenergy",
+      "docket": "DOE TFP; no FERC docket",
+      "status": "proposed",
+      "in_service_year": 2028,
+      "origin": {
+        "description": "Texas County, OK (Oklahoma panhandle)",
+        "lat": 36.75,
+        "lng": -101.49
+      },
+      "destination": {
+        "description": "Tulsa, OK area (eastern Oklahoma)",
+        "lat": 36.15,
+        "lng": -95.99
+      },
+      "states": [
+        "OK"
+      ],
+      "length_miles": 400,
+      "capacity_mw": 1900,
+      "voltage_kv": null,
+      "technology": "HVDC",
+      "project_type": "new_build",
+      "strategic_context": "Wind/solar integration OK panhandle to load centers; DOE TFP $306M; SPP congestion relief",
+      "region": "other",
+      "data_confidence": "medium",
+      "confidence_note": "DOE TFP selected Oct 2024. Over half of ROW acquired. Voltage unconfirmed. Single-state but included for scale and DOE involvement.",
+      "permitting": {
+        "nepa_status": "pending",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "Cimarron Link project site",
+          "url": "https://cimarronlink.com/",
+          "accessed": "2026-03-21",
+          "source_type": "industry"
+        },
+        {
+          "name": "DOE TFP selections",
+          "url": "https://www.energy.gov/gdo/transmission-facilitation-program-selections",
+          "accessed": "2026-03-21"
+        }
+      ]
+    },
+    {
+      "id": "gateway-south",
+      "name": "Gateway South (Aeolus to Clover)",
+      "operator": "PacifiCorp",
+      "docket": "BLM ROW; UT PSC CPCN; WY PSC CPCN",
+      "status": "operational",
+      "in_service_year": 2024,
+      "origin": {
+        "description": "Aeolus Substation, Carbon County, WY",
+        "lat": 42.0016,
+        "lng": -106.4266
+      },
+      "destination": {
+        "description": "Clover Substation, Juab County, UT",
+        "lat": 39.8225,
+        "lng": -111.9083
+      },
+      "states": [
+        "WY",
+        "CO",
+        "UT"
+      ],
+      "length_miles": 400,
+      "capacity_mw": null,
+      "voltage_kv": 500,
+      "technology": "HVAC overhead",
+      "project_type": "new_build",
+      "strategic_context": "PacifiCorp Energy Gateway; Wyoming wind integration; $2.5B",
+      "region": "other",
+      "data_confidence": "high",
+      "confidence_note": "In service December 2024. BLM-approved. Part of PacifiCorp IRP.",
+      "permitting": {
+        "nepa_status": "completed",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "PacifiCorp press release",
+          "accessed": "2026-03-21",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "twin-states-clean-energy",
+      "name": "Twin States Clean Energy Link",
+      "operator": "National Grid / Citizens Energy Corporation",
+      "docket": "DOE TFP (canceled Mar 2024)",
+      "status": "proposed",
+      "in_service_year": 2030,
+      "origin": {
+        "description": "Canadian border, northern Vermont (Hydro-Quebec)",
+        "lat": 45.01,
+        "lng": -72.1
+      },
+      "destination": {
+        "description": "Londonderry, NH",
+        "lat": 42.87,
+        "lng": -71.37
+      },
+      "states": [
+        "VT",
+        "NH"
+      ],
+      "length_miles": 211,
+      "capacity_mw": 1200,
+      "voltage_kv": null,
+      "technology": "HVDC bidirectional",
+      "project_type": "new_build",
+      "strategic_context": "Canadian hydropower to New England; third Hydro-Quebec link",
+      "region": "other",
+      "data_confidence": "low",
+      "confidence_note": "Withdrew from DOE TFP $477M contract March 2024. Unclear funding path. NH consumer advocate skeptical. Voltage/technology limited. In-service highly uncertain.",
+      "permitting": {
+        "nepa_status": "pending",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "DOE TFP selections (withdrawn)",
+          "url": "https://www.energy.gov/gdo/transmission-facilitation-program-selections",
+          "accessed": "2026-03-21"
+        },
+        {
+          "name": "New Hampshire Bulletin",
+          "url": "https://newhampshirebulletin.com/2023/05/03/what-you-know-about-twin-states-clean-energy-link-a-hydropower-transmission-proposal/",
+          "accessed": "2026-03-21",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "id": "north-plains-connector",
+      "name": "North Plains Connector",
+      "operator": "Grid United / ALLETE (co-developers); BHE US Transmission, NorthWestern Energy, Avista, Portland General Electric, Puget Sound Energy (ownership MOUs)",
+      "docket": "DOE EIS-0568; DOE GRIP",
+      "status": "proposed",
+      "in_service_year": 2032,
+      "origin": {
+        "description": "Colstrip, Rosebud County, MT (existing substation)",
+        "lat": 45.88,
+        "lng": -106.63
+      },
+      "destination": {
+        "description": "Center, ND / St. Anthony, ND (two endpoints)",
+        "lat": 47.12,
+        "lng": -101.3
+      },
+      "states": [
+        "MT",
+        "ND"
+      ],
+      "length_miles": 420,
+      "capacity_mw": 3000,
+      "voltage_kv": 525,
+      "technology": "HVDC VSC bidirectional (three converter stations linking WECC, MISO, and SPP)",
+      "project_type": "new_build",
+      "strategic_context": "First HVDC link among three regional markets (WECC-MISO-SPP); bridges Eastern and Western Interconnections",
+      "region": "other",
+      "data_confidence": "high",
+      "confidence_note": "DOE GRIP conditional award of up to $700M (Aug 2024). DEIS published Jan 2026 (DOE/EIS-0568). Hitachi Energy ESA for converter stations announced Oct 2025. Multi-utility ownership MOUs in place. Approvals targeted 2026, construction 2028.",
+      "permitting": {
+        "nepa_status": "EIS",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "DOE EIS-0568 NEPA page",
+          "url": "https://www.energy.gov/nepa/doeeis-0568-north-plains-connector-multiple-locations",
+          "accessed": "2026-03-21",
+          "source_type": "government"
+        },
+        {
+          "name": "DOE Draft EIS (Jan 2026)",
+          "url": "https://www.energy.gov/nepa/articles/doeeis-0568-draft-environmental-impact-statement-january-2026",
+          "accessed": "2026-03-21",
+          "source_type": "government"
+        },
+        {
+          "name": "Federal Register NOI",
+          "url": "https://www.federalregister.gov/documents/2024/10/25/2024-24879/notice-of-intent-to-prepare-an-environmental-impact-statement-for-the-proposed-north-plains",
+          "date": "2024-10-25",
+          "source_type": "government"
+        },
+        {
+          "name": "Federal Register Amended NOI",
+          "url": "https://www.federalregister.gov/documents/2025/11/19/2025-20267/amended-notice-of-intent-to-prepare-an-environmental-impact-statement-for-the-proposed-north-plains",
+          "date": "2025-11-19",
+          "source_type": "government"
+        },
+        {
+          "name": "ND Governor press release ($700M GRIP)",
+          "url": "https://www.governor.nd.gov/news/burgum-welcomes-700m-boost-regional-power-grid-capacity-reliability-north-plains-connector",
+          "date": "2024-08-06",
+          "source_type": "government"
+        },
+        {
+          "name": "Hitachi Energy ESA announcement",
+          "url": "https://www.hitachienergy.com/news-and-events/press-releases/2025/10/hitachi-energy-and-grid-united-announce-key-milestone-in-development-of-north-plains-connector-interregional-transmission-line",
+          "date": "2025-10-02",
+          "source_type": "industry"
+        },
+        {
+          "name": "BHE US Transmission MOU (BusinessWire)",
+          "url": "https://www.businesswire.com/news/home/20250108279171/en/BHE-U.S.-Transmission-Joins-Grid-United-for-North-Plains-Connector-Transmission-Project",
+          "date": "2025-01-08",
+          "source_type": "industry"
+        },
+        {
+          "name": "North Plains Connector project site",
+          "url": "https://northplainsconnector.com/",
+          "accessed": "2026-03-21",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "swip-north",
+      "name": "Southwest Intertie Project - North (SWIP-North)",
+      "operator": "Great Basin Transmission LLC (LS Power subsidiary); Idaho Power (participant)",
+      "docket": "BLM ROW; DOE TFP Round 1",
+      "status": "approved",
+      "in_service_year": 2028,
+      "origin": {
+        "description": "Midpoint Substation, near Twin Falls, Jerome County, ID",
+        "lat": 42.63,
+        "lng": -114.47
+      },
+      "destination": {
+        "description": "Robinson Summit Substation, near Ely, White Pine County, NV",
+        "lat": 39.72,
+        "lng": -115.11
+      },
+      "states": [
+        "ID",
+        "NV"
+      ],
+      "length_miles": 285,
+      "capacity_mw": 2000,
+      "voltage_kv": 500,
+      "technology": "HVAC overhead (500 kV single circuit)",
+      "project_type": "new_build",
+      "strategic_context": "Final link of Idaho-to-southern-Nevada corridor; enables bidirectional flow of ~2,000 MW between Pacific NW and Desert Southwest",
+      "region": "other",
+      "data_confidence": "high",
+      "confidence_note": "DOE TFP Round 1 ($331M). BLM ROD issued (original SWIP EIS). Idaho PUC CPCN approved Dec 2025. First project under DOE CITAP framework. Jerome County special-use permit still pending (remanded). Construction expected 2026, in-service ~2028.",
+      "permitting": {
+        "nepa_status": "completed",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "DOE TFP selections",
+          "url": "https://www.energy.gov/gdo/transmission-facilitation-program-selections",
+          "accessed": "2026-03-21",
+          "source_type": "government"
+        },
+        {
+          "name": "DOE CITAP announcement (Utility Dive)",
+          "url": "https://www.utilitydive.com/news/doe-federal-transmission-permitting-citap-ls-power-swip-north/714256/",
+          "date": "2024-04-25",
+          "source_type": "news"
+        },
+        {
+          "name": "LS Power TFP selection press release",
+          "url": "https://www.prnewswire.com/news-releases/us-department-of-energy-selects-ls-powers-swip-north-project-for-the-transmission-facilitation-program-302126928.html",
+          "date": "2024-04-25",
+          "source_type": "industry"
+        },
+        {
+          "name": "Idaho Power SWIP-North page",
+          "url": "https://www.idahopower.com/energy-environment/energy/planning-and-electrical-projects/current-projects/swip-north/",
+          "accessed": "2026-03-21",
+          "source_type": "industry"
+        },
+        {
+          "name": "BLM ePlanning \u2014 SWIP project",
+          "url": "https://eplanning.blm.gov/eplanning-ui/project/2018153/510",
+          "accessed": "2026-03-21",
+          "source_type": "government"
+        },
+        {
+          "name": "BLM Robinson Summit Substation decision record",
+          "url": "https://www.blm.gov/announcement/blm-signs-decision-record-robinson-summit-substation-expansion-and-interconnection",
+          "accessed": "2026-03-21",
+          "source_type": "government"
+        }
+      ]
+    },
+    {
+      "id": "aroostook-renewable-gateway",
+      "name": "Aroostook Renewable Gateway",
+      "operator": "LS Power Grid Maine (original); Avangrid/CMP (DOE TFP awardee, pending PUC selection)",
+      "docket": "DOE TFP; ME PUC (pending)",
+      "status": "proposed",
+      "in_service_year": 2032,
+      "origin": {
+        "description": "Haynesville, Aroostook County, ME",
+        "lat": 46.12,
+        "lng": -67.98
+      },
+      "destination": {
+        "description": "Pittsfield, Somerset County, ME (ISO-NE interconnection)",
+        "lat": 44.78,
+        "lng": -69.38
+      },
+      "states": [
+        "ME"
+      ],
+      "length_miles": 140,
+      "capacity_mw": 1200,
+      "voltage_kv": 345,
+      "technology": "HVAC overhead (single-circuit and double-circuit 345 kV)",
+      "project_type": "new_build",
+      "strategic_context": "Unlocks northern Maine wind resources (King Pine Wind, 1,000 MW) for ISO-New England grid; relieves Aroostook County transmission constraints",
+      "region": "other",
+      "data_confidence": "low",
+      "confidence_note": "Developer transition underway: LS Power selected 2022 but PUC terminated contract Dec 2023 over cost/route disputes. Avangrid awarded DOE TFP $425M (Oct 2024) but must still win PUC procurement. NEPA not yet initiated. Landowner opposition to eminent domain significant. In-service year highly uncertain; wind generation may not connect until 2032. Single-state project included for DOE TFP significance and policy relevance.",
+      "permitting": {
+        "nepa_status": "pending",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "DOE TFP selections",
+          "url": "https://www.energy.gov/gdo/transmission-facilitation-program-selections",
+          "accessed": "2026-03-21",
+          "source_type": "government"
+        },
+        {
+          "name": "Avangrid TFP award press release",
+          "url": "https://www.avangrid.com/w/avangrid-awarded-425m-federal-capacity-contract-for-maine-transmission-project",
+          "date": "2024-10-03",
+          "source_type": "industry"
+        },
+        {
+          "name": "Maine PUC docket 2021-00369",
+          "url": "https://mpuc-cms.maine.gov/CQM.Public.WebUI/Common/CaseMaster.aspx?CaseNumber=2021-00369",
+          "accessed": "2026-03-21",
+          "source_type": "government"
+        },
+        {
+          "name": "LS Power bipartisan legislative approval",
+          "url": "https://www.prnewswire.com/news-releases/ls-power-grid-maine-receives-bipartisan-legislative-approval-for-aroostook-renewable-gateway-301862638.html",
+          "date": "2023-06-16",
+          "source_type": "industry"
+        },
+        {
+          "name": "Maine PUC priority nod (Bangor Daily News)",
+          "url": "https://www.bangordailynews.com/2025/10/23/aroostook/aroostook-environment/northern-maine-wind-transmission-line-puc-priority-n6hjn1me0n/",
+          "date": "2025-10-23",
+          "source_type": "news"
+        },
+        {
+          "name": "Landowner opposition (Maine Monitor)",
+          "url": "https://themainemonitor.org/aroostook-power-corridor-faces-opposition/",
+          "accessed": "2026-03-21",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "id": "pecos-west",
+      "name": "Pecos West Intertie",
+      "operator": "Grid United Texas LLC (Grid United subsidiary)",
+      "docket": "PUCT Docket 53758",
+      "status": "proposed",
+      "in_service_year": 2035,
+      "origin": {
+        "description": "Bakersfield, Pecos County, TX (ERCOT)",
+        "lat": 30.92,
+        "lng": -102.15
+      },
+      "destination": {
+        "description": "El Paso, El Paso County, TX (WECC / El Paso Electric)",
+        "lat": 31.76,
+        "lng": -106.44
+      },
+      "states": [
+        "TX"
+      ],
+      "length_miles": 280,
+      "capacity_mw": 1500,
+      "voltage_kv": 525,
+      "technology": "HVDC bidirectional (two converter stations; expandable to 3,000 MW)",
+      "project_type": "new_build",
+      "strategic_context": "Bridges ERCOT and WECC within Texas; addresses El Paso isolation from ERCOT and Desert Southwest grid needs",
+      "region": "gulf-coast",
+      "data_confidence": "low",
+      "confidence_note": "PUCT rejected initial CCN application Feb 2023 citing Texas right-of-first-refusal (ROFR) law. Grid United withdrew and refiled seeking public interest determination. Regulatory path unclear given ROFR precedent. No NEPA process initiated. Mid-2030s operational target. Single-state but interregional (ERCOT-WECC).",
+      "permitting": {
+        "nepa_status": "pending",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "PUCT Docket 53758 filings",
+          "url": "https://interchange.puc.texas.gov/Search/Filings?ControlNumber=53758",
+          "accessed": "2026-03-21",
+          "source_type": "government"
+        },
+        {
+          "name": "Grid United PUCT filings page",
+          "url": "https://www.gridunited.com/resource/public-utility-commission-of-texas-filings/",
+          "accessed": "2026-03-21",
+          "source_type": "industry"
+        },
+        {
+          "name": "Texas PUC rejects CCN (RTO Insider)",
+          "url": "https://www.rtoinsider.com/31670-texas-puc-rejects-ccn-grid-united-pecos-west/",
+          "date": "2023-02-16",
+          "source_type": "news"
+        },
+        {
+          "name": "Pecos West project site",
+          "url": "https://pecoswest.com/",
+          "accessed": "2026-03-21",
+          "source_type": "industry"
+        },
+        {
+          "name": "ERCOT RPG presentation (Jul 2022)",
+          "url": "https://www.ercot.com/files/docs/2022/07/15/Pecos%20West%20Intertie%20ERCOT%20RPG%2020220719.pdf",
+          "date": "2022-07-19",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "three-corners-connector",
+      "name": "Three Corners Connector",
+      "operator": "Three Corners Connector LLC (Grid United subsidiary)",
+      "docket": "OK CC (filed Jan 2026); no FERC docket",
+      "status": "proposed",
+      "in_service_year": 2031,
+      "origin": {
+        "description": "Pueblo, Pueblo County, CO (PSCo/WECC)",
+        "lat": 38.25,
+        "lng": -104.61
+      },
+      "destination": {
+        "description": "Near Guymon, Texas County, OK (SPP)",
+        "lat": 36.69,
+        "lng": -101.48
+      },
+      "states": [
+        "CO",
+        "OK"
+      ],
+      "length_miles": 300,
+      "capacity_mw": 3000,
+      "voltage_kv": 525,
+      "technology": "HVDC bidirectional (two converter stations \u2014 Pueblo CO and Texas County OK \u2014 plus fiber repeater)",
+      "project_type": "new_build",
+      "strategic_context": "Bridges WECC (PSCo) and SPP Eastern Interconnection; enables firm transfers between regions with non-coincident peak demand",
+      "region": "other",
+      "data_confidence": "medium",
+      "confidence_note": "OCC application filed (Jan 2026). 100% voluntary land options in OK. 97% survey permissions, 90% site control (Nov 2024). DOE TSED $9.5M community grant for SE Colorado. No NEPA process initiated. Estimated ~$2.1B. In-service as early as 2031 per developer.",
+      "permitting": {
+        "nepa_status": "pending",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "OCC application filing (OK Energy Today)",
+          "url": "https://www.okenergytoday.com/2026/01/2-1b-transmission-line-to-stretch-across-oklahoma-panhandle/",
+          "date": "2026-01-01",
+          "source_type": "news"
+        },
+        {
+          "name": "Three Corners Connector project site",
+          "url": "https://threecornersconnector.com/",
+          "accessed": "2026-03-21",
+          "source_type": "industry"
+        },
+        {
+          "name": "DOE TSED grant announcement (CDOLA)",
+          "url": "https://cdola.colorado.gov/press-release/the-department-of-local-affairs-receives-nearly-10-million-from-us-department-of-energy-to-support-economic-and-workforce-development-in-southeast-colorado",
+          "date": "2024-07-01",
+          "source_type": "government"
+        },
+        {
+          "name": "Grid United Nov 2024 comments (WIEB)",
+          "url": "https://static1.squarespace.com/static/6390da3a799a023d4be2c27e/t/6738e983054828791b441dcd/1731783043731/Grid+United+Comments.pdf",
+          "date": "2024-11-01",
+          "source_type": "industry"
+        },
+        {
+          "name": "Three Corners project overview handout (Nov 2022)",
+          "url": "https://threecornersconnector.com/wp-content/uploads/2023/06/GU-Three-Corners-Connector-general-handout_Nov22.pdf",
+          "date": "2022-11-01",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "wyoming-intertie",
+      "name": "Wyoming Intertie",
+      "operator": "Grid United",
+      "docket": "No filings (pre-permitting)",
+      "status": "proposed",
+      "in_service_year": 2032,
+      "origin": {
+        "description": "Near Medicine Bow, Carbon County, WY (Western Interconnection)",
+        "lat": 41.9,
+        "lng": -106.2
+      },
+      "destination": {
+        "description": "Near Wheatland / Laramie River Station, Platte County, WY (Eastern Interconnection)",
+        "lat": 42.05,
+        "lng": -104.95
+      },
+      "states": [
+        "WY"
+      ],
+      "length_miles": 106,
+      "capacity_mw": 1800,
+      "voltage_kv": 500,
+      "technology": "HVDC bidirectional",
+      "project_type": "new_build",
+      "strategic_context": "E-W grid interconnection within Wyoming; enables power sharing between Western Interconnection and Eastern Interconnection across Carbon, Albany, and Platte Counties",
+      "region": "other",
+      "data_confidence": "low",
+      "confidence_note": "Pre-permitting: still in planning and route determination with landowners and Tribal Nations. No regulatory filings yet. Wyoming Industrial Siting permit, county CUPs, and NEPA all required. Operational early 2030s per developer. Voltage reported as 500 kV in some sources, possibly up to 525 kV. Technology type (HVDC vs HVAC) not explicitly confirmed in public filings \u2014 inferred HVDC from Grid United's interregional portfolio and E-W interconnection function. Single-state but interregional.",
+      "permitting": {
+        "nepa_status": "pending",
+        "nhpa_section_106": null,
+        "state_permits": [],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "Wyoming Intertie project site",
+          "url": "https://wyomingintertie.com/",
+          "accessed": "2026-03-21",
+          "source_type": "industry"
+        },
+        {
+          "name": "Wyoming Intertie FAQ",
+          "url": "https://wyomingintertie.com/frequently-asked-questions/",
+          "accessed": "2026-03-21",
+          "source_type": "industry"
+        },
+        {
+          "name": "Grid United projects page",
+          "url": "https://www.gridunited.com/projects/",
+          "accessed": "2026-03-21",
+          "source_type": "industry"
+        },
+        {
+          "name": "Wyoming Intertie project overview (May 2025)",
+          "url": "https://wyomingintertie.com/wp-content/uploads/2025/05/GU-Wyoming-Intertie-Project-Overview_5.20.25.pdf",
+          "date": "2025-05-20",
+          "source_type": "industry"
+        },
+        {
+          "name": "Cowboy State Daily announcement",
+          "url": "https://cowboystatedaily.com/2022/10/20/exclusive-new-wyoming-transmission-line-will-bridge-national-grids-together/",
+          "date": "2022-10-20",
+          "source_type": "news"
+        }
+      ]
+    }
+  ]
+}

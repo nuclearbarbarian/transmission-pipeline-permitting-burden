@@ -1,0 +1,966 @@
+{
+  "_metadata": {
+    "description": "Permitting events for proposed gas pipeline projects, researched and vetted per Ultan framework",
+    "sources": "FERC eLibrary, Federal Register, DOE press releases, state DEQ orders, DC Circuit opinions, Utility Dive, Appalachian Voices, SELC",
+    "access_date": "2026-03-21",
+    "vetting_notes": [
+      "Each event individually sourced with source_type classification",
+      "Government sources (tier 1) prioritized; news sources (tier 3) flagged",
+      "Industry sources (tier 4) flagged; used only when no government/news alternative",
+      "Events without confirmable dates marked [ESTIMATE]",
+      "Docket correction: MVP Southgate is CP25-60-000 per FERC, not CP26-60"
+    ]
+  },
+  "events": {
+    "mississippi-crossing": [
+      {
+        "type": "nepa_eis",
+        "description": "FERC Notice of Scoping for MSX and SSE4",
+        "date": "2025-03-03",
+        "agency": "FERC",
+        "source": "Federal Register 2025-03703",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2025/03/07/2025-03703/southern-natural-gas-company-llc-elba-express-company-llc-tennessee-gas-pipeline-company-llc-notice"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "Certificate application filed (CP25-514-000)",
+        "date": "2025-06-30",
+        "agency": "FERC",
+        "source": "Oil & Gas Journal",
+        "source_type": "industry",
+        "source_url": "https://www.ogj.com/pipelines-transportation/pipelines/article/55250945/kmis-tennessee-gas-pipeline-takes-fid-to-advance-mississippi-crossing-project"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "FERC Notice of Intent to prepare EIS (joint with SSE4)",
+        "date": "2025-09-10",
+        "agency": "FERC",
+        "source": "Federal Register 2025-17407",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2025/09/10/2025-17407/tennessee-gas-pipeline-company-llc-southern-natural-gas-company-llc-elba-express-company-llc-notice"
+      },
+      {
+        "type": "federal_permit",
+        "description": "Projects added to FAST-41 Permitting Dashboard",
+        "date": "2025-11-01",
+        "agency": "FPISC",
+        "source": "Permitting Council press release",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] November 2025",
+        "source_url": "https://www.permitting.gov/newsroom/press-releases/two-southeastern-us-pipeline-projects-gain-fast-41-coverage"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "Draft EIS issued (joint with SSE4)",
+        "date": "2026-01-30",
+        "agency": "FERC",
+        "source": "Federal Register 2026-02427",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2026/02/06/2026-02427/tennessee-gas-pipeline-company-llc-southern-natural-gas-company-llc-elba-express-company-llc-notice"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "Final EIS anticipated",
+        "date": "2026-06-26",
+        "agency": "FERC",
+        "source": "Federal Register 2026-00020",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] Anticipated date per FERC schedule",
+        "source_url": "https://www.federalregister.gov/documents/2026/01/06/2026-00020/tennessee-gas-pipeline-company-llc-southern-natural-gas-company-llc-elba-express-company-llc-notice"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "Certificate order anticipated no later than this date",
+        "date": "2026-07-31",
+        "agency": "FERC",
+        "source": "Federal Register 2026-00020",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] Anticipated date per FERC schedule",
+        "source_url": "https://www.federalregister.gov/documents/2026/01/06/2026-00020/tennessee-gas-pipeline-company-llc-southern-natural-gas-company-llc-elba-express-company-llc-notice"
+      }
+    ],
+    "south-system-expansion-4": [
+      {
+        "type": "nepa_eis",
+        "description": "FERC Notice of Scoping (joint with MSX)",
+        "date": "2025-03-03",
+        "agency": "FERC",
+        "source": "Federal Register 2025-03703",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2025/03/07/2025-03703/southern-natural-gas-company-llc-elba-express-company-llc-tennessee-gas-pipeline-company-llc-notice"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "Certificate application filed (CP25-517-000)",
+        "date": "2025-06-30",
+        "agency": "FERC",
+        "source": "Natural Gas Intelligence",
+        "source_type": "industry",
+        "source_url": "https://www.federalregister.gov/documents/2025/07/18/2025-13534/tennessee-gas-pipeline-company-llc-southern-natural-gas-company-llc-elba-express-company-llc-notice"
+      },
+      {
+        "type": "opposition",
+        "description": "Joint protest filed by Alabama Rivers Alliance, Sierra Club, SACE et al. challenging project need (63% affiliate capacity) and environmental impacts",
+        "date": "2025-08-05",
+        "agency": "FERC",
+        "source": "SELC filing, Docket CP25-517-000",
+        "source_type": "news",
+        "source_url": "https://www.selc.org/wp-content/uploads/2025/08/20250805-5219_Joint-Protest-and-Comments-in-Opposition_SSE4_CP25-517-000.pdf",
+        "state": "AL"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "FERC Notice of Intent to prepare EIS (joint with MSX)",
+        "date": "2025-09-10",
+        "agency": "FERC",
+        "source": "Federal Register 2025-17407",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2025/09/10/2025-17407/tennessee-gas-pipeline-company-llc-southern-natural-gas-company-llc-elba-express-company-llc-notice"
+      },
+      {
+        "type": "federal_permit",
+        "description": "Projects added to FAST-41 Permitting Dashboard",
+        "date": "2025-11-01",
+        "agency": "FPISC",
+        "source": "Permitting Council press release",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] November 2025",
+        "source_url": "https://www.permitting.gov/newsroom/press-releases/two-southeastern-us-pipeline-projects-gain-fast-41-coverage"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "Draft EIS issued (joint with MSX)",
+        "date": "2026-01-30",
+        "agency": "FERC",
+        "source": "Federal Register 2026-02427",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2026/02/06/2026-02427/tennessee-gas-pipeline-company-llc-southern-natural-gas-company-llc-elba-express-company-llc-notice"
+      }
+    ],
+    "mvp-southgate": [
+      {
+        "type": "federal_permit",
+        "description": "Original Southgate certificate issued (CP19-14-000)",
+        "date": "2020-01-01",
+        "agency": "FERC",
+        "source": "FERC docket records",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] 2020",
+        "source_url": "https://www.permits.performance.gov/permitting-project/other-projects/mvp-southgate-cp19-14"
+      },
+      {
+        "type": "state_action",
+        "description": "NC DEQ denied Section 401 water quality certification for original Southgate route",
+        "date": "2020-01-01",
+        "agency": "NC DEQ",
+        "source": "NC Newsline, Dec 19, 2025",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] 2020",
+        "source_url": "https://www.deq.nc.gov/news/press-releases/2020/08/11/state-denies-water-quality-certification-mvp-southgate-pipeline",
+        "state": "NC"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "MVP filed amendment application (CP25-60-000) for shortened/revised route",
+        "date": "2025-02-03",
+        "agency": "FERC",
+        "source": "FERC docket; Marcellus Drilling News",
+        "source_type": "government",
+        "source_url": "https://www.ferc.gov/mvp-southgate-amendment-project"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "FERC Notice of Scoping Period",
+        "date": "2025-05-29",
+        "agency": "FERC",
+        "source": "Federal Register 2025-09669",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2025/05/29/2025-09669/mountain-valley-pipeline-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues"
+      },
+      {
+        "type": "opposition",
+        "description": "Over 12,500 public comments during intervention period; >80% opposed",
+        "date": "2025-03-01",
+        "agency": "FERC",
+        "source": "Appalachian Voices, March 13, 2025",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] March 2025",
+        "source_url": "https://appvoices.org/2025/03/13/opposition-to-mvp-southgate/"
+      },
+      {
+        "type": "nepa_ea",
+        "description": "FERC issued Environmental Assessment \u2014 finding of no significant impact",
+        "date": "2025-10-03",
+        "agency": "FERC",
+        "source": "Appalachian Voices, Oct 3, 2025",
+        "source_type": "news",
+        "source_url": "https://appvoices.org/2025/10/03/southgate-ferc-ea/"
+      },
+      {
+        "type": "state_permit",
+        "description": "NC DEQ approved Section 401 water quality certification (reversal of 2020 denial for revised route)",
+        "date": "2025-11-01",
+        "agency": "NC DEQ",
+        "source": "Appalachian Voices, Feb 23, 2026",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] November 2025",
+        "source_url": "https://www.deq.nc.gov/news/press-releases/2025/11/13/ncdeq-division-water-resources-announces-action-mountain-valley-pipeline-southgate-water-quality",
+        "state": "NC"
+      },
+      {
+        "type": "federal_permit",
+        "description": "FERC approved amended certificate for Southgate",
+        "date": "2025-12-18",
+        "agency": "FERC",
+        "source": "WVTF, Dec 18, 2025; NC Newsline, Dec 19, 2025",
+        "source_type": "news",
+        "source_url": "https://www.wvtf.org/news/2025-12-18/ferc-approves-amended-mvp-southgate-project"
+      },
+      {
+        "type": "state_permit",
+        "description": "Virginia DEQ approved Virginia Water Protection Permit (Section 401)",
+        "date": "2026-01-13",
+        "agency": "VA DEQ",
+        "source": "WDBJ7, Jan 13, 2026",
+        "source_type": "news",
+        "source_url": "https://www.wdbj7.com/2026/01/13/mountain-valley-pipeline-southgates-application-virginia-water-protection-permit-approved/",
+        "state": "VA"
+      },
+      {
+        "type": "litigation",
+        "description": "Environmental groups challenged VA DEQ water permit in state court",
+        "date": "2026-02-23",
+        "agency": "VA State Water Control Board",
+        "source": "Appalachian Voices, Feb 23, 2026; Sierra Club press release",
+        "source_type": "news",
+        "source_url": "https://appvoices.org/2026/02/23/va-southgate-401-challenge/",
+        "state": "VA"
+      }
+    ],
+    "southeast-supply-enhancement": [
+      {
+        "type": "nepa_eis",
+        "description": "Pre-filing process initiated (PF24-2-000)",
+        "date": "2024-02-01",
+        "agency": "FERC",
+        "source": "FERC docket records",
+        "source_type": "government",
+        "source_url": "https://www.ferc.gov/media/notice-pf24-2-000"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "Certificate application filed (CP25-10-000)",
+        "date": "2024-10-29",
+        "agency": "FERC",
+        "source": "FERC docket; Appalachian Voices",
+        "source_type": "government",
+        "source_url": "https://aglaw.psu.edu/wp-content/uploads/2024/11/Transco-FERC-Application-10.29.24.pdf"
+      },
+      {
+        "type": "opposition",
+        "description": "Over 7,000 public comments opposing project; majority requested full EIS instead of EA",
+        "date": "2025-01-01",
+        "agency": "FERC",
+        "source": "Appalachian Voices SSEP page",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] 2024-2025",
+        "source_url": "https://appvoices.org/pipelines/ssep/"
+      },
+      {
+        "type": "opposition",
+        "description": "36+ NC state and federal elected officials submitted letter opposing project",
+        "date": "2025-04-01",
+        "agency": "NC elected officials",
+        "source": "NC Newsline, April 3, 2025",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] 2025",
+        "source_url": "https://ncnewsline.com/2025/04/03/proposed-pipeline-project-would-harm-north-carolina-communities-report-shows/"
+      },
+      {
+        "type": "opposition",
+        "description": "Town of Midway, NC passed resolution opposing SSEP",
+        "date": "2025-05-01",
+        "agency": "Town of Midway",
+        "source": "Sierra Club NC blog, May 2025",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] May 2025",
+        "source_url": "https://appvoices.org/2025/05/06/midway-opposes-transcos-ssep/",
+        "state": "NC"
+      },
+      {
+        "type": "nepa_ea",
+        "description": "FERC issued Environmental Assessment",
+        "date": "2025-10-31",
+        "agency": "FERC",
+        "source": "Federal Register 2025-20914",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2025/11/25/2025-20914/transcontinental-gas-pipe-line-company-llc-notice-of-availability-of-the-environmental-assessment"
+      },
+      {
+        "type": "federal_permit",
+        "description": "FERC issued Certificate of Public Convenience and Necessity",
+        "date": "2026-01-29",
+        "agency": "FERC",
+        "source": "Troutman Energy Report, Feb 2026",
+        "source_type": "news",
+        "source_url": "https://www.troutmanenergyreport.com/2026/02/ferc-issues-cpcn-for-transco-southeast-supply-enhancement-project/"
+      },
+      {
+        "type": "litigation",
+        "description": "Joint rehearing request filed by SELC/Sierra Club/SACE challenging EA adequacy, need analysis, and GHG emissions",
+        "date": "2026-03-02",
+        "agency": "FERC",
+        "source": "WVTF, March 3, 2026; SACE press release",
+        "source_type": "news",
+        "source_url": "https://www.wvtf.org/news/2026-03-03/environmental-groups-ask-ferc-to-reconsider-approval-for-ssep-pipeline"
+      }
+    ],
+    "anr-heartland": [
+      {
+        "type": "nepa_eis",
+        "description": "FERC Notice of Scoping Period",
+        "date": "2024-07-26",
+        "agency": "FERC",
+        "source": "Federal Register 2024-16530",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2024/07/26/2024-16530/anr-pipeline-company-notice-of-scoping-period-requesting-comments-on-environmental-issues-for-the"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "Certificate application filed (CP25-79-000)",
+        "date": "2025-02-20",
+        "agency": "FERC",
+        "source": "Federal Register 2025-03927",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2025/03/12/2025-03927/notice-of-application-and-establishing-intervention-deadline-anr-pipeline-company"
+      },
+      {
+        "type": "nepa_ea",
+        "description": "FERC issued Environmental Assessment \u2014 FONSI",
+        "date": "2025-10-01",
+        "agency": "FERC",
+        "source": "PGJ Online, October 2025",
+        "source_type": "industry",
+        "date_note": "[ESTIMATE] October 2025",
+        "source_url": "https://pgjonline.com/news/2025/october/tc-energy-s-midwest-pipeline-expansion-clears-ferc-environmental-review"
+      },
+      {
+        "type": "federal_permit",
+        "description": "FERC issued certificate of public convenience and necessity",
+        "date": "2025-11-01",
+        "agency": "FERC",
+        "source": "Underground Construction, Nov 2025",
+        "source_type": "industry",
+        "date_note": "[ESTIMATE] November 2025",
+        "source_url": "https://undergroundinfrastructure.com/news/2025/november/heartland-gas-expansion-wins-ferc-approval-for-69-mile-route-in-illinois-wisconsin"
+      },
+      {
+        "type": "state_permit",
+        "description": "Wisconsin DATCP issued Agricultural Impact Statement (AIS #4653)",
+        "date": "2025-01-01",
+        "agency": "WI DATCP",
+        "source": "datcp.wi.gov",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] 2025",
+        "source_url": "https://datcp.wi.gov/Documents/Heartland_AIS4653_FinalAll.pdf",
+        "state": "WI"
+      }
+    ],
+    "sabine-crossing": [
+      {
+        "type": "nepa_eis",
+        "description": "Certificate application filed (CP25-505-000)",
+        "date": "2025-06-06",
+        "agency": "FERC",
+        "source": "Federal Register 2025-11578",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2025/06/24/2025-11578/sabine-pass-liquefaction-llc-sabine-pass-liquefaction-stage-v-llc-sabine-crossing-llc-cheniere"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "FERC Notice of Intent to prepare EIS",
+        "date": "2025-08-13",
+        "agency": "FERC",
+        "source": "Federal Register 2025-15362",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2025/08/13/2025-15362/sabine-pass-liquefaction-llc-sabine-pass-liquefaction-stage-v-llc-sabine-crossing-llc-cheniere"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "Final EIS anticipated",
+        "date": "2026-09-25",
+        "agency": "FERC",
+        "source": "Federal Register 2025-15362",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] Anticipated per FERC schedule",
+        "source_url": "https://www.federalregister.gov/documents/2025/08/13/2025-15362/sabine-pass-liquefaction-llc-sabine-pass-liquefaction-stage-v-llc-sabine-crossing-llc-cheniere"
+      }
+    ],
+    "dela-express": [
+      {
+        "type": "nepa_eis",
+        "description": "FERC approved pre-filing request (PF24-4-000)",
+        "date": "2024-04-15",
+        "agency": "FERC",
+        "source": "FERC DeLa Express project page",
+        "source_type": "government",
+        "source_url": "https://www.ferc.gov/dela-express-pipeline-project"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "FERC Notice of Scoping Period",
+        "date": "2024-08-22",
+        "agency": "FERC",
+        "source": "Federal Register 2024-19359",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2024/08/28/2024-19359/dela-express-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues-for-the"
+      },
+      {
+        "type": "opposition",
+        "description": "Landowner opposition organized across 27 TX counties; eminent domain concerns",
+        "date": "2024-06-01",
+        "agency": "N/A",
+        "source": "Hoestenbach Law Group; Pipeline Fighters Hub",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] 2024",
+        "source_url": "https://hoestenbachlawgroup.com/dela-express-pipeline/"
+      },
+      {
+        "type": "esa",
+        "description": "Route crosses habitat for red-cockaded woodpecker, peregrine falcon, and red wolf",
+        "date": "2024-01-01",
+        "agency": "USFWS",
+        "source": "Habitat Recovery Project",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] Identified during scoping",
+        "source_url": "https://habitatrecovery.org/dela-pipeline-main"
+      }
+    ],
+    "cp-express": [
+      {
+        "type": "nepa_eis",
+        "description": "FERC Final EIS issued for CP2 LNG and CP Express Pipeline",
+        "date": "2023-07-28",
+        "agency": "FERC",
+        "source": "FERC news release",
+        "source_type": "government",
+        "source_url": "https://www.ferc.gov/news-events/news/final-eis-cp2-lng-and-cp-express-project-cp22-21000-cp22-22-000"
+      },
+      {
+        "type": "federal_permit",
+        "description": "FERC approved CP2/CP Express 2-1 (Sections 3 and 7 NGA)",
+        "date": "2024-06-27",
+        "agency": "FERC",
+        "source": "FERC; S&P Global",
+        "source_type": "government",
+        "source_url": "https://www.ferc.gov/news-events/news/summaries-june-2024-commission-meeting"
+      },
+      {
+        "type": "litigation",
+        "description": "NRDC/SELC/Sierra Club petitioned DC Circuit for review of FERC authorization",
+        "date": "2024-09-01",
+        "agency": "DC Circuit",
+        "source": "NRDC press release",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] September 2024",
+        "source_url": "https://www.nrdc.org/press-releases/nrdc-selc-challenge-fercs-approval-cp2-lng-project-dc-circuit"
+      },
+      {
+        "type": "federal_action",
+        "description": "FERC voluntarily set aside own authorization; ordered supplemental EIS on cumulative air quality (NO2, PM2.5)",
+        "date": "2024-11-27",
+        "agency": "FERC",
+        "source": "Akin Gump blog, Nov 2024",
+        "source_type": "news",
+        "source_url": "https://www.akingump.com/en/insights/blogs/speaking-energy/ferc-mandates-new-supplemental-environmental-impact-statement-to-align-with-expected-court-litigation"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "FERC issued Draft Supplemental EIS",
+        "date": "2025-02-07",
+        "agency": "FERC",
+        "source": "FERC news release",
+        "source_type": "government",
+        "source_url": "https://www.ferc.gov/news-events/news/ferc-staff-issues-draft-supplemental-environmental-impact-statement-eis-venture"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "FERC issued Final Supplemental EIS",
+        "date": "2025-05-09",
+        "agency": "FERC",
+        "source": "Federal Register 2025-08650",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2025/05/15/2025-08650/venture-global-cp2-lng-llc-venture-global-cp-express-llc-notice-of-availability-of-the-final"
+      },
+      {
+        "type": "federal_permit",
+        "description": "FERC re-issued final authorization order",
+        "date": "2025-05-23",
+        "agency": "FERC",
+        "source": "S&P Global; Natural Gas Intelligence",
+        "source_type": "government",
+        "source_url": "https://www.spglobal.com/commodity-insights/en/news-research/latest-news/lng/052325-venture-globals-cp2-lng-project-in-louisiana-gets-final-approval-from-us-ferc"
+      },
+      {
+        "type": "federal_permit",
+        "description": "DOE issued final Non-FTA export authorization",
+        "date": "2025-10-21",
+        "agency": "DOE",
+        "source": "DOE press release",
+        "source_type": "government",
+        "source_url": "https://www.energy.gov/fecm/articles/energy-department-approves-final-export-authorization-venture-global-cp2-lng"
+      }
+    ],
+    "rio-bravo": [
+      {
+        "type": "nepa_eis",
+        "description": "FERC issued original Final EIS for Rio Grande LNG and Rio Bravo Pipeline",
+        "date": "2019-01-01",
+        "agency": "FERC",
+        "source": "FERC project page",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] 2019",
+        "source_url": "https://www.ferc.gov/final-environmental-impact-statement-rio-grande-lng-project-and-rio-bravo-pipeline-project"
+      },
+      {
+        "type": "federal_permit",
+        "description": "FERC issued original certificate (169 FERC 61,131)",
+        "date": "2019-11-01",
+        "agency": "FERC",
+        "source": "FERC order",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] November 2019",
+        "source_url": "https://www.ferc.gov/sites/default/files/2020-07/11-2019-C-2.pdf"
+      },
+      {
+        "type": "litigation",
+        "description": "Sierra Club, City of Port Isabel, Carrizo/Comecrudo Tribe, and Vecinos challenged FERC approval in DC Circuit",
+        "date": "2020-01-01",
+        "agency": "DC Circuit",
+        "source": "Sierra Club press release, July 2023",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] 2020",
+        "source_url": "https://www.sierraclub.org/press-releases/2023/07/rio-grande-valley-lng-projects-hit-legal-challenges-over-ferc-s-flawed"
+      },
+      {
+        "type": "federal_permit",
+        "description": "FERC issued Order on Remand reauthorizing project",
+        "date": "2023-04-21",
+        "agency": "FERC",
+        "source": "FERC docket records",
+        "source_type": "government",
+        "source_url": "https://www.vnf.com/ferc-reauthorizes-texas-lng-rio-grande-lng-projects"
+      },
+      {
+        "type": "litigation",
+        "description": "DC Circuit vacated FERC's 2023 reapproval \u2014 first-ever vacatur of a FERC LNG terminal approval. Found deficient environmental justice analysis",
+        "date": "2024-08-06",
+        "agency": "DC Circuit",
+        "source": "Utility Dive; Arnold & Porter blog",
+        "source_type": "news",
+        "source_url": "https://www.utilitydive.com/news/dc-circuit-appeals-ferc-lng-gas-nextdecade-glenfarne-rio-grande-sierra-club/723544/"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "FERC issued Draft Supplemental EIS",
+        "date": "2025-03-28",
+        "agency": "FERC",
+        "source": "FERC news release",
+        "source_type": "government",
+        "source_url": "https://www.ferc.gov/news-events/news/ferc-staff-issues-draft-supplemental-environmental-impact-statement-eis-rio-grande"
+      },
+      {
+        "type": "litigation",
+        "description": "DC Circuit remanded without vacatur \u2014 construction can continue during remand",
+        "date": "2025-03-18",
+        "agency": "DC Circuit",
+        "source": "Natural Gas Intelligence; DC Circuit opinion 23-1174",
+        "source_type": "government",
+        "source_url": "https://naturalgasintel.com/news/rio-grande-lng-construction-can-continue-while-ferc-reviews-approvals-dc-circuit-says/"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "FERC issued Final Supplemental EIS",
+        "date": "2025-08-05",
+        "agency": "FERC",
+        "source": "FERC news release; Rigzone",
+        "source_type": "government",
+        "source_url": "https://www.ferc.gov/news-events/news/ferc-staff-issues-final-supplemental-environmental-impact-statement-eis-rio-grande"
+      },
+      {
+        "type": "federal_permit",
+        "description": "FERC reauthorized project on remand, citing Trump EOs narrowing EJ/NEPA scope",
+        "date": "2025-08-29",
+        "agency": "FERC",
+        "source": "S&P Global; Venable LLP blog",
+        "source_type": "government",
+        "source_url": "https://www.venable.com/insights/publications/2025/10/fercs-new-lng-order-reflects-trump-admin"
+      }
+    ],
+    "cumberland": [
+      {
+        "type": "nepa_eis",
+        "description": "FERC issued Final EIS for Cumberland Project (CP22-493)",
+        "date": "2023-07-07",
+        "agency": "FERC",
+        "source": "FERC.gov",
+        "source_type": "government",
+        "source_url": "https://www.ferc.gov/news-events/news/ferc-staff-issues-final-environmental-impact-statement-cumberland-project-cp22-493"
+      },
+      {
+        "type": "federal_permit",
+        "description": "FERC issued certificate of public convenience and necessity",
+        "date": "2023-07-01",
+        "agency": "FERC",
+        "source": "FERC docket CP22-493-000",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] 2023",
+        "source_url": "https://www.ferc.gov/news-events/news/summaries-november-2023-commission-meeting"
+      },
+      {
+        "type": "litigation",
+        "description": "6th Circuit issued stay blocking Section 401/404 permits, citing potential CWA violations",
+        "date": "2024-10-11",
+        "agency": "U.S. Court of Appeals, 6th Circuit",
+        "source": "Pipeline and Gas Journal; SELC",
+        "source_type": "news",
+        "source_url": "https://www.selc.org/press-release/court-order-stops-construction-of-tvas-cumberland-pipeline/"
+      },
+      {
+        "type": "litigation",
+        "description": "6th Circuit rejected challenges to 401/404 permits; construction cleared",
+        "date": "2025-04-04",
+        "agency": "U.S. Court of Appeals, 6th Circuit",
+        "source": "Kinder Morgan project page; World Pipelines",
+        "source_type": "industry",
+        "source_url": "https://www.kindermorgan.com/Operations/Projects/cumberland-project"
+      }
+    ],
+    "virginia-reliability": [
+      {
+        "type": "nepa_eis",
+        "description": "FERC issued Final EIS for Virginia Reliability Project (CP22-502)",
+        "date": "2023-09-01",
+        "agency": "FERC",
+        "source": "FERC.gov",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] September 2023",
+        "source_url": "https://www.ferc.gov/news-events/news/final-eis-virginia-reliability-project-and-commonwealth-energy-connector-project"
+      },
+      {
+        "type": "federal_permit",
+        "description": "FERC issued certificate; Commissioner partially dissented on GHG characterization",
+        "date": "2023-11-01",
+        "agency": "FERC",
+        "source": "FERC docket CP22-502-000; VPM News",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] November 2023",
+        "source_url": "https://www.ferc.gov/news-events/news/summaries-november-2023-commission-meeting"
+      },
+      {
+        "type": "opposition",
+        "description": "Local civic leagues and environmental groups opposed project citing environmental justice impacts",
+        "date": "2023-01-01",
+        "agency": "FERC (public comment)",
+        "source": "Chesapeake Climate Action Network; VPM News",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] 2022-2023",
+        "source_url": "https://chesapeakeclimate.org/virginia/virginia-reliability-project/"
+      }
+    ],
+    "ridgeline-expansion": [
+      {
+        "type": "nepa_eis",
+        "description": "FERC issued Final EIS for Ridgeline Expansion (CP23-516)",
+        "date": "2024-12-01",
+        "agency": "FERC",
+        "source": "FERC.gov",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] December 2024",
+        "source_url": "https://www.ferc.gov/news-events/news/ferc-staff-issues-final-environmental-impact-statement-ridgeline-expansion-project"
+      },
+      {
+        "type": "federal_permit",
+        "description": "FERC issued certificate of public convenience and necessity",
+        "date": "2025-04-02",
+        "agency": "FERC",
+        "source": "FERC.gov; Natural Gas Intelligence",
+        "source_type": "government",
+        "source_url": "https://pgjonline.com/news/2025/april/ferc-approves-122-mile-ridgeline-gas-pipeline-expansion-in-tennessee"
+      }
+    ],
+    "oak-grove-enhancement": [
+      {
+        "type": "nepa_ea",
+        "description": "FERC issued Environmental Assessment for Oak Grove Enhancement (CP23-523)",
+        "date": "2024-03-08",
+        "agency": "FERC",
+        "source": "Federal Register, March 8, 2024",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2024/03/08/2024-04910/anr-pipeline-company-notice-of-availability-of-the-environmental-assessment-for-the-proposed-oak"
+      },
+      {
+        "type": "federal_permit",
+        "description": "FERC issued certificate order",
+        "date": "2024-07-25",
+        "agency": "FERC",
+        "source": "FERC docket CP23-523-000",
+        "source_type": "government",
+        "source_url": "https://www.whitecase.com/insight-alert/summary-ferc-meeting-agenda-july-2024"
+      }
+    ],
+    "alaska-nikiski-lng": [
+      {
+        "type": "nepa_eis",
+        "description": "FERC issued Final EIS for Alaska LNG (CP17-178)",
+        "date": "2020-03-06",
+        "agency": "FERC",
+        "source": "FERC.gov",
+        "source_type": "government",
+        "source_url": "https://www.ferc.gov/industries-data/natural-gas/final-environmental-impact-statement-0"
+      },
+      {
+        "type": "federal_permit",
+        "description": "FERC issued Section 3 authorization with 165 environmental conditions",
+        "date": "2020-05-21",
+        "agency": "FERC",
+        "source": "FERC docket CP17-178-000",
+        "source_type": "government",
+        "source_url": "https://www.ferc.gov/news-events/news/ferc-authorizes-alaska-lng-project"
+      },
+      {
+        "type": "federal_action",
+        "description": "Glenfarne/AGDC filed to transfer FERC authorization to 8 Star Alaska LLC",
+        "date": "2025-04-01",
+        "agency": "FERC",
+        "source": "Natural Gas Intelligence",
+        "source_type": "industry",
+        "date_note": "[ESTIMATE] April 2025",
+        "source_url": "https://www.federalregister.gov/documents/2025/04/18/2025-06735/alaska-gasline-development-corporation-glenfarne-alaska-lng-llc-notice-of-application-and"
+      }
+    ],
+    "port-arthur-la-connector": [
+      {
+        "type": "nepa_eis",
+        "description": "FERC issued Final EIS for Port Arthur LNG and pipeline connectors",
+        "date": "2019-01-01",
+        "agency": "FERC",
+        "source": "FERC.gov",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] 2019",
+        "source_url": "https://www.ferc.gov/final-environmental-impact-statement-port-arthur-liquefaction-project-texas-connector-project-and"
+      },
+      {
+        "type": "federal_permit",
+        "description": "FERC issued certificate for Louisiana Connector (CP18-7)",
+        "date": "2019-04-01",
+        "agency": "FERC",
+        "source": "FERC docket CP18-7",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] April 2019",
+        "source_url": "https://www.ferc.gov/news-events/news/ferc-approves-two-new-lng-export-projects"
+      }
+    ],
+    "port-arthur-tx-connector": [
+      {
+        "type": "nepa_eis",
+        "description": "FERC issued Final EIS for Port Arthur LNG and pipeline connectors",
+        "date": "2019-01-01",
+        "agency": "FERC",
+        "source": "FERC.gov",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] 2019",
+        "source_url": "https://www.ferc.gov/final-environmental-impact-statement-port-arthur-liquefaction-project-texas-connector-project-and"
+      },
+      {
+        "type": "federal_permit",
+        "description": "FERC issued certificate for Texas Connector (CP17-21)",
+        "date": "2019-04-01",
+        "agency": "FERC",
+        "source": "FERC docket CP17-21",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] April 2019",
+        "source_url": "https://www.ferc.gov/news-events/news/ferc-approves-two-new-lng-export-projects"
+      }
+    ],
+    "bakken-east": [
+      {
+        "type": "nepa_eis",
+        "description": "FERC pre-filing process initiated (PF26-4)",
+        "date": "2025-12-01",
+        "agency": "FERC",
+        "source": "WBI Energy project website; FERC docket",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] December 2025",
+        "source_url": "https://www.wbienergy.com/projects/bakken-east-pipeline/"
+      },
+      {
+        "type": "section_106",
+        "description": "Cultural resource surveys with State Historical Society of ND, USFS, and BLM approvals",
+        "date": "2025-09-01",
+        "agency": "State Historical Society of ND / USFS / BLM",
+        "source": "WBI Energy project website",
+        "source_type": "industry",
+        "date_note": "[ESTIMATE] September 2025",
+        "source_url": "https://www.wbienergy.com/projects/bakken-east-pipeline/"
+      }
+    ],
+    "mvp-boost": [
+      {
+        "date": "2025-10-23",
+        "description": "Mountain Valley Pipeline LLC files formal application for Certificate of Public Convenience and Necessity for MVP Boost Project (CP26-14-000). Proposes adding 600,000 Dth/d capacity via compression upgrades at three existing WV stations and new Swann CS in VA.",
+        "type": "ferc_order",
+        "source": "EQT Corporation / PR Newswire",
+        "source_url": "https://www.prnewswire.com/news-releases/mountain-valley-pipeline-llc-files-formal-application-requesting-ferc-authorization-to-construct-mvp-boost-302593283.html",
+        "source_type": "industry",
+        "date_precision": "day",
+        "is_estimate": false
+      },
+      {
+        "date": "2025-11-03",
+        "description": "MVP LLC submits Minor New Source Review (NSR) Permit application to Virginia DEQ for Swann Compressor Station in Elliston, Montgomery County, VA.",
+        "type": "state_permit",
+        "source": "Virginia DEQ \u2014 MVP Boost / Swann CS Topic Page",
+        "source_url": "https://www.deq.virginia.gov/news-info/shortcuts/topics-of-interest/mountain-valley-pipeline-boost-swann-compressor-station",
+        "source_type": "government",
+        "date_precision": "day",
+        "is_estimate": false
+      },
+      {
+        "date": "2025-11-24",
+        "description": "FERC issues Notice of Scoping Period requesting comments on environmental issues for MVP Boost Project. Comment period opens.",
+        "type": "nepa_ea",
+        "source": "Federal Register 2025-20781",
+        "source_url": "https://www.federalregister.gov/documents/2025/11/24/2025-20781/mountain-valley-pipeline-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues",
+        "source_type": "government",
+        "date_precision": "day",
+        "is_estimate": false
+      },
+      {
+        "date": "2025-12-18",
+        "description": "Public comment deadline approaches; significant opposition from environmental groups (POWHR, Appalachian Voices) citing environmental justice concerns (>40% of residents within 3 miles of proposed Swann CS in low-income community) and climate impacts.",
+        "type": "public_opposition",
+        "source": "WVTF Public Radio",
+        "source_url": "https://www.wvtf.org/news/2025-12-18/mvp-boost-project-draws-opposition-and-support-as-deadline-nears-to-comment-to-ferc",
+        "source_type": "news",
+        "date_precision": "day",
+        "is_estimate": false
+      },
+      {
+        "date": "2026-01-20",
+        "description": "FERC issues Notice of Schedule for EA preparation. EA expected to be issued August 2026. Federal authorization decision deadline targeted for November 2026.",
+        "type": "nepa_ea",
+        "source": "Federal Register 2026-00990",
+        "source_url": "https://www.federalregister.gov/documents/2026/01/20/2026-00990/mountain-valley-pipeline-llc-notice-of-schedule-for-the-preparation-of-an-environmental-assessment",
+        "source_type": "government",
+        "date_precision": "day",
+        "is_estimate": false
+      }
+    ],
+    "appalachian-reliability": [
+      {
+        "date": "2025-07-24",
+        "description": "Eastern Gas Transmission and Storage Inc. (EGTS) files application for Certificate of Public Convenience and Necessity for Appalachian Reliability Project (CP25-528-000). Proposes 550,000 Dth/d additional firm transportation in PA and OH.",
+        "type": "ferc_order",
+        "source": "EGTS Appalachian Reliability Project Website",
+        "source_url": "https://aboutarp.com/",
+        "source_type": "industry",
+        "date_precision": "day",
+        "is_estimate": false
+      },
+      {
+        "date": "2025-08-12",
+        "description": "FERC issues Notice of Application and Petition for Waiver, establishing intervention deadline.",
+        "type": "ferc_order",
+        "source": "Federal Register 2025-15273",
+        "source_url": "https://www.federalregister.gov/documents/2025/08/12/2025-15273/eastern-gas-transmission-and-storage-inc-notice-of-application-and-petition-for-waiver-and",
+        "source_type": "government",
+        "date_precision": "day",
+        "is_estimate": false
+      },
+      {
+        "date": "2025-09-10",
+        "description": "FERC issues Notice of Scoping Period requesting comments on environmental issues for ARP. Details pipeline route through Armstrong, Greene, Westmoreland Counties (PA) and Monroe County (OH).",
+        "type": "nepa_ea",
+        "source": "Federal Register 2025-17408",
+        "source_url": "https://www.federalregister.gov/documents/2025/09/10/2025-17408/eastern-gas-transmission-and-storage-inc-notice-of-scoping-period-requesting-comments-on",
+        "source_type": "government",
+        "date_precision": "day",
+        "is_estimate": false
+      },
+      {
+        "date": "2025-11-24",
+        "description": "FERC issues Notice of Schedule for EA preparation. EA scheduled for issuance Feb 27, 2026. Federal authorization decision deadline May 28, 2026.",
+        "type": "nepa_ea",
+        "source": "Federal Register 2025-20698",
+        "source_url": "https://www.federalregister.gov/documents/2025/11/24/2025-20698/eastern-gas-transmission-and-storage-inc-notice-of-schedule-for-the-preparation-of-an-environmental",
+        "source_type": "government",
+        "date_precision": "day",
+        "is_estimate": false
+      },
+      {
+        "date": "2025-12-01",
+        "description": "PA DEP reportedly ready to issue permits for EGTS pipeline project from PA to OH.",
+        "type": "state_permit",
+        "source": "Marcellus Drilling News",
+        "source_url": "https://marcellusdrilling.com/2025/12/pa-dep-ready-to-issue-permits-for-egts-pipe-project-from-pa-to-oh/",
+        "source_type": "news",
+        "date_precision": "month",
+        "is_estimate": true
+      },
+      {
+        "date": "2026-03-04",
+        "description": "FERC issues Notice of Availability of the Environmental Assessment for ARP. 30-day public comment period begins.",
+        "type": "nepa_ea",
+        "source": "Federal Register 2026-04268",
+        "source_url": "https://www.federalregister.gov/documents/2026/03/04/2026-04268/eastern-gas-transmission-and-storage-inc-notice-of-availability-of-the-environmental-assessment-for",
+        "source_type": "government",
+        "date_precision": "day",
+        "is_estimate": false
+      }
+    ],
+    "ctpl-expansion": [
+      {
+        "date": "2024-07-16",
+        "description": "D.C. Circuit decides Healthy Gulf v. FERC (No. 23-1069): FERC failed to adequately assess cumulative NO2 emissions and explain significance of GHG impacts for Commonwealth LNG. Remanded without vacatur. Establishes precedent requiring rigorous cumulative air quality analysis for Gulf Coast pipeline/LNG projects \u2014 directly relevant to CTPL Expansion EIS.",
+        "type": "litigation",
+        "source": "D.C. Circuit Court \u2014 Healthy Gulf v. FERC, No. 23-1069",
+        "source_url": "https://law.justia.com/cases/federal/appellate-courts/cadc/23-1069/23-1069-2024-07-16.html",
+        "source_type": "government",
+        "date_precision": "day",
+        "is_estimate": false
+      },
+      {
+        "date": "2025-06-06",
+        "description": "Cheniere Creole Trail Pipeline LP, Sabine Pass Liquefaction LLC, Sabine Pass Liquefaction Stage V LLC, and Sabine Crossing LLC jointly file applications for Sabine Pass Stage 5 Expansion Project (dockets CP24-75-001, CP25-505-000, CP25-506-000). CTPL expansion component seeks ~0.9 Bcf/d incremental capacity via ~104 miles of new pipeline and new compression in Louisiana.",
+        "type": "ferc_order",
+        "source": "Federal Register 2025-11578",
+        "source_url": "https://www.federalregister.gov/documents/2025/06/24/2025-11578/sabine-pass-liquefaction-llc-sabine-pass-liquefaction-stage-v-llc-sabine-crossing-llc-cheniere",
+        "source_type": "government",
+        "date_precision": "day",
+        "is_estimate": false
+      },
+      {
+        "date": "2025-06-24",
+        "description": "FERC issues Notice of Application and establishes intervention deadline for Sabine Pass Stage 5 / CTPL Expansion.",
+        "type": "ferc_order",
+        "source": "Federal Register 2025-11578",
+        "source_url": "https://www.federalregister.gov/documents/2025/06/24/2025-11578/sabine-pass-liquefaction-llc-sabine-pass-liquefaction-stage-v-llc-sabine-crossing-llc-cheniere",
+        "source_type": "government",
+        "date_precision": "day",
+        "is_estimate": false
+      },
+      {
+        "date": "2025-08-13",
+        "description": "FERC issues Notice of Intent to prepare Environmental Impact Statement (EIS) for Sabine Pass Stage 5 Expansion Project. Requests public comments on environmental issues. Scoping comment deadline Sep 8, 2025. Covers facilities in Cameron, Beauregard, Calcasieu, Allen, and Evangeline Parishes (LA) and Liberty, Jefferson, and Chambers Counties (TX).",
+        "type": "nepa_eis",
+        "source": "Federal Register 2025-15362",
+        "source_url": "https://www.federalregister.gov/documents/2025/08/13/2025-15362/sabine-pass-liquefaction-llc-sabine-pass-liquefaction-stage-v-llc-sabine-crossing-llc-cheniere",
+        "source_type": "government",
+        "date_precision": "day",
+        "is_estimate": false
+      }
+    ]
+  }
+}

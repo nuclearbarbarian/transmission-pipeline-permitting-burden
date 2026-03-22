@@ -1,0 +1,73 @@
+{
+  "_metadata": {
+    "description": "NEPA EIS timeline benchmarks from CEQ EIS Timeline Reports (2025), compiled by Thomas Hochman / Foundation for American Innovation",
+    "source_url": "https://tbhochman.github.io/nepa-eis-dashboard/",
+    "primary_data": "CEQ EIS Timeline Reports (2025) — completed EISs with FEIS published 2010-2024",
+    "supplementary_data": "EPA EIS Database (cdxapps.epa.gov) for 2025-2026 filings",
+    "source_type": "tier-4 (advocacy organization) using tier-1 government data (CEQ, EPA)",
+    "access_date": "2026-03-21",
+    "known_gaps": [
+      "Only 2 FERC pipeline EISs in completed dataset (Ruby Pipeline, Apex Expansion) — small sample",
+      "Most current proposed pipeline/transmission projects have not yet completed EIS",
+      "Court challenge data (350+ lawsuits) not yet integrated",
+      "Duration = NOI-to-ROD in years; projects without ROD excluded from duration calculations"
+    ]
+  },
+  "benchmarks": {
+    "all_completed": {
+      "count": 1003,
+      "median_years": 2.7,
+      "mean_years": 4.1,
+      "description": "All completed EISs (FEIS 2010-2024)"
+    },
+    "energy_fossil": {
+      "count": 47,
+      "median_years": 2.9,
+      "mean_years": 3.8,
+      "agencies": ["FERC", "BLM", "DOE", "WAPA", "USFS", "BR"],
+      "description": "Energy Fossil category (pipelines, gas development, coal leases, fossil generation)"
+    },
+    "energy_renewable": {
+      "count": 28,
+      "median_years": 1.5,
+      "mean_years": 2.1,
+      "agencies": ["FERC", "BLM", "DOE", "BPA", "WAPA"],
+      "description": "Energy Renewable category (hydro relicensing, wind, solar, transmission for renewables)"
+    },
+    "ferc_pipeline": {
+      "count": 2,
+      "median_years": 1.4,
+      "mean_years": 1.4,
+      "note": "[GAP] Only 2 completed FERC pipeline EISs in dataset. Most FERC pipeline reviews use EA (Environmental Assessment), not EIS. EIS sample too small for reliable benchmarking.",
+      "projects": [
+        {
+          "name": "Ruby Pipeline Project",
+          "noi": "2008-10-02",
+          "rod": "2010-04-05",
+          "duration_years": 1.5,
+          "states": "NV, OR, UT"
+        },
+        {
+          "name": "Apex Expansion Project",
+          "noi": "2009-05-26",
+          "rod": "2010-09-16",
+          "duration_years": 1.3,
+          "states": "WY, UT"
+        }
+      ]
+    },
+    "statutory_target_years": 2,
+    "statutory_note": "FAST-41 and Fiscal Responsibility Act set 2-year NOI-to-ROD target for EIS reviews"
+  },
+  "nepa_status_definitions": {
+    "no_eis_required": "Project processed via EA/FONSI or categorically excluded — no EIS needed",
+    "pre_noi": "Project announced but Notice of Intent not yet published in Federal Register",
+    "noi_published": "NOI published — scoping and public comment phase",
+    "deis_published": "Draft EIS published — public review (45-day minimum comment period)",
+    "feis_published": "Final EIS published — 30-day waiting period before ROD",
+    "rod_issued": "Record of Decision issued — NEPA review complete",
+    "ea_fonsi": "Environmental Assessment resulted in Finding of No Significant Impact",
+    "supplemental_eis": "Supplemental EIS required (changed conditions, court order, or new information)",
+    "categorical_exclusion": "Action qualifies for categorical exclusion from NEPA review"
+  }
+}

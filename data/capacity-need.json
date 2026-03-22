@@ -1,0 +1,119 @@
+{
+  "_metadata": {
+    "description": "Regional capacity need assessment synthesized from NERC, EPRI, and DOE data. Mapped to NERC reliability regions.",
+    "sources": [
+      "NERC Long-Term Reliability Assessment 2025 (December 2025)",
+      "EPRI Powering Intelligence Dashboard (February 2026 update)",
+      "DOE Accelerating Speed to Power Data Viewer (2025)"
+    ],
+    "access_date": "2026-03-22",
+    "methodology": "Composite risk tier based on three inputs with explicit thresholds. Peak demand growth is cumulative % over the NERC LTRA 10-year forecast window (2025-2034 unless otherwise noted per region). DC load share is the projected percentage of regional electricity consumed by data centers in 2030, aggregated from EPRI state-level projections using load-weighted averages within each NERC region, using the Medium-High growth scenario.",
+    "scoring_matrix": {
+      "critical": "Reserve margin below Reference Margin Level within 5 years (at_risk_year <= 2030) AND peak demand growth >= 18% AND at least one structural vulnerability (islanded grid, interconnection queue backlog, or generation fleet retirement wave)",
+      "high": "NERC identifies elevated reserve margin risk AND (peak demand growth >= 12% OR dc_load_share >= 4%) AND aging/retiring generation or seasonal shortfall risk",
+      "moderate": "Adequate near-term reserves but at least one stress factor: wind/hydro variability, gas dependence, growing demand, or permitting delays affecting planned additions",
+      "lower": "Adequate margins through forecast period with manageable growth and diversified resource mix. No US region currently qualifies — all face at least moderate pressure."
+    },
+    "known_gaps": [
+      "EPRI data center projections use Medium-High scenario (annual growth ~10%); actual growth could be higher or lower",
+      "NERC regions are broader than ISO/RTO assessment areas; sub-regional variation exists within each region",
+      "Speed to Power data focuses on data center siting; does not capture industrial electrification or EV charging load growth",
+      "Reserve margin projections assume planned resource additions materialize; delays would worsen shortfalls",
+      "MISO spans both MRO and parts of SERC; risk assessment reflects the combined MISO footprint mapped to MRO"
+    ],
+    "source_tier": "tier-1 (NERC, DOE) and tier-2 (EPRI)"
+  },
+  "regions": {
+    "MRO": {
+      "name": "Midwest (MRO / MISO)",
+      "nerc_code": "MRO",
+      "risk_tier": "critical",
+      "nerc_risk": "high",
+      "reserve_margin_status": "MISO below Reference Margin Level 2025-2026. Projected 19,700 MW short by 2034 without expedited resource additions. 1,300 MW deficit in 2025.",
+      "peak_demand_growth_pct": 24,
+      "peak_demand_growth_base_year": 2025,
+      "peak_demand_growth_end_year": 2034,
+      "dc_load_share_2030_pct": 6.5,
+      "key_drivers": ["Data center growth (IL, IA)", "Industrial electrification", "Coal retirements", "MISO interconnection queue delays"],
+      "at_risk_year": 2025
+    },
+    "RFC": {
+      "name": "Mid-Atlantic / Ohio Valley (RFC / PJM)",
+      "nerc_code": "RFC",
+      "risk_tier": "critical",
+      "nerc_risk": "high",
+      "reserve_margin_status": "PJM reserve margin fell from 35.7% to 29.7% year-over-year. Falls below Reference Margin Level starting 2029. Virginia hosts largest US data center concentration.",
+      "peak_demand_growth_pct": 18,
+      "peak_demand_growth_base_year": 2025,
+      "peak_demand_growth_end_year": 2034,
+      "dc_load_share_2030_pct": 15.0,
+      "key_drivers": ["Data center concentration (Virginia #1 nationally)", "Coal-to-gas transition delays", "PJM interconnection queue backlog"],
+      "at_risk_year": 2029
+    },
+    "TRE": {
+      "name": "Texas (TRE / ERCOT)",
+      "nerc_code": "TRE",
+      "risk_tier": "critical",
+      "nerc_risk": "elevated",
+      "reserve_margin_status": "225 new large load interconnection requests in 2025 (270% increase). Summer peak forecast to grow from 94.7 GW (2026) to 154.1 GW (2035) — 5.6% CAGR. NERC projects 53.1 GW of curtailable demand response by 2030 (up from 2.7 GW in 2024 LTRA), reflecting new large loads enrolling in emergency curtailment. Islanded grid with no import capability.",
+      "peak_demand_growth_pct": 63,
+      "peak_demand_growth_base_year": 2026,
+      "peak_demand_growth_end_year": 2035,
+      "dc_load_share_2030_pct": 12.0,
+      "key_drivers": ["Data center growth (TX #2 nationally)", "Cryptomining", "LNG export facility loads", "Industrial expansion", "No interconnection to neighboring grids"],
+      "at_risk_year": 2027
+    },
+    "SERC": {
+      "name": "Southeast (SERC)",
+      "nerc_code": "SERC",
+      "risk_tier": "high",
+      "nerc_risk": "elevated",
+      "reserve_margin_status": "SERC-Central: seasonal capacity shortfalls, aging generation fleet. SERC-East (Carolinas): growing data center and manufacturing load. TVA system under increasing pressure.",
+      "peak_demand_growth_pct": 15,
+      "peak_demand_growth_base_year": 2025,
+      "peak_demand_growth_end_year": 2034,
+      "dc_load_share_2030_pct": 4.5,
+      "key_drivers": ["Coal retirement acceleration", "TVA system load growth", "Data center growth (NC, TN, GA)", "Manufacturing reshoring", "Population growth"],
+      "at_risk_year": 2028
+    },
+    "WECC": {
+      "name": "Western (WECC)",
+      "nerc_code": "WECC",
+      "risk_tier": "moderate",
+      "nerc_risk": "elevated",
+      "reserve_margin_status": "WECC-Northwest and WECC-Basin face elevated winter shortfall risk. CAISO improving with solar + storage. Regional variation significant — Pacific Northwest at higher risk than Southwest.",
+      "peak_demand_growth_pct": 9,
+      "peak_demand_growth_base_year": 2025,
+      "peak_demand_growth_end_year": 2034,
+      "dc_load_share_2030_pct": 4.0,
+      "key_drivers": ["Hydro variability (Pacific NW)", "Coal retirement", "Data center growth (OR, WA, CA)", "Extreme weather events", "Solar + storage buildout offsetting in Southwest"],
+      "at_risk_year": 2028
+    },
+    "SPP": {
+      "name": "Central Plains (SPP)",
+      "nerc_code": "SPP",
+      "risk_tier": "moderate",
+      "nerc_risk": "moderate",
+      "reserve_margin_status": "Adequate near-term reserves. Wind integration challenges during low-wind, high-demand periods. Growing data center interest in Oklahoma.",
+      "peak_demand_growth_pct": 11,
+      "peak_demand_growth_base_year": 2025,
+      "peak_demand_growth_end_year": 2034,
+      "dc_load_share_2030_pct": 2.0,
+      "key_drivers": ["Wind variability", "Data center growth (OK)", "Industrial load", "Increasing extreme weather frequency"],
+      "at_risk_year": 2030
+    },
+    "NPCC": {
+      "name": "Northeast (NPCC / ISO-NE / NYISO)",
+      "nerc_code": "NPCC",
+      "risk_tier": "moderate",
+      "nerc_risk": "moderate",
+      "reserve_margin_status": "ISO-NE: winter gas dependence remains primary risk. NYISO: adequate with CHPE and planned additions. Both regions face offshore wind permitting delays that could tighten margins.",
+      "peak_demand_growth_pct": 7,
+      "peak_demand_growth_base_year": 2025,
+      "peak_demand_growth_end_year": 2034,
+      "dc_load_share_2030_pct": 4.0,
+      "key_drivers": ["Winter gas pipeline constraints", "Offshore wind permitting delays", "Data center growth (NYC metro)", "Electrification mandates"],
+      "at_risk_year": 2030
+    }
+  }
+}

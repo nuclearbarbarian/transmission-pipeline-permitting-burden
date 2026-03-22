@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transmission &amp; Pipeline Permitting Burden — FAI</title>
+  <meta name="description" content="Interactive map of US transmission and pipeline infrastructure showing the impact of NEPA, NHPA, and state permitting laws on major projects. A Foundation for American Innovation project.">
+  <meta property="og:title" content="Transmission & Pipeline Permitting Burden">
+  <meta property="og:description" content="Interactive map showing how federal and state permitting laws affect US energy infrastructure projects.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="img/fai-logo.svg" type="image/svg+xml">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin="" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Dashboard Styles -->
+  <link rel="stylesheet" href="css/penney-dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- Header -->
+  <header class="dashboard-header">
+    <h1>Transmission &amp; Pipeline Permitting Burden</h1>
+    <span class="fai-logo-link has-tip-html" data-tip-html="This is a Foundation for American Innovation project. Support this project and others like it &lt;a href='https://www.thefai.org/donate' target='_blank' rel='noopener' style='color:var(--color-newsprint);text-decoration:underline;font-weight:bold;'&gt;here&lt;/a&gt;."><img src="img/fai-logo.svg" alt="FAI" class="fai-logo"></span>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="dashboard-sidebar">
+
+    <!-- Layer Controls -->
+    <div class="sidebar-section">
+      <h2>Layers</h2>
+      <label class="layer-toggle">
+        <input type="checkbox" id="layer-pipeline-proposed" checked>
+        <span class="layer-swatch layer-swatch--pipeline-proposed"></span>
+        Gas Pipelines
+      </label>
+      <label class="layer-toggle">
+        <input type="checkbox" id="layer-transmission-proposed" checked>
+        <span class="layer-swatch layer-swatch--transmission-proposed"></span>
+        Proposed Transmission
+      </label>
+      <label class="layer-toggle">
+        <input type="checkbox" id="layer-state-permitting">
+        <span class="layer-swatch layer-swatch--state-permitting"></span>
+        State Permitting Score
+      </label>
+      <label class="layer-toggle">
+        <input type="checkbox" id="layer-capacity-need">
+        <span class="layer-swatch layer-swatch--capacity-need"></span>
+        Capacity Need
+      </label>
+      <div class="legend-lines">
+        <div class="legend-item"><span class="legend-line legend-line--solid"></span> Regulatory clearance obtained</div>
+        <div class="legend-item"><span class="legend-line legend-line--dashed"></span> Regulatory clearance pending</div>
+      </div>
+      <div class="legend-lines" id="permitting-legend" style="display:none;">
+        <div class="legend-item"><span class="legend-swatch-sm" style="background:#3D5C3D;"></span> Low burden</div>
+        <div class="legend-item"><span class="legend-swatch-sm" style="background:#C4A035;"></span> Medium burden</div>
+        <div class="legend-item"><span class="legend-swatch-sm" style="background:#8B2B2B;"></span> High burden</div>
+      </div>
+      <div class="legend-lines" id="capacity-legend" style="display:none;">
+        <div class="legend-item"><span class="legend-swatch-sm" style="background:#8B2B2B;"></span> Critical need</div>
+        <div class="legend-item"><span class="legend-swatch-sm" style="background:#C4A035;"></span> High need</div>
+        <div class="legend-item"><span class="legend-swatch-sm" style="background:#9C9788;"></span> Moderate need</div>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="sidebar-section">
+      <h2>Filters</h2>
+      <div class="filter-group">
+        <label for="filter-status">Status</label>
+        <select id="filter-status">
+          <option value="all">All Statuses</option>
+          <option value="proposed">Proposed</option>
+          <option value="announced">Announced</option>
+          <option value="pre-filing">Pre-Filing</option>
+          <option value="construction-pending">Construction Pending</option>
+          <option value="under-construction">Under Construction</option>
+          <option value="approved">Approved</option>
+          <option value="operational">Operational</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-operator">Operator</label>
+        <select id="filter-operator">
+          <option value="all">All Operators</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-region">Region</label>
+        <select id="filter-region">
+          <option value="all">All Regions</option>
+          <option value="permian">Permian Basin</option>
+          <option value="appalachian">Appalachian</option>
+          <option value="gulf-coast">Gulf Coast</option>
+          <option value="southeast">Southeast</option>
+          <option value="midwest">Midwest</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-search">Search</label>
+        <input type="text" id="filter-search" placeholder="Project name or docket...">
+      </div>
+    </div>
+
+    <!-- Project List -->
+    <div class="sidebar-section" style="flex:1; overflow-y:auto; border-bottom:none;">
+      <h2>Projects</h2>
+      <div class="results-count" id="results-count">Loading...</div>
+      <ul class="project-list" id="project-list"></ul>
+    </div>
+
+  </aside>
+
+  <!-- Main Map -->
+  <main class="dashboard-main">
+    <div id="map"></div>
+    <div id="detail-card" class="detail-card" style="display:none;"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="dashboard-footer">
+    <details class="sources-panel">
+      <summary class="sources-btn">Sources</summary>
+      <ul class="sources-list">
+        <li>ATC ArcGIS</li>
+        <li>BLM Rights-of-Way FeatureServer</li>
+        <li>DOE GDO</li>
+        <li>EEIA (8/27/2025)</li>
+        <li>FAI Permitting Playbook (2024, 2025)</li>
+        <li>FAST-41 Dashboard</li>
+        <li>FERC eLibrary</li>
+        <li>FracTracker Alliance</li>
+        <li>Idaho Power ArcGIS</li>
+        <li>NERC LTRA 2025</li>
+        <li>Pattern Energy ArcGIS</li>
+        <li>RFF (Resources for the Future)</li>
+      </ul>
+    </details>
+    <span>Data confidence levels indicated per project. Route geometries sourced from BLM Rights-of-Way FeatureServer, FracTracker Alliance, RFF, Idaho Power, Pattern Energy, and ATC where available; approximated from EEIA data otherwise. <span id="last-updated">Last updated: —</span></span>
+  </footer>
+
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
+<!-- Application Scripts -->
+<script src="js/data-loader.js?v=2"></script>
+<script src="js/map.js?v=4"></script>
+<script src="js/choropleth.js?v=6"></script>
+<script src="js/capacity-need.js?v=4"></script>
+<script src="js/sidebar.js?v=2"></script>
+<script src="js/card.js?v=4"></script>
+<script src="js/app.js?v=13"></script>
+
+</body>
+</html>

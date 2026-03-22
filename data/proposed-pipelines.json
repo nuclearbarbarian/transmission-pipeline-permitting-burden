@@ -1,0 +1,1486 @@
+{
+  "_metadata": {
+    "description": "Major proposed, approved, and under-construction natural gas pipeline projects in the United States (>$200M CAPEX)",
+    "source_urls": [
+      "https://eeia.org/wp-content/uploads/2025/08/EEIA-Full-Project-List-8-27-25.pdf",
+      "https://www.ferc.gov/industries-data/natural-gas/major-pipeline-projects-pending"
+    ],
+    "access_date": "2026-03-21",
+    "jurisdiction": "United States \u2014 interstate and intrastate (>$200M CAPEX threshold)",
+    "known_gaps": [
+      "EEIA list is self-described as 'not comprehensive'",
+      "Excludes abandonments, minor projects, blanket program projects, storage, LNG terminals without pipelines",
+      "FERC pending projects page returned 403 on direct fetch; docket enrichment done via search results",
+      "CAPEX figures: where not disclosed by sponsor, EEIA estimated at $6.5M/mile industry average \u2014 cannot distinguish disclosed from estimated in source data",
+      "22 of 30 projects rely on EEIA (industry trade group, tier-4 source) as sole source; 8 cross-referenced against FERC filings"
+    ],
+    "notes": "EEIA is the Energy Equipment & Infrastructure Alliance, an industry trade group. Per Ultan sourcing standards, this is a tier-4 source (advocacy/industry). Data treated as potentially partial. All projects should be cross-referenced against FERC filings where docket numbers exist. Route geometries are straight lines between approximate endpoints until FERC KML/GIS files are provided."
+  },
+  "projects": [
+    {
+      "id": "alaska-nikiski-lng",
+      "name": "Alaska Nikiski (LNG)",
+      "operator": "Glenfarne",
+      "docket": "FERC CP17-178-000",
+      "status": "approved",
+      "in_service_year": 2031,
+      "origin": {
+        "description": "Nikiski, AK",
+        "lat": 60.6749,
+        "lng": -151.3572
+      },
+      "destination": {
+        "description": "Nikiski LNG Terminal, AK",
+        "lat": 70.3191,
+        "lng": -148.5437
+      },
+      "states": [
+        "AK"
+      ],
+      "length_miles": 805,
+      "capacity_bcfd": 3.5,
+      "capex_mm": 10800,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "Alaska LNG export",
+      "region": "other",
+      "data_confidence": "medium",
+      "confidence_note": "Intrastate project; route approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "anr-heartland",
+      "name": "ANR Heartland Project",
+      "operator": "TC Energy",
+      "docket": "FERC CP25-79-000",
+      "status": "proposed",
+      "in_service_year": 2027,
+      "origin": {
+        "description": "Southwest Wisconsin",
+        "lat": 42.75,
+        "lng": -90.5
+      },
+      "destination": {
+        "description": "Northeast Illinois",
+        "lat": 41.9,
+        "lng": -87.8
+      },
+      "states": [
+        "WI",
+        "IL"
+      ],
+      "length_miles": 69,
+      "capacity_bcfd": 0.5,
+      "capex_mm": 448,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "Midwest supply",
+      "region": "midwest",
+      "data_confidence": "medium",
+      "confidence_note": "Endpoints approximated from state-level description",
+      "permitting": {
+        "nepa_status": "pending",
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        },
+        {
+          "name": "FERC eLibrary",
+          "docket": "CP25-79-000",
+          "source_type": "government"
+        }
+      ]
+    },
+    {
+      "id": "apex-pipeline",
+      "name": "Apex Pipeline",
+      "operator": "Targa",
+      "docket": "TX RRC (permit number unconfirmed)",
+      "status": "announced",
+      "in_service_year": 2026,
+      "origin": {
+        "description": "Permian Basin, TX",
+        "lat": 31.8516,
+        "lng": -101.8262
+      },
+      "destination": {
+        "description": "Gulf Coast, TX",
+        "lat": 29.758,
+        "lng": -93.9164
+      },
+      "states": [
+        "TX"
+      ],
+      "length_miles": 563,
+      "capacity_bcfd": 2.0,
+      "capex_mm": 2500,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "Permian takeaway",
+      "region": "permian",
+      "data_confidence": "low",
+      "confidence_note": "Start/end only; corridor speculative",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "bakken-east",
+      "name": "Bakken East",
+      "operator": "WBI Energy",
+      "docket": "FERC PF26-4-000",
+      "status": "announced",
+      "in_service_year": 2029,
+      "origin": {
+        "description": "MacKenzie County, ND",
+        "lat": 47.6913,
+        "lng": -103.2575
+      },
+      "destination": {
+        "description": "Mapleton, ND",
+        "lat": 46.9003,
+        "lng": -97.0643
+      },
+      "states": [
+        "ND"
+      ],
+      "length_miles": 350,
+      "capacity_bcfd": 1.0,
+      "capex_mm": 2275,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "Bakken egress",
+      "region": "other",
+      "data_confidence": "medium",
+      "confidence_note": "Named endpoints; route approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "blackfin",
+      "name": "Blackfin",
+      "operator": "WhiteWater Midstream",
+      "docket": "TX RRC (permit number unconfirmed)",
+      "status": "under-construction",
+      "in_service_year": 2025,
+      "origin": {
+        "description": "Katy, TX",
+        "lat": 29.4501,
+        "lng": -96.6287
+      },
+      "destination": {
+        "description": "East Texas Gulf Coast",
+        "lat": 30.2627,
+        "lng": -94.0178
+      },
+      "states": [
+        "TX"
+      ],
+      "length_miles": 193,
+      "capacity_bcfd": 3.5,
+      "capex_mm": 1255,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "Gulf Coast LNG feed",
+      "region": "gulf-coast",
+      "data_confidence": "medium",
+      "confidence_note": "Named origin; destination approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "blackcomb",
+      "name": "Blackcomb",
+      "operator": "WhiteWater Midstream",
+      "docket": "TX RRC T10643",
+      "status": "under-construction",
+      "in_service_year": 2026,
+      "origin": {
+        "description": "Permian Basin, TX",
+        "lat": 32.325,
+        "lng": -101.8288
+      },
+      "destination": {
+        "description": "Agua Dulce, TX",
+        "lat": 27.7488,
+        "lng": -97.8411
+      },
+      "states": [
+        "TX"
+      ],
+      "length_miles": 365,
+      "capacity_bcfd": 2.5,
+      "capex_mm": 2373,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "Permian takeaway",
+      "region": "permian",
+      "data_confidence": "medium",
+      "confidence_note": "Named endpoints; route approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "cp-express",
+      "name": "CP Express (CP2 LNG)",
+      "operator": "Venture Global",
+      "docket": "FERC CP22-21-000",
+      "status": "construction-pending",
+      "in_service_year": 2026,
+      "origin": {
+        "description": "Cameron Parish, LA",
+        "lat": 29.7816,
+        "lng": -93.3113
+      },
+      "destination": {
+        "description": "CP2 LNG Terminal, Cameron Parish, LA",
+        "lat": 30.2798,
+        "lng": -94.0207
+      },
+      "states": [
+        "LA"
+      ],
+      "length_miles": 91,
+      "capacity_bcfd": 4.4,
+      "capex_mm": 1500,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "LNG feed",
+      "region": "gulf-coast",
+      "data_confidence": "medium",
+      "confidence_note": "Terminal location known; pipeline route approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "cumberland",
+      "name": "Cumberland Project",
+      "operator": "Kinder Morgan",
+      "docket": "FERC CP22-493-000",
+      "status": "under-construction",
+      "in_service_year": 2026,
+      "origin": {
+        "description": "Dickson County, TN",
+        "lat": 36.1622,
+        "lng": -87.2083
+      },
+      "destination": {
+        "description": "Stewart County, TN",
+        "lat": 36.3728,
+        "lng": -87.6758
+      },
+      "states": [
+        "TN"
+      ],
+      "length_miles": 32,
+      "capacity_bcfd": 0.2,
+      "capex_mm": 225,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "Southeast supply",
+      "region": "southeast",
+      "data_confidence": "medium",
+      "confidence_note": "County-level endpoints; route approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "dela-express",
+      "name": "DeLa Express",
+      "operator": "Moss Lake Partners",
+      "docket": "FERC PF24-4-000",
+      "status": "pre-filing",
+      "in_service_year": 2028,
+      "origin": {
+        "description": "Delaware Basin, TX/NM",
+        "lat": 31.9001,
+        "lng": -104.0294
+      },
+      "destination": {
+        "description": "Gulf Coast, TX",
+        "lat": 30.2788,
+        "lng": -93.3672
+      },
+      "states": [
+        "TX",
+        "NM"
+      ],
+      "length_miles": 690,
+      "capacity_bcfd": 2.0,
+      "capex_mm": 4485,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "Permian takeaway",
+      "region": "permian",
+      "data_confidence": "low",
+      "confidence_note": "Basin-to-coast; corridor speculative",
+      "permitting": {
+        "nepa_status": "pre-filing",
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        },
+        {
+          "name": "FERC eLibrary",
+          "docket": "PF24-4-000",
+          "source_type": "government"
+        }
+      ]
+    },
+    {
+      "id": "desert-southwest",
+      "name": "Desert Southwest",
+      "operator": "Energy Transfer",
+      "docket": "FERC (pre-filing expected 2026)",
+      "status": "pre-filing",
+      "in_service_year": 2029,
+      "origin": {
+        "description": "Permian Basin, TX",
+        "lat": 31.437,
+        "lng": -102.6174
+      },
+      "destination": {
+        "description": "Central Arizona",
+        "lat": 34.8649,
+        "lng": -114.5877
+      },
+      "states": [
+        "TX",
+        "NM",
+        "AZ"
+      ],
+      "length_miles": 518,
+      "capacity_bcfd": 1.5,
+      "capex_mm": 5300,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "Permian takeaway / Western supply",
+      "region": "permian",
+      "data_confidence": "low",
+      "confidence_note": "Start/end only; multi-state corridor speculative",
+      "permitting": {
+        "nepa_status": "pending",
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "eiger-express",
+      "name": "Eiger Express Pipeline",
+      "operator": "WhiteWater Midstream JV",
+      "docket": "TX RRC (pending)",
+      "status": "approved",
+      "in_service_year": 2028,
+      "origin": {
+        "description": "Permian Basin, TX",
+        "lat": 31.3302,
+        "lng": -103.0724
+      },
+      "destination": {
+        "description": "Katy, TX",
+        "lat": 29.7818,
+        "lng": -95.8847
+      },
+      "states": [
+        "TX"
+      ],
+      "length_miles": 450,
+      "capacity_bcfd": 2.5,
+      "capex_mm": 2925,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "Permian takeaway",
+      "region": "permian",
+      "data_confidence": "low",
+      "confidence_note": "Start/end only; corridor speculative",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "elba-express-bridge",
+      "name": "Elba Express Bridge Pipeline",
+      "operator": "Dominion - Santee Cooper",
+      "docket": "FERC (pre-filing expected Q2 2026)",
+      "status": "announced",
+      "in_service_year": 2030,
+      "origin": {
+        "description": "Screven County, GA",
+        "lat": 32.7,
+        "lng": -81.6
+      },
+      "destination": {
+        "description": "Canadys, SC",
+        "lat": 33.18,
+        "lng": -80.6
+      },
+      "states": [
+        "GA",
+        "SC"
+      ],
+      "length_miles": 71,
+      "capacity_bcfd": 0.3,
+      "capex_mm": 431,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "Southeast supply",
+      "region": "southeast",
+      "data_confidence": "medium",
+      "confidence_note": "Named endpoints; route approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "woodside-line-200",
+      "name": "Woodside Line 200 (LNG)",
+      "operator": "Woodside",
+      "docket": "TX RRC (permit number unconfirmed)",
+      "status": "under-construction",
+      "in_service_year": 2027,
+      "origin": {
+        "description": "Ragley, LA",
+        "lat": 30.51,
+        "lng": -93.23
+      },
+      "destination": {
+        "description": "Carlyss, LA",
+        "lat": 30.17,
+        "lng": -93.37
+      },
+      "states": [
+        "LA"
+      ],
+      "length_miles": 31,
+      "capacity_bcfd": 5.5,
+      "capex_mm": 1400,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "LNG feed",
+      "region": "gulf-coast",
+      "data_confidence": "medium",
+      "confidence_note": "Named endpoints; route approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "mississippi-crossing",
+      "name": "Mississippi Crossing",
+      "operator": "Kinder Morgan",
+      "docket": "FERC CP25-514-000",
+      "status": "proposed",
+      "in_service_year": 2028,
+      "origin": {
+        "description": "Greenville, MS",
+        "lat": 33.3583,
+        "lng": -91.0541
+      },
+      "destination": {
+        "description": "Butler, AL",
+        "lat": 32.0574,
+        "lng": -88.3605
+      },
+      "states": [
+        "MS",
+        "AL"
+      ],
+      "length_miles": 208,
+      "capacity_bcfd": 1.5,
+      "capex_mm": 1500,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "Southeast supply",
+      "region": "southeast",
+      "data_confidence": "high",
+      "confidence_note": "Named city endpoints; FERC docket with draft EIS",
+      "permitting": {
+        "nepa_status": "EIS",
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        },
+        {
+          "name": "FERC eLibrary",
+          "docket": "CP25-514-000",
+          "source_type": "government"
+        }
+      ]
+    },
+    {
+      "id": "mvp-southgate",
+      "name": "Mountain Valley Pipeline - Southgate",
+      "operator": "Equitrans Midstream/EQT",
+      "docket": "FERC CP25-60-000",
+      "status": "proposed",
+      "in_service_year": 2026,
+      "origin": {
+        "description": "Chatham, VA",
+        "lat": 36.8309,
+        "lng": -79.344
+      },
+      "destination": {
+        "description": "Rockingham County, NC",
+        "lat": 36.4682,
+        "lng": -79.7041
+      },
+      "states": [
+        "VA",
+        "NC"
+      ],
+      "length_miles": 31,
+      "capacity_bcfd": 0.4,
+      "capex_mm": 440,
+      "capex_estimated": null,
+      "project_type": "expansion",
+      "strategic_context": "Appalachian egress",
+      "region": "appalachian",
+      "data_confidence": "high",
+      "confidence_note": "Named endpoints; extension of completed MVP",
+      "permitting": {
+        "nepa_status": "pending",
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        },
+        {
+          "name": "FERC eLibrary",
+          "docket": "CP25-60-000",
+          "source_type": "government"
+        }
+      ]
+    },
+    {
+      "id": "oak-grove-enhancement",
+      "name": "Oak Grove Enhancement (Replacement)",
+      "operator": "TC Energy",
+      "docket": "FERC CP23-523-000",
+      "status": "under-construction",
+      "in_service_year": 2025,
+      "origin": {
+        "description": "Richland Parish, LA",
+        "lat": 32.42,
+        "lng": -91.76
+      },
+      "destination": {
+        "description": "West Carroll Parish, LA",
+        "lat": 32.8,
+        "lng": -91.46
+      },
+      "states": [
+        "LA"
+      ],
+      "length_miles": 34,
+      "capacity_bcfd": 0.1,
+      "capex_mm": 400,
+      "capex_estimated": null,
+      "project_type": "expansion",
+      "strategic_context": "System reliability",
+      "region": "gulf-coast",
+      "data_confidence": "medium",
+      "confidence_note": "Parish-level endpoints; route approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "pelican-pipeline",
+      "name": "Pelican Pipeline",
+      "operator": "WhiteWater",
+      "docket": "LA (pending)",
+      "status": "construction-pending",
+      "in_service_year": 2027,
+      "origin": {
+        "description": "Williams, LA",
+        "lat": 30.28,
+        "lng": -92.77
+      },
+      "destination": {
+        "description": "Ragley, LA",
+        "lat": 30.51,
+        "lng": -93.23
+      },
+      "states": [
+        "LA"
+      ],
+      "length_miles": 170,
+      "capacity_bcfd": 2.5,
+      "capex_mm": 1105,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "LNG feed",
+      "region": "gulf-coast",
+      "data_confidence": "medium",
+      "confidence_note": "Named endpoints; route approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "port-arthur-la-connector",
+      "name": "Port Arthur Louisiana Connector (LNG)",
+      "operator": "Sempra",
+      "docket": "FERC CP18-7-000",
+      "status": "under-construction",
+      "in_service_year": 2026,
+      "origin": {
+        "description": "Eunice, LA",
+        "lat": 29.7622,
+        "lng": -93.883
+      },
+      "destination": {
+        "description": "Port Arthur, TX",
+        "lat": 29.7949,
+        "lng": -93.968
+      },
+      "states": [
+        "LA",
+        "TX"
+      ],
+      "length_miles": 131,
+      "capacity_bcfd": 2.0,
+      "capex_mm": 1200,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "LNG feed",
+      "region": "gulf-coast",
+      "data_confidence": "medium",
+      "confidence_note": "Named endpoints; route approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "port-arthur-tx-connector",
+      "name": "Port Arthur Texas Connector (LNG)",
+      "operator": "Sempra",
+      "docket": "FERC CP17-21-000",
+      "status": "approved",
+      "in_service_year": 2026,
+      "origin": {
+        "description": "Orange County, TX",
+        "lat": 30.0673,
+        "lng": -93.9831
+      },
+      "destination": {
+        "description": "Port Arthur, TX",
+        "lat": 29.7949,
+        "lng": -93.968
+      },
+      "states": [
+        "TX"
+      ],
+      "length_miles": 30,
+      "capacity_bcfd": 2.0,
+      "capex_mm": 600,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "LNG feed",
+      "region": "gulf-coast",
+      "data_confidence": "medium",
+      "confidence_note": "Named endpoints; route approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "ridgeline-expansion",
+      "name": "Ridgeline Expansion Project",
+      "operator": "Enbridge",
+      "docket": "FERC CP23-516-000",
+      "status": "construction-pending",
+      "in_service_year": 2026,
+      "origin": {
+        "description": "Trousdale County, TN",
+        "lat": 36.3932,
+        "lng": -86.2586
+      },
+      "destination": {
+        "description": "Roane County, TN",
+        "lat": 35.8975,
+        "lng": -84.5027
+      },
+      "states": [
+        "TN"
+      ],
+      "length_miles": 122,
+      "capacity_bcfd": 0.3,
+      "capex_mm": 1100,
+      "capex_estimated": null,
+      "project_type": "expansion",
+      "strategic_context": "Southeast supply",
+      "region": "southeast",
+      "data_confidence": "medium",
+      "confidence_note": "County-level endpoints; route approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "rio-bravo",
+      "name": "Rio Bravo Pipeline (Rio Grande LNG)",
+      "operator": "Enbridge",
+      "docket": "FERC CP16-454-000",
+      "status": "construction-pending",
+      "in_service_year": 2026,
+      "origin": {
+        "description": "Agua Dulce, TX",
+        "lat": 27.4863,
+        "lng": -98.0667
+      },
+      "destination": {
+        "description": "Brownsville, TX",
+        "lat": 26.0149,
+        "lng": -97.2751
+      },
+      "states": [
+        "TX"
+      ],
+      "length_miles": 137,
+      "capacity_bcfd": 4.5,
+      "capex_mm": 2173,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "LNG feed",
+      "region": "gulf-coast",
+      "data_confidence": "medium",
+      "confidence_note": "Named endpoints; route approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "sabine-crossing",
+      "name": "Sabine Crossing Pipeline",
+      "operator": "Cheniere",
+      "docket": "FERC CP25-505-000",
+      "status": "proposed",
+      "in_service_year": 2031,
+      "origin": {
+        "description": "Liberty County, TX",
+        "lat": 29.7569,
+        "lng": -93.9332
+      },
+      "destination": {
+        "description": "Sabine Pass, LA",
+        "lat": 29.7599,
+        "lng": -93.8653
+      },
+      "states": [
+        "TX",
+        "LA"
+      ],
+      "length_miles": 56,
+      "capacity_bcfd": 2.7,
+      "capex_mm": 1620,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "LNG feed",
+      "region": "gulf-coast",
+      "data_confidence": "medium",
+      "confidence_note": "Named endpoints; FERC docket filed",
+      "permitting": {
+        "nepa_status": "pending",
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        },
+        {
+          "name": "FERC eLibrary",
+          "docket": "CP25-505-000",
+          "source_type": "government"
+        }
+      ]
+    },
+    {
+      "id": "southeast-supply-enhancement",
+      "name": "Southeast Supply Enhancement",
+      "operator": "Williams (Transco)",
+      "docket": "FERC CP25-10-000",
+      "status": "proposed",
+      "in_service_year": 2027,
+      "origin": {
+        "description": "Lexington, NC (Transco Station 165)",
+        "lat": 35.9277,
+        "lng": -80.2658
+      },
+      "destination": {
+        "description": "Chatham, VA (Transco mainline)",
+        "lat": 36.8343,
+        "lng": -79.3365
+      },
+      "states": [
+        "VA",
+        "NC"
+      ],
+      "length_miles": 54,
+      "capacity_bcfd": 1.6,
+      "capex_mm": 1527,
+      "capex_estimated": null,
+      "project_type": "expansion",
+      "strategic_context": "Southeast supply",
+      "region": "appalachian",
+      "data_confidence": "high",
+      "confidence_note": "Named endpoints; FERC docket with EA issued",
+      "permitting": {
+        "nepa_status": "EA",
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        },
+        {
+          "name": "FERC eLibrary",
+          "docket": "CP25-10-000",
+          "source_type": "government"
+        }
+      ]
+    },
+    {
+      "id": "traverse-pipeline",
+      "name": "Traverse Pipeline",
+      "operator": "WhiteWater, ENB, MLPX",
+      "docket": "TX RRC (pending)",
+      "status": "construction-pending",
+      "in_service_year": 2027,
+      "origin": {
+        "description": "Agua Dulce, TX",
+        "lat": 27.7395,
+        "lng": -97.7745
+      },
+      "destination": {
+        "description": "Katy, TX",
+        "lat": 29.4374,
+        "lng": -96.0179
+      },
+      "states": [
+        "TX"
+      ],
+      "length_miles": 160,
+      "capacity_bcfd": 1.8,
+      "capex_mm": 1040,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "Permian takeaway / Gulf Coast redistribution",
+      "region": "gulf-coast",
+      "data_confidence": "medium",
+      "confidence_note": "Named endpoints; route approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "trident-intrastate",
+      "name": "Trident Intrastate",
+      "operator": "Kinder Morgan",
+      "docket": "TX RRC (permit number unconfirmed)",
+      "status": "construction-pending",
+      "in_service_year": 2027,
+      "origin": {
+        "description": "Katy, TX",
+        "lat": 30.0299,
+        "lng": -95.8964
+      },
+      "destination": {
+        "description": "Port Arthur, TX",
+        "lat": 29.7552,
+        "lng": -93.9414
+      },
+      "states": [
+        "TX"
+      ],
+      "length_miles": 216,
+      "capacity_bcfd": 1.5,
+      "capex_mm": 1700,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "LNG feed",
+      "region": "gulf-coast",
+      "data_confidence": "medium",
+      "confidence_note": "Named endpoints; route approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "virginia-reliability",
+      "name": "Virginia Reliability Project (Replacement)",
+      "operator": "TC Energy",
+      "docket": "FERC CP22-502-000",
+      "status": "under-construction",
+      "in_service_year": 2025,
+      "origin": {
+        "description": "Surry County, VA",
+        "lat": 37.0388,
+        "lng": -77.0168
+      },
+      "destination": {
+        "description": "Hampton Roads, VA",
+        "lat": 36.7751,
+        "lng": -76.2811
+      },
+      "states": [
+        "VA"
+      ],
+      "length_miles": 48,
+      "capacity_bcfd": 0.3,
+      "capex_mm": 500,
+      "capex_estimated": null,
+      "project_type": "expansion",
+      "strategic_context": "System reliability",
+      "region": "appalachian",
+      "data_confidence": "medium",
+      "confidence_note": "Named endpoints; route approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "hugh-brinson",
+      "name": "Hugh Brinson Pipeline",
+      "operator": "Energy Transfer",
+      "docket": "TX RRC (permit number unconfirmed)",
+      "status": "under-construction",
+      "in_service_year": 2026,
+      "origin": {
+        "description": "Waha Hub, TX",
+        "lat": 31.6409,
+        "lng": -102.1953
+      },
+      "destination": {
+        "description": "Maypearl, TX",
+        "lat": 32.2913,
+        "lng": -97.0371
+      },
+      "states": [
+        "TX"
+      ],
+      "length_miles": 400,
+      "capacity_bcfd": 1.5,
+      "capex_mm": 2600,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "Permian takeaway",
+      "region": "permian",
+      "data_confidence": "medium",
+      "confidence_note": "Named endpoints; route approximated",
+      "permitting": {
+        "nepa_status": null,
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "EEIA Major Pipeline Projects List",
+          "date": "2025-08-27",
+          "source_type": "industry"
+        }
+      ]
+    },
+    {
+      "id": "south-system-expansion-4",
+      "name": "South System Expansion 4",
+      "operator": "Southern Natural Gas (Kinder Morgan)",
+      "docket": "FERC CP25-517-000",
+      "status": "proposed",
+      "in_service_year": 2028,
+      "origin": {
+        "description": "Mississippi (multiple loops)",
+        "lat": 32.1439,
+        "lng": -88.8767
+      },
+      "destination": {
+        "description": "Georgia (multiple loops)",
+        "lat": 33.3597,
+        "lng": -82.1126
+      },
+      "states": [
+        "MS",
+        "AL",
+        "GA"
+      ],
+      "length_miles": 279,
+      "capacity_bcfd": 1.3,
+      "capex_mm": null,
+      "capex_estimated": null,
+      "project_type": "expansion",
+      "strategic_context": "Southeast supply",
+      "region": "southeast",
+      "data_confidence": "medium",
+      "confidence_note": "14 noncontiguous loops along existing South Main Line; draft EIS issued",
+      "permitting": {
+        "nepa_status": "EIS",
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "FERC eLibrary",
+          "docket": "CP25-517-000",
+          "source_type": "government"
+        },
+        {
+          "name": "FERC Draft EIS",
+          "date": "2026-01-30",
+          "source_type": "government"
+        }
+      ]
+    },
+    {
+      "id": "kosciusko-junction",
+      "name": "Kosciusko Junction Pipeline",
+      "operator": "Gulf South Pipeline / Texas Gas Transmission",
+      "docket": "FERC (docket unconfirmed)",
+      "status": "proposed",
+      "in_service_year": null,
+      "origin": {
+        "description": "Kosciusko, MS area",
+        "lat": 33.06,
+        "lng": -89.59
+      },
+      "destination": {
+        "description": "Mississippi (junction)",
+        "lat": 33.1,
+        "lng": -89.5
+      },
+      "states": [
+        "MS"
+      ],
+      "length_miles": null,
+      "capacity_bcfd": null,
+      "capex_mm": null,
+      "capex_estimated": null,
+      "project_type": "new_build",
+      "strategic_context": "Southeast supply",
+      "region": "southeast",
+      "data_confidence": "low",
+      "confidence_note": "Accepted into CP phase Sept 2025; limited public detail",
+      "permitting": {
+        "nepa_status": "pending",
+        "nhpa_section_106": null,
+        "state_permits": []
+      },
+      "sources": [
+        {
+          "name": "FERC eLibrary",
+          "date": "2025-09-25",
+          "source_type": "government"
+        }
+      ]
+    },
+    {
+      "id": "mvp-boost",
+      "name": "MVP Boost Project",
+      "operator": "Mountain Valley Pipeline, LLC",
+      "docket": "CP26-14-000",
+      "docket_type": "FERC",
+      "status": "pre-filing",
+      "in_service_year": 2028,
+      "origin": {
+        "description": "Wetzel County, WV (Stallworth CS)",
+        "lat": 39.6,
+        "lng": -80.65
+      },
+      "destination": {
+        "description": "Montgomery County, VA (Swann CS / MVP Mainline interconnect)",
+        "lat": 37.22,
+        "lng": -80.22
+      },
+      "states": [
+        "WV",
+        "VA"
+      ],
+      "length_miles": 0,
+      "capacity_bcfd": 0.6,
+      "capex_mm": 450,
+      "capex_estimated": false,
+      "project_type": "expansion",
+      "strategic_context": "Adds 0.6 Bcf/d compression to existing 303-mile MVP Mainline system (current capacity 2.0 Bcf/d). Upgrades three existing compressor stations in WV (Bradshaw in Braxton Co., Harris in Fayette Co., Stallworth in Wetzel Co.) and constructs new Swann Compressor Station in Montgomery Co., VA. Joint venture of EQT, NextEra Energy, Consolidated Edison, AltaGas, and RGC Resources. No new pipeline construction \u2014 compression-only expansion.",
+      "region": "appalachian",
+      "data_confidence": "high",
+      "confidence_note": "FERC application filed Oct 23, 2025 (CP26-14-000). Capacity, CAPEX ($450M), and facility details confirmed via EQT press release and Federal Register EA schedule notice. EA expected Aug 2026.",
+      "permitting": {
+        "nepa_status": "EA pending",
+        "nhpa_section_106": "pending",
+        "state_permits": [
+          "Virginia DEQ Minor NSR Permit (Swann CS) \u2014 application filed Nov 3, 2025"
+        ],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "Federal Register \u2014 EA Schedule Notice",
+          "date": "2026-01-20",
+          "docket": "CP26-14-000",
+          "source_type": "government"
+        },
+        {
+          "name": "Federal Register \u2014 Scoping Notice",
+          "date": "2025-11-24",
+          "docket": "CP26-14-000",
+          "source_type": "government"
+        },
+        {
+          "name": "EQT Corporation / PR Newswire \u2014 Formal Application Announcement",
+          "date": "2025-10-23",
+          "docket": "CP26-14-000",
+          "source_type": "industry"
+        },
+        {
+          "name": "Virginia DEQ \u2014 Swann Compressor Station Topic Page",
+          "date": "2025-11-03",
+          "source_type": "government"
+        }
+      ]
+    },
+    {
+      "id": "appalachian-reliability",
+      "name": "Appalachian Reliability Project",
+      "operator": "Eastern Gas Transmission and Storage, Inc. (Berkshire Hathaway Energy)",
+      "docket": "CP25-528-000",
+      "docket_type": "FERC",
+      "status": "pre-filing",
+      "in_service_year": 2027,
+      "origin": {
+        "description": "Armstrong County, PA (new receipt point)",
+        "lat": 40.78,
+        "lng": -79.47
+      },
+      "destination": {
+        "description": "Monroe County, OH (REX interconnect)",
+        "lat": 39.73,
+        "lng": -80.95
+      },
+      "states": [
+        "PA",
+        "OH"
+      ],
+      "length_miles": 3.9,
+      "capacity_bcfd": 0.55,
+      "capex_mm": null,
+      "capex_estimated": null,
+      "project_type": "expansion",
+      "strategic_context": "Constructs 3.9 miles of 30-inch pipeline, adds compression at two existing compressor stations, builds new metering/regulation station, modifies two existing M&R stations. Provides 550,000 Dth/d additional firm transportation from Armstrong County, PA to Texas Eastern (Westmoreland Co., PA) and Rockies Express Pipeline (Monroe Co., OH). Facilities in Armstrong, Greene, and Westmoreland Counties, PA, and Monroe County, OH.",
+      "region": "appalachian",
+      "data_confidence": "high",
+      "confidence_note": "FERC application filed Jul 24, 2025. Details confirmed via Federal Register scoping notice (2025-17408). EA issued Feb 27, 2026 per Federal Register (2026-04268). Federal authorization decision deadline May 28, 2026. CAPEX not publicly disclosed.",
+      "permitting": {
+        "nepa_status": "EA complete",
+        "nhpa_section_106": "pending",
+        "state_permits": [
+          "PA DEP permits \u2014 ready to issue (Dec 2025 per Marcellus Drilling News)"
+        ],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "Federal Register \u2014 Scoping Notice (2025-17408)",
+          "date": "2025-09-10",
+          "docket": "CP25-528-000",
+          "source_type": "government"
+        },
+        {
+          "name": "Federal Register \u2014 EA Schedule Notice (2025-20698)",
+          "date": "2025-11-24",
+          "docket": "CP25-528-000",
+          "source_type": "government"
+        },
+        {
+          "name": "Federal Register \u2014 EA Availability Notice (2026-04268)",
+          "date": "2026-03-04",
+          "docket": "CP25-528-000",
+          "source_type": "government"
+        },
+        {
+          "name": "EGTS Appalachian Reliability Project Website (aboutarp.com)",
+          "date": "2025-07-24",
+          "source_type": "industry"
+        },
+        {
+          "name": "Marcellus Drilling News \u2014 PA DEP Ready to Issue Permits",
+          "date": "2025-12-01",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "id": "ctpl-expansion",
+      "name": "CTPL Expansion (Sabine Pass Stage 5)",
+      "operator": "Cheniere Creole Trail Pipeline, L.P. (Cheniere Energy)",
+      "docket": "CP25-506-000",
+      "docket_type": "FERC",
+      "status": "pre-filing",
+      "in_service_year": 2030,
+      "origin": {
+        "description": "Gillis Hub area, Beauregard Parish, LA",
+        "lat": 30.4492,
+        "lng": -93.1502
+      },
+      "destination": {
+        "description": "Sabine Pass LNG Terminal, Cameron Parish, LA",
+        "lat": 29.7506,
+        "lng": -93.8703
+      },
+      "states": [
+        "LA"
+      ],
+      "length_miles": 104,
+      "capacity_bcfd": 0.9,
+      "capex_mm": 390,
+      "capex_estimated": false,
+      "project_type": "expansion",
+      "strategic_context": "Part of Sabine Pass Stage 5 Expansion Project (dockets CP24-75-001, CP25-505-000, CP25-506-000). CTPL expansion adds ~104 miles of new 42-inch and 36-inch pipeline (loop, mainline extension, laterals) in Cameron, Calcasieu, Beauregard, Allen, and Evangeline Parishes, LA. Expands existing Gillis CS and constructs new Tarpon CS in Cameron Parish plus new Mamou CS in Evangeline Parish (53,000 HP). Provides ~0.9 Bcf/d incremental firm transportation to Sabine Pass LNG. Separate Sabine Crossing Pipeline (CP25-505-000) adds 55.6 miles of 48-inch pipeline in TX delivering 2.7 Bcf/d to SPLNG. Healthy Gulf v. FERC (D.C. Cir. 2024) precedent on cumulative NO2/GHG analysis directly relevant \u2014 project must demonstrate adequate cumulative air quality assessment in EIS.",
+      "region": "gulf-coast",
+      "data_confidence": "high",
+      "confidence_note": "FERC application filed Jun 6, 2025. EIS (not EA) required given project scale. Federal Register NOI to prepare EIS issued Aug 13, 2025. CAPEX ~$390M from FERC application. Capacity from open season filings. Note: CTPL expansion is the Louisiana pipeline component; Sabine Crossing (TX, CP25-505) is a separate but coordinated docket.",
+      "permitting": {
+        "nepa_status": "EIS pending",
+        "nhpa_section_106": "pending",
+        "state_permits": [
+          "Louisiana DEQ air permits (pending \u2014 Tarpon CS, Mamou CS, Gillis CS expansion)",
+          "Louisiana Coastal Use Permit (pending \u2014 Cameron Parish wetlands)",
+          "USACE Section 404 wetlands permit (pending)"
+        ],
+        "fast_41": false
+      },
+      "sources": [
+        {
+          "name": "Federal Register \u2014 NOI to Prepare EIS (2025-15362)",
+          "date": "2025-08-13",
+          "docket": "CP25-506-000",
+          "source_type": "government"
+        },
+        {
+          "name": "Federal Register \u2014 Notice of Application (2025-11578)",
+          "date": "2025-06-24",
+          "docket": "CP25-506-000",
+          "source_type": "government"
+        },
+        {
+          "name": "Pipeline & Gas Journal \u2014 CTPL Expansion Targets 1.4 Bcf/d",
+          "date": "2025-08-01",
+          "source_type": "news"
+        },
+        {
+          "name": "Healthy Gulf v. FERC, No. 23-1069 (D.C. Cir. 2024)",
+          "date": "2024-07-16",
+          "source_type": "government"
+        }
+      ]
+    }
+  ]
+}

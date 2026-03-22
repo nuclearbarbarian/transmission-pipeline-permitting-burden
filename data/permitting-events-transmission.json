@@ -1,0 +1,1739 @@
+{
+  "_metadata": {
+    "description": "Permitting events for proposed transmission projects, researched and vetted per Ultan framework",
+    "sources": "FERC eLibrary, Federal Register, DOE/BLM press releases, state PUC orders, court records, Utility Dive, E&E News",
+    "access_date": "2026-03-21",
+    "vetting_notes": [
+      "Each event individually sourced with source_type classification",
+      "Government sources (tier 1) prioritized; news sources (tier 3) flagged",
+      "Industry sources (tier 4) flagged; used only when no government/news alternative",
+      "Events without confirmable dates marked [ESTIMATE]",
+      "ESA and Section 106 details often in FEIS appendices not publicly indexed \u2014 flagged as [GAP]"
+    ]
+  },
+  "events": {
+    "necec": [
+      {
+        "type": "nepa_ea",
+        "description": "CMP filed Presidential Permit application with DOE",
+        "date": "2017-07-27",
+        "agency": "DOE",
+        "source": "DOE OE Docket PP-438",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2017/09/27/2017-20681/application-for-presidential-permit-central-maine-power-company"
+      },
+      {
+        "type": "state_permit",
+        "description": "Maine PUC approved Certificate of Public Convenience and Necessity",
+        "date": "2019-05-03",
+        "agency": "Maine PUC",
+        "source": "MPUC press release",
+        "source_type": "government",
+        "source_url": "https://www.maine.gov/tools/whatsnew/index.php?topic=puc-pressreleases&id=1243475&v=article08",
+        "state": "ME"
+      },
+      {
+        "type": "state_permit",
+        "description": "Maine LUPC voted 5-2 to approve site law certification",
+        "date": "2020-01-07",
+        "agency": "Maine LUPC",
+        "source": "Bangor Daily News, Jan 8, 2020",
+        "source_type": "news",
+        "source_url": "https://www.bangordailynews.com/2020/01/08/news/cmps-controversial-hydropower-project-passes-second-regulatory-hurdle/",
+        "state": "ME"
+      },
+      {
+        "type": "state_permit",
+        "description": "Maine DEP issued environmental permit",
+        "date": "2020-05-11",
+        "agency": "Maine DEP",
+        "source": "Maine DEP media release",
+        "source_type": "government",
+        "source_url": "https://www.maine.gov/dep/news/news.html?id=2519723",
+        "state": "ME"
+      },
+      {
+        "type": "federal_permit",
+        "description": "USACE issued Section 404 permit (FONSI)",
+        "date": "2020-11-04",
+        "agency": "USACE",
+        "source": "Avangrid/BusinessWire press release",
+        "source_type": "industry",
+        "source_url": "https://www.businesswire.com/news/home/20201104005763/en/Army-Corps-of-Engineers-Grants-Permit-to-AVANGRID%E2%80%99S-New-England-Clean-Energy-Connect-Clean-Energy-Corridor"
+      },
+      {
+        "type": "nepa_ea",
+        "description": "DOE published Environmental Assessment (DOE/EA-2155)",
+        "date": "2021-01-14",
+        "agency": "DOE",
+        "source": "DOE EA-2155 document",
+        "source_type": "government",
+        "source_url": "https://www.energy.gov/nepa/doeea-2155-new-england-clean-energy-connect-maine"
+      },
+      {
+        "type": "federal_permit",
+        "description": "DOE issued Presidential Permit",
+        "date": "2021-01-14",
+        "agency": "DOE",
+        "source": "DOE Docket PP-438",
+        "source_type": "government",
+        "source_url": "https://www.energy.gov/oe/articles/pp-438-necec-presidential-permit"
+      },
+      {
+        "type": "litigation",
+        "description": "Sierra Club et al. filed federal lawsuit challenging USACE/DOE NEPA reviews",
+        "date": "2020-10-01",
+        "agency": "U.S. District Court, D. Maine",
+        "source": "Sabin Center Climate Case Chart",
+        "source_type": "news",
+        "source_url": "https://climatecasechart.com/case/sierra-club-v-us-army-corps-of-engineers",
+        "state": "ME"
+      },
+      {
+        "type": "litigation",
+        "description": "First Circuit affirmed denial of preliminary injunction",
+        "date": "2021-05-13",
+        "agency": "U.S. Court of Appeals, First Circuit",
+        "source": "Justia, No. 20-2195",
+        "source_type": "government",
+        "source_url": "https://law.justia.com/cases/federal/appellate-courts/ca1/20-2195/20-2195-2021-05-13.html"
+      },
+      {
+        "type": "state_action",
+        "description": "Maine voters approved Question 1 referendum (59%) blocking NECEC",
+        "date": "2021-11-02",
+        "agency": "Maine Secretary of State",
+        "source": "Ballotpedia; Portland Press Herald",
+        "source_type": "government",
+        "source_url": "https://ballotpedia.org/Maine_Question_1,_Electric_Transmission_Line_Restrictions_and_Legislative_Approval_Initiative_(2021)",
+        "state": "ME"
+      },
+      {
+        "type": "delay",
+        "description": "Construction halted at Governor Mills' request after referendum",
+        "date": "2021-11-19",
+        "agency": "Maine Governor",
+        "source": "WAGM TV",
+        "source_type": "news",
+        "source_url": "https://www.pressherald.com/2021/11/19/mills-asks-necec-to-stop-construction-on-power-corridor-project/",
+        "state": "ME"
+      },
+      {
+        "type": "litigation",
+        "description": "Maine Supreme Judicial Court ruled retroactive referendum unconstitutional if vested rights acquired (2022 ME 48)",
+        "date": "2022-08-30",
+        "agency": "Maine Supreme Judicial Court",
+        "source": "Court decision 2022 ME 48",
+        "source_type": "government",
+        "source_url": "https://www.courts.maine.gov/news/necec/2022me48.pdf",
+        "state": "ME"
+      },
+      {
+        "type": "state_permit",
+        "description": "Maine BEP denied appeals of DEP permit; modified conditions (50,000 acre conservation, decommissioning plan)",
+        "date": "2022-07-21",
+        "agency": "Maine BEP",
+        "source": "BEP decision document",
+        "source_type": "government",
+        "source_url": "https://www.maine.gov/dep/news/news.html?id=8402482",
+        "state": "ME"
+      },
+      {
+        "type": "litigation",
+        "description": "Jury ruled 9-0 that NECEC had acquired vested rights through substantial construction",
+        "date": "2023-04-20",
+        "agency": "Maine Superior Court",
+        "source": "Maine Public",
+        "source_type": "news",
+        "source_url": "https://www.mainepublic.org/courts-and-crime/2023-04-20/central-maine-power-wins-9-0-verdict-in-jury-trial-determining-vested-rights-for-transmission-line",
+        "state": "ME"
+      },
+      {
+        "type": "litigation",
+        "description": "Federal judge ruled in favor of USACE/DOE, declining to revoke federal permits",
+        "date": "2025-04-01",
+        "agency": "U.S. District Court, D. Maine",
+        "source": "Portland Press Herald",
+        "source_type": "news",
+        "source_url": "https://www.pressherald.com/2025/04/01/judge-sides-with-federal-agencies-wont-pull-permits-for-necec/",
+        "state": "ME"
+      },
+      {
+        "type": "litigation",
+        "description": "Environmental groups appealed federal ruling to First Circuit",
+        "date": "2025-05-29",
+        "agency": "U.S. Court of Appeals, First Circuit",
+        "source": "Portland Press Herald",
+        "source_type": "news",
+        "source_url": "https://www.pressherald.com/2025/05/29/environmental-groups-appeal-judges-approval-of-construction-for-controversial-power-corridor/"
+      }
+    ],
+    "sunzia-transmission": [
+      {
+        "type": "nepa_eis",
+        "description": "BLM published Notice of Intent to prepare EIS",
+        "date": "2008-12-16",
+        "agency": "BLM",
+        "source": "Federal Register",
+        "source_type": "government",
+        "source_url": "https://eplanning.blm.gov/eplanning-ui/project/2011785/510"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM published Draft EIS for public review",
+        "date": "2012-05-25",
+        "agency": "BLM",
+        "source": "BLM press release",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2012/05/29/2012-12978/notice-of-availability-of-the-draft-environmental-impact-statement-for-the-sunzia-southwest-500-kv"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM issued Record of Decision for original route",
+        "date": "2015-01-01",
+        "agency": "BLM",
+        "source": "BLM project records",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] Exact date not confirmed; pre-dates 2016 ROW grant",
+        "source_url": "https://eplanning.blm.gov/public_projects/lup/92916/124232/151492/LCDO_-_2015_-_Sunzia_Southwest_Transmission_Project__RMPA_and_ROD.pdf"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM published NOI for supplemental EIS and RMP amendments for ROW amendment",
+        "date": "2021-06-04",
+        "agency": "BLM",
+        "source": "Federal Register 86 FR 30027",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2021/06/04/2021-11788/notice-of-intent-to-prepare-an-environmental-impact-statement-and-resource-management-plan"
+      },
+      {
+        "type": "federal_permit",
+        "description": "SunZia received FAST-41 coverage from Permitting Council",
+        "date": "2021-07-29",
+        "agency": "FPISC",
+        "source": "permits.performance.gov",
+        "source_type": "government",
+        "source_url": "https://www.permits.performance.gov/fpisc-content/sunzia-southwest-transmission-project-receives-fast-41-coverage"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM published Draft EIS for ROW amendment",
+        "date": "2022-05-02",
+        "agency": "BLM",
+        "source": "Federal Register 87 FR 25671",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2022/05/02/2022-09379/notice-of-availability-of-a-draft-environmental-impact-statement-and-resource-management-plan"
+      },
+      {
+        "type": "esa",
+        "description": "USFWS listed lesser prairie-chicken as endangered (Southern DPS) and threatened (Northern DPS)",
+        "date": "2022-11-25",
+        "agency": "USFWS",
+        "source": "USFWS press release; Federal Register",
+        "source_type": "government",
+        "source_url": "https://www.fws.gov/press-release/2022-11/lesser-prairie-chicken-listed-under-endangered-species-act"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM published Final EIS for ROW amendment",
+        "date": "2023-02-17",
+        "agency": "BLM",
+        "source": "Federal Register 88 FR 10323",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2023/02/17/2023-03299/notice-of-availability-of-the-proposed-resource-management-plan-amendment-and-final-environmental"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM signed Record of Decision / Approved RMP Amendment",
+        "date": "2023-05-16",
+        "agency": "BLM",
+        "source": "Federal Register 88 FR 32169; DOI press release",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2023/05/19/2023-10784/notice-of-availability-of-the-record-of-decision-and-approved-resource-management-plan-amendment-for"
+      },
+      {
+        "type": "section_106",
+        "description": "Tohono O'odham Nation and San Carlos Apache Tribe allege BLM issued construction LNTPs before completing Section 106 tribal consultation in San Pedro Valley",
+        "date": "2024-01-01",
+        "agency": "BLM",
+        "source": "NARF (narf.org); AZPM",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] Complaint filed January 2024",
+        "source_url": "https://news.azpm.org/p/azpmnews/2024/3/14/219465-sunzia-transmission-project-sparks-legal-dispute-over-sacred-sites-preservation/"
+      },
+      {
+        "type": "litigation",
+        "description": "Tribes filed federal lawsuit alleging NHPA Section 106 violations in SunZia construction through San Pedro Valley",
+        "date": "2024-01-01",
+        "agency": "U.S. District Court, D. Arizona",
+        "source": "NARF; Tucson.com",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] January 2024",
+        "source_url": "https://tucson.com/news/local/tribes-lawsuit-sunzia-transmission-line-arizona-san-pedro-river-wind-energy/article_8205227c-b949-11ee-8d8b-fbdc4b7ee822.html",
+        "state": "AZ"
+      },
+      {
+        "type": "litigation",
+        "description": "Judge denied tribes' request for preliminary injunction to stop construction",
+        "date": "2024-04-16",
+        "agency": "U.S. District Court, D. Arizona",
+        "source": "KOLD TV",
+        "source_type": "news",
+        "source_url": "https://www.kold.com/2024/04/17/judge-rejects-injunction-sunzia-transmission-project/",
+        "state": "AZ"
+      },
+      {
+        "type": "litigation",
+        "description": "Ninth Circuit reversed dismissal, ruling BLM's 2023 LNTPs were the final agency action; tribes' Section 106 claims revived",
+        "date": "2025-05-27",
+        "agency": "U.S. Court of Appeals, Ninth Circuit",
+        "source": "Justia, No. 24-3659",
+        "source_type": "government",
+        "source_url": "https://law.justia.com/cases/federal/appellate-courts/ca9/24-3659/24-3659-2025-05-27.html"
+      }
+    ],
+    "grain-belt-express": [
+      {
+        "type": "state_permit",
+        "description": "Kansas Corporation Commission issued initial siting permit for 370-mile KS segment",
+        "date": "2013-11-07",
+        "agency": "KS KCC",
+        "source": "KCC Order, Docket 13-GBEE-803-MIS",
+        "source_type": "government",
+        "source_url": "https://estar.kcc.ks.gov/estar/ViewFile.aspx/Order_Granting_Siting_Permit_with_Conditions.pdf?Id=cbe11137-262b-4d9d-b789-8a0aefb7e38d",
+        "state": "KS"
+      },
+      {
+        "type": "state_permit",
+        "description": "Indiana Utility Regulatory Commission issued CPCN",
+        "date": "2013-05-23",
+        "agency": "IN IURC",
+        "source": "OUCC case page",
+        "source_type": "government",
+        "source_url": "https://www.in.gov/oucc/electric/key-cases-by-utility/grain-belt-express-clean-line-project/",
+        "state": "IN"
+      },
+      {
+        "type": "state_action",
+        "description": "Missouri PSC voted 3-2 to deny CCN (first denial)",
+        "date": "2015-07-01",
+        "agency": "MO PSC",
+        "source": "Utility Dive",
+        "source_type": "news",
+        "source_url": "https://www.utilitydive.com/news/missouri-regulators-reject-grain-belt-express-transmission-project/401672/",
+        "state": "MO"
+      },
+      {
+        "type": "state_action",
+        "description": "Missouri PSC denied CCN a second time",
+        "date": "2017-08-01",
+        "agency": "MO PSC",
+        "source": "Utility Dive",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] August 2017, exact day not confirmed",
+        "source_url": "https://www.utilitydive.com/news/missouri-rejects-grain-belt-express-transmission-project-again/449628/",
+        "state": "MO"
+      },
+      {
+        "type": "litigation",
+        "description": "Missouri Supreme Court unanimously reversed PSC denial; remanded",
+        "date": "2018-07-17",
+        "agency": "MO Supreme Court",
+        "source": "Justia, SC96993",
+        "source_type": "government",
+        "source_url": "https://www.courts.mo.gov/file.jsp?id=123655",
+        "state": "MO"
+      },
+      {
+        "type": "state_permit",
+        "description": "Missouri PSC granted CCN to Grain Belt Express (under Invenergy)",
+        "date": "2019-03-01",
+        "agency": "MO PSC",
+        "source": "Grain Belt Express press release",
+        "source_type": "industry",
+        "date_note": "[ESTIMATE] March 2019, exact day not confirmed",
+        "source_url": "https://www.troutmanenergyreport.com/2019/03/missouri-public-service-commission-grants-certificate-of-convenience-and-necessity-to-grain-belt-express-transmission-line/",
+        "state": "MO"
+      },
+      {
+        "type": "state_permit",
+        "description": "Kansas Corporation Commission approved siting certificate extension",
+        "date": "2019-09-26",
+        "agency": "KS KCC",
+        "source": "KCC News Release",
+        "source_type": "government",
+        "source_url": "https://www.kcc.ks.gov/news-9-26-19",
+        "state": "KS"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "DOE published Notice of Intent to prepare EIS (DOE/EIS-0554)",
+        "date": "2022-12-16",
+        "agency": "DOE LPO",
+        "source": "Federal Register 2022-27099",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2022/12/16/2022-27099/notice-of-intent-to-prepare-an-environmental-impact-statement-for-the-grain-belt-express"
+      },
+      {
+        "type": "state_permit",
+        "description": "Illinois Commerce Commission granted CPCN, completing four-state siting approvals",
+        "date": "2023-03-08",
+        "agency": "IL ICC",
+        "source": "Grain Belt Express press release",
+        "source_type": "industry",
+        "source_url": "https://grainbeltexpress.com/grain-belt-express-approved-by-illinois-commerce-commission/",
+        "state": "IL"
+      },
+      {
+        "type": "state_permit",
+        "description": "Missouri PSC approved amended CCN for expanded scope",
+        "date": "2023-10-01",
+        "agency": "MO PSC",
+        "source": "Grain Belt Express press release",
+        "source_type": "industry",
+        "date_note": "[ESTIMATE] October 2023",
+        "source_url": "https://grainbeltexpress.com/invenergys-grain-belt-express-transmission-line-secures-last-of-its-state-approvals/",
+        "state": "MO"
+      },
+      {
+        "type": "federal_permit",
+        "description": "DOE LPO announced conditional commitment for up to $4.9B loan guarantee",
+        "date": "2024-11-25",
+        "agency": "DOE LPO",
+        "source": "DOE LPO press release",
+        "source_type": "government",
+        "source_url": "https://www.energy.gov/lpo/articles/lpo-announces-conditional-commitment-grain-belt-express-construct-high-voltage-direct"
+      },
+      {
+        "type": "litigation",
+        "description": "Illinois 5th District Appellate Court reversed ICC approval, ruling GBE failed to prove financing",
+        "date": "2024-08-01",
+        "agency": "IL Appellate Court",
+        "source": "Capitol News Illinois",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] August 2024",
+        "source_url": "https://capitolnewsillinois.com/news/state-appeals-court-tosses-proposal-for-new-transmission-line-in-central-illinois/",
+        "state": "IL"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "DOE published Draft EIS for Phase 1",
+        "date": "2025-01-17",
+        "agency": "DOE LPO",
+        "source": "Federal Register 2025-00736",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2025/01/17/2025-00736/notice-of-availability-of-the-draft-environmental-impact-statement-for-phase-1-of-the-grain-belt"
+      },
+      {
+        "type": "litigation",
+        "description": "Missouri AG issued Civil Investigative Demand alleging misleading claims",
+        "date": "2025-06-27",
+        "agency": "MO AG",
+        "source": "MO AG CID document",
+        "source_type": "government",
+        "source_url": "https://ago.mo.gov/wp-content/uploads/2025-06-27-CID-25-37-Grain-Belt-Express.pdf",
+        "state": "MO"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "DOE published Final EIS for Phase 1",
+        "date": "2025-07-25",
+        "agency": "DOE LPO",
+        "source": "DOE EIS-0554 page",
+        "source_type": "government",
+        "source_url": "https://www.energy.gov/lpo/eis-0554-grain-belt-express-transmission-line"
+      },
+      {
+        "type": "federal_action",
+        "description": "DOE terminated $4.9B conditional loan commitment",
+        "date": "2025-07-23",
+        "agency": "DOE",
+        "source": "DOE press release",
+        "source_type": "government",
+        "source_url": "https://www.energy.gov/articles/department-energy-terminates-taxpayer-funded-financial-assistance-grain-belt-express"
+      },
+      {
+        "type": "litigation",
+        "description": "Illinois Supreme Court reversed appellate court, reinstated ICC approval",
+        "date": "2026-01-01",
+        "agency": "IL Supreme Court",
+        "source": "Capitol News Illinois",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] January 2026",
+        "source_url": "https://capitolnewsillinois.com/news/state-high-court-rejects-challenge-to-wind-generated-transmission-line/",
+        "state": "IL"
+      },
+      {
+        "type": "litigation",
+        "description": "Missouri appellate court ruled Chariton County cannot block construction by denying road-crossing permits",
+        "date": "2024-10-01",
+        "agency": "MO Court of Appeals",
+        "source": "Missouri Independent",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] October 2024",
+        "source_url": "https://missouriindependent.com/briefs/grain-belt-express-clears-another-legal-hurdle-with-missouri-appeals-court-ruling/",
+        "state": "MO"
+      }
+    ],
+    "transwest-express": [
+      {
+        "type": "nepa_eis",
+        "description": "BLM and WAPA published Notice of Intent to prepare EIS",
+        "date": "2011-01-04",
+        "agency": "BLM / WAPA",
+        "source": "WAPA TransWest NEPA page",
+        "source_type": "government",
+        "source_url": "https://www.wapa.gov/transmission/transmission-environmental-review-nepa/transwest-express-nepa/"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM and WAPA published Draft EIS (~2,000 pages)",
+        "date": "2013-07-03",
+        "agency": "BLM / WAPA",
+        "source": "Federal Register 2013-16009",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2013/07/03/2013-16009/notice-of-availability-of-the-draft-environmental-impact-statement-for-the-transwest-express-600-kv"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM and WAPA published Final EIS",
+        "date": "2015-04-30",
+        "agency": "BLM / WAPA",
+        "source": "BLM press release",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2015/05/01/2015-10248/notice-of-availability-of-the-final-environmental-impact-statement-for-the-transwest-express-600-kv"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM issued Record of Decision",
+        "date": "2016-12-16",
+        "agency": "BLM",
+        "source": "Federal Register",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2017/04/03/2017-06479/transwest-express-transmission-project-environmental-impact-statement-doeeis-0450"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "WAPA issued Record of Decision",
+        "date": "2017-01-13",
+        "agency": "WAPA",
+        "source": "WAPA news release",
+        "source_type": "government",
+        "source_url": "https://www.transwestexpress.net/news/alerts/2017/011717-wapa-record-of-decision.shtml"
+      },
+      {
+        "type": "federal_permit",
+        "description": "BLM issued Right-of-Way Grant",
+        "date": "2017-06-20",
+        "agency": "BLM",
+        "source": "WAPA TransWest project page",
+        "source_type": "government",
+        "source_url": "https://www.wapa.gov/transmission/transmission-infrastructure-program-tip/projects/transwest-express-project/"
+      },
+      {
+        "type": "section_106",
+        "description": "Section 106 tribal consultation initiated; 7 tribes responded. Ute Mountain Ute raised concerns about human remains and sacred sites",
+        "date": "2010-07-20",
+        "agency": "BLM",
+        "source": "TransWest EIS Chapter 6 (BLM ePlanning)",
+        "source_type": "government",
+        "source_url": "https://eplanning.blm.gov/public_projects/nepa/65198/78887/90852/13-Chapter6-ConsultationandCoordination.pdf"
+      },
+      {
+        "type": "esa",
+        "description": "Biological Assessment completed as FEIS Appendix N; greater sage-grouse analyzed but not ESA-listed",
+        "date": "2015-04-30",
+        "agency": "BLM / USFWS",
+        "source": "FEIS Appendix N (BLM ePlanning)",
+        "source_type": "government",
+        "source_url": "https://eplanning.blm.gov/public_projects/nepa/65198/78887/90852/13-Chapter6-ConsultationandCoordination.pdf"
+      },
+      {
+        "type": "litigation",
+        "description": "TransWest sued USDA/NRCS over refusal to consent to condemnation within conservation easement",
+        "date": "2019-12-19",
+        "agency": "U.S. District Court, D. Colorado",
+        "source": "Justia Docket 1:2019cv03603",
+        "source_type": "government",
+        "source_url": "https://dockets.justia.com/docket/colorado/codce/1:2019cv03603/194244",
+        "state": "CO"
+      },
+      {
+        "type": "litigation",
+        "description": "TransWest sued National Park Service in D. Colorado",
+        "date": "2021-07-01",
+        "agency": "U.S. District Court, D. Colorado",
+        "source": "Law360",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] July 2021",
+        "source_url": "https://www.law360.com/cases/60ef57418792c802de45c4b6",
+        "state": "CO"
+      },
+      {
+        "type": "federal_permit",
+        "description": "BLM signed Notice to Proceed to Construction",
+        "date": "2023-04-10",
+        "agency": "BLM / DOI",
+        "source": "DOI press release",
+        "source_type": "government",
+        "source_url": "https://www.blm.gov/press-release/blm-approves-construction-transwest-express-transmission-project"
+      }
+    ],
+    "cardinal-hickory-creek": [
+      {
+        "type": "nepa_eis",
+        "description": "USDA RUS published Notice of Intent to prepare EIS",
+        "date": "2016-10-18",
+        "agency": "USDA RUS",
+        "source": "Federal Register 81 FR 71697",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2016/10/18/2016-25045/cardinal-hickory-creek-345-kv-transmission-line-project"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "RUS published Draft EIS",
+        "date": "2018-12-07",
+        "agency": "USDA RUS",
+        "source": "Federal Register 2018-26558",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2018/12/07/2018-26558/cardinal-hickory-creek-345-kv-transmission-line-project"
+      },
+      {
+        "type": "state_permit",
+        "description": "Wisconsin PSC voted unanimously to grant CPCN",
+        "date": "2019-08-20",
+        "agency": "WI PSC",
+        "source": "Madison.com",
+        "source_type": "news",
+        "source_url": "https://madison.com/news/local/environment/regulators-approve-controversial-cardinal-hickory-creek-power-line/article_67ca9eac-a9e7-59ba-86d3-df69d739d43f.html",
+        "state": "WI"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "RUS published Final EIS",
+        "date": "2019-10-23",
+        "agency": "USDA RUS",
+        "source": "Federal Register 2020-02946",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2020/02/14/2020-02946/cardinal-hickory-creek-345-kv-transmission-line-project"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "RUS, USFWS, and USACE jointly issued Record of Decision",
+        "date": "2020-02-14",
+        "agency": "USDA RUS / USFWS / USACE",
+        "source": "Federal Register 2020-02946",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2020/02/14/2020-02946/cardinal-hickory-creek-345-kv-transmission-line-project"
+      },
+      {
+        "type": "litigation",
+        "description": "Conservation groups filed federal lawsuit challenging FEIS/ROD and USFWS refuge crossing permit",
+        "date": "2021-10-01",
+        "agency": "U.S. District Court, W.D. Wisconsin",
+        "source": "ELPC press release",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] October 2021",
+        "source_url": "https://elpc.org/news/conservation-groups-sue-to-protect-upper-mississippi-river-wildlife-refuge/",
+        "state": "WI"
+      },
+      {
+        "type": "litigation",
+        "description": "Judge Conley ruled NEPA review inadequate; vacated FEIS/ROD; found USFWS refuge right-of-way arbitrary and capricious",
+        "date": "2022-01-14",
+        "agency": "U.S. District Court, W.D. Wisconsin",
+        "source": "ELPC press release; RUS project page",
+        "source_type": "government",
+        "source_url": "https://elpc.org/news/federal-district-court-stops-cardinal-hickory-creek-transmission-line-running-through-upper-mississippi-river-national-wildlife-and-fish-refuge/",
+        "state": "WI"
+      },
+      {
+        "type": "litigation",
+        "description": "7th Circuit reversed district court, ruling USFWS had not made final action on land exchange; effectively cleared project",
+        "date": "2023-07-19",
+        "agency": "U.S. Court of Appeals, 7th Circuit",
+        "source": "Justia, No. 22-1737",
+        "source_type": "government",
+        "source_url": "https://law.justia.com/cases/federal/appellate-courts/ca7/22-1737/22-1737-2023-07-19.html"
+      },
+      {
+        "type": "litigation",
+        "description": "Judge Conley issued preliminary injunction blocking USFWS land swap for refuge crossing",
+        "date": "2024-03-01",
+        "agency": "U.S. District Court, W.D. Wisconsin",
+        "source": "WPR",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] March 2024",
+        "source_url": "https://www.wpr.org/news/federal-judge-blocks-transmission-lines-crossing-through-wildlife-refuge-for-now",
+        "state": "WI"
+      },
+      {
+        "type": "litigation",
+        "description": "7th Circuit stayed district court injunction, clearing land exchange",
+        "date": "2024-05-01",
+        "agency": "U.S. Court of Appeals, 7th Circuit",
+        "source": "WPR; Power Technology",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] May 2024",
+        "source_url": "https://www.wpr.org/environment/federal-appeals-court-controversial-transmission-project-cardinal-hickory-creek"
+      },
+      {
+        "type": "federal_permit",
+        "description": "USFWS land exchange completed (36 acres to refuge, 10 acres for line)",
+        "date": "2024-05-10",
+        "agency": "USFWS",
+        "source": "Daily Reporter",
+        "source_type": "news",
+        "source_url": "https://www.cardinal-hickorycreek.com/utilities-move-forward-to-complete-cardinal-hickory-creek-project/"
+      }
+    ],
+    "boardman-to-hemingway": [
+      {
+        "type": "nepa_eis",
+        "description": "BLM published Notice of Intent to prepare EIS",
+        "date": "2008-09-12",
+        "agency": "BLM",
+        "source": "Federal Register",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2008/09/12/E8-21285/notice-of-intent-to-prepare-an-environmental-impact-statement-eis-for-the-boardman-hemingway-500"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM published Draft EIS",
+        "date": "2014-12-19",
+        "agency": "BLM",
+        "source": "Federal Register",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2014/12/19/2014-29770/notice-of-availability-of-the-draft-environmental-impact-statement-and-land-use-plan-amendments-for"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM published Final EIS",
+        "date": "2016-11-28",
+        "agency": "BLM",
+        "source": "Federal Register",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2016/11/28/2016-28691/notice-of-availability-of-the-final-environmental-impact-statement-and-proposed-land-use-plan"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM issued Record of Decision",
+        "date": "2017-11-17",
+        "agency": "BLM",
+        "source": "Federal Register",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2017/11/17/2017-25013/notice-of-availability-of-the-record-of-decision-for-the-boardman-to-hemingway-transmission-line"
+      },
+      {
+        "type": "state_permit",
+        "description": "Idaho Power filed Application for Site Certificate with Oregon EFSC",
+        "date": "2018-10-01",
+        "agency": "Oregon EFSC",
+        "source": "EFSC project page",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] October 2018",
+        "source_url": "https://www.oregon.gov/energy/facilities-safety/facilities/Pages/B2H.aspx",
+        "state": "OR"
+      },
+      {
+        "type": "litigation",
+        "description": "Stop B2H Coalition filed suit challenging sage grouse analysis and cumulative effects under NEPA",
+        "date": "2019-11-12",
+        "agency": "U.S. District Court, D. Oregon",
+        "source": "CourtListener, Case 2:19-cv-01822",
+        "source_type": "government",
+        "source_url": "https://www.courtlistener.com/docket/16459239/stop-b2h-coalition-v-bureau-of-land-management/",
+        "state": "OR"
+      },
+      {
+        "type": "state_permit",
+        "description": "Oregon EFSC approved site certificate after contested case proceedings",
+        "date": "2022-09-27",
+        "agency": "Oregon EFSC",
+        "source": "EFSC project page",
+        "source_type": "government",
+        "source_url": "https://energyinfo.oregon.gov/blog/2022/9/28/energy-facility-siting-council-approves-boardman-to-hemingway-transmission-line",
+        "state": "OR"
+      },
+      {
+        "type": "federal_permit",
+        "description": "FAST-41 permitting completed",
+        "date": "2024-12-10",
+        "agency": "FPISC",
+        "source": "permits.performance.gov",
+        "source_type": "government",
+        "source_url": "https://www.permits.performance.gov/permitting-project/fast-41-covered-projects/boardman-hemingway-transmission-line"
+      }
+    ],
+    "champlain-hudson-power-express": [
+      {
+        "type": "nepa_eis",
+        "description": "DOE published Notice of Intent to prepare EIS",
+        "date": "2010-06-18",
+        "agency": "DOE",
+        "source": "Federal Register",
+        "source_type": "government",
+        "source_url": "https://www.energy.gov/nepa/eis-0447-champlain-hudson-power-express-transmission-line-project-new-york"
+      },
+      {
+        "type": "state_permit",
+        "description": "NY Article VII settlement reached with parties",
+        "date": "2012-02-24",
+        "agency": "NY DPS",
+        "source": "DPS case files",
+        "source_type": "government",
+        "source_url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=10-T-0139",
+        "state": "NY"
+      },
+      {
+        "type": "state_permit",
+        "description": "NY PSC granted Certificate of Environmental Compatibility and Public Need",
+        "date": "2013-04-18",
+        "agency": "NY PSC",
+        "source": "DPS case files",
+        "source_type": "government",
+        "source_url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=10-T-0139",
+        "state": "NY"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "DOE published Draft EIS",
+        "date": "2013-11-01",
+        "agency": "DOE",
+        "source": "Federal Register",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2013/11/01/2013-26132/environmental-impact-statements-notice-of-availability"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "DOE published Final EIS",
+        "date": "2014-08-01",
+        "agency": "DOE",
+        "source": "Federal Register",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] August 2014",
+        "source_url": "https://www.energy.gov/nepa/eis-0447-champlain-hudson-power-express-transmission-line-project-new-york"
+      },
+      {
+        "type": "esa",
+        "description": "Section 7 consultation found CHPE not likely to adversely affect Atlantic sturgeon",
+        "date": "2014-09-18",
+        "agency": "NOAA Fisheries",
+        "source": "NOAA concurrence letter",
+        "source_type": "government",
+        "source_url": "https://chpexpress.com/wp-content/uploads/2021/04/2021.03.31_CHPE_NOAA-Concurrence_Presidential-Permit.pdf"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "DOE issued Record of Decision / Presidential Permit",
+        "date": "2014-10-01",
+        "agency": "DOE",
+        "source": "DOE",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2014/10/01/2014-23421/record-of-decision-for-issuing-a-presidential-permit-to-champlain-hudson-power-express-inc-for-the"
+      },
+      {
+        "type": "federal_permit",
+        "description": "Army Corps issued Section 10/Section 404 permit",
+        "date": "2015-03-01",
+        "agency": "USACE",
+        "source": "USACE",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] ~March 2015",
+        "source_url": "https://chpexpress.com/news/champlain-hudson-power-express-completes-federal-permitting-process/"
+      },
+      {
+        "type": "esa",
+        "description": "Center for Biological Diversity filed 60-day ESA notice regarding Atlantic sturgeon critical habitat",
+        "date": "2020-10-08",
+        "agency": "USFWS/NOAA",
+        "source": "CBD notice",
+        "source_type": "news",
+        "source_url": "https://biologicaldiversity.org/w/news/press-releases/regulators-warned-of-champlain-hudson-power-express-projects-environmental-impact-2020-10-08/"
+      },
+      {
+        "type": "esa",
+        "description": "NOAA Fisheries issued updated concurrence upholding original findings on Atlantic sturgeon",
+        "date": "2021-03-31",
+        "agency": "NOAA Fisheries",
+        "source": "NOAA concurrence letter",
+        "source_type": "government",
+        "source_url": "https://chpexpress.com/wp-content/uploads/2021/04/2021.03.31_CHPE_NOAA-Concurrence_Presidential-Permit.pdf"
+      }
+    ],
+    "cross-tie-500kv": [
+      {
+        "type": "nepa_eis",
+        "description": "BLM published Notice of Intent to prepare EIS",
+        "date": "2022-05-02",
+        "agency": "BLM",
+        "source": "Federal Register",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2022/05/02/2022-09397/notice-of-intent-to-prepare-an-environmental-impact-statement-for-the-proposed-cross-tie-500-kv"
+      },
+      {
+        "type": "federal_permit",
+        "description": "DOE Transmission Facilitation Program selected Cross-Tie (~$226M capacity contract)",
+        "date": "2023-10-20",
+        "agency": "DOE GDO",
+        "source": "DOE Grid Deployment Office",
+        "source_type": "government",
+        "source_url": "https://www.energy.gov/gdo/transmission-facilitation-program-first-round-selections"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM published Draft EIS",
+        "date": "2023-11-09",
+        "agency": "BLM",
+        "source": "Federal Register",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2023/11/09/2023-24748/notice-of-availability-of-the-draft-environmental-impact-statement-for-the-cross-tie-500-kv"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM published Final EIS; corridor reduced in NV for sage-grouse RMP compliance",
+        "date": "2024-09-20",
+        "agency": "BLM",
+        "source": "Federal Register",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2024/09/20/2024-21279/notice-of-availability-of-the-final-environmental-impact-statement-for-the-cross-tie-500-kv"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM issued Record of Decision",
+        "date": "2024-12-18",
+        "agency": "BLM",
+        "source": "BLM press release; ePlanning",
+        "source_type": "government",
+        "source_url": "https://www.blm.gov/press-release/blm-and-forest-service-approve-cross-tie-transmission-project"
+      },
+      {
+        "type": "federal_action",
+        "description": "TransCanyon terminated DOE TFP capacity contract",
+        "date": "2025-11-04",
+        "agency": "DOE GDO",
+        "source": "DOE GDO",
+        "source_type": "government",
+        "source_url": "https://www.energy.gov/gdo/transmission-facilitation-program-selections"
+      }
+    ],
+    "soo-green-hvdc": [
+      {
+        "type": "federal_permit",
+        "description": "FERC approved negotiated rate authority (ER20-1665)",
+        "date": "2020-07-23",
+        "agency": "FERC",
+        "source": "Federal Register; Renewable Energy World",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2021/06/30/2021-13925/soo-green-hvdc-link-projectco-llc-v-pjm-interconnection-llc-notice-of-complaint"
+      },
+      {
+        "type": "litigation",
+        "description": "SOO Green filed FERC complaint alleging PJM interconnection process caused years of delay",
+        "date": "2021-06-01",
+        "agency": "FERC",
+        "source": "Federal Register 2021-13925; Utility Dive",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] June 2021",
+        "source_url": "https://www.federalregister.gov/documents/2021/06/30/2021-13925/soo-green-hvdc-link-projectco-llc-v-pjm-interconnection-llc-notice-of-complaint"
+      },
+      {
+        "type": "litigation",
+        "description": "SOO Green filed second FERC complaint alleging PJM capacity import rules block market entry",
+        "date": "2021-09-01",
+        "agency": "FERC",
+        "source": "Utility Dive",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] September 2021",
+        "source_url": "https://www.utilitydive.com/news/soo-green-transmission-miso-pjm-interregional-big-wires-act-hickenlooper/693916/"
+      },
+      {
+        "type": "state_permit",
+        "description": "Iowa Utilities Board approved franchise petition including eminent domain for 6 parcels",
+        "date": "2023-09-13",
+        "agency": "Iowa Utilities Board",
+        "source": "IUB press release",
+        "source_type": "government",
+        "source_url": "https://iuc.iowa.gov/press-release/2023-09-13/iub-approves-soo-green-underground-electric-transmission-line-project",
+        "state": "IA"
+      },
+      {
+        "type": "state_permit",
+        "description": "Final municipal franchise agreement secured (Bellevue, IA \u2014 24th of 24 Iowa municipalities)",
+        "date": "2025-09-24",
+        "agency": "City of Bellevue, IA",
+        "source": "Utility Dive; PR Newswire",
+        "source_type": "news",
+        "source_url": "https://www.utilitydive.com/news/soo-green-transmission-iowa-illinois-pjm-miso/761080/",
+        "state": "IA"
+      }
+    ],
+    "riosol-transmission": [
+      {
+        "type": "nepa_eis",
+        "description": "BLM published NOI for SunZia/RioSol corridor EIS",
+        "date": "2009-05-29",
+        "agency": "BLM",
+        "source": "Federal Register 74 FR 25764",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2009/05/29/E9-12497/notice-of-intent-to-prepare-an-environmental-impact-statement-for-the-proposed-sunzia-southwest-500"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM published Draft EIS (shared with SunZia corridor)",
+        "date": "2012-05-25",
+        "agency": "BLM",
+        "source": "BLM press release",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2012/05/29/2012-12978/notice-of-availability-of-the-draft-environmental-impact-statement-for-the-sunzia-southwest-500-kv"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM published Final EIS for SunZia/RioSol corridor",
+        "date": "2013-06-14",
+        "agency": "BLM",
+        "source": "Federal Register",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2013/06/14/2013-14110/notice-of-availability-of-the-final-environmental-impact-statement-for-the-sunzia-southwest"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM signed Record of Decision / Approved RMP Amendment (covers RioSol route)",
+        "date": "2023-05-16",
+        "agency": "BLM",
+        "source": "Federal Register 2023-10784",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2023/05/19/2023-10784/notice-of-availability-of-the-record-of-decision-and-approved-resource-management-plan-amendment-for"
+      },
+      {
+        "type": "federal_permit",
+        "description": "FERC granted Negotiated Rate Authority (ER24-1726-000)",
+        "date": "2024-07-05",
+        "agency": "FERC",
+        "source": "Utility Dive; FERC order",
+        "source_type": "government",
+        "source_url": "https://www.utilitydive.com/news/ferc-capacity-solicitation-riosol-transmission-sunzia-pattern-nextera-lake-erie/720818/"
+      }
+    ],
+    "lake-erie-connector": [
+      {
+        "type": "nepa_ea",
+        "description": "DOE published Draft Environmental Assessment (EA-2019)",
+        "date": "2016-06-03",
+        "agency": "DOE",
+        "source": "DOE NEPA page",
+        "source_type": "government",
+        "source_url": "https://www.energy.gov/nepa/articles/ea-2019-draft-environmental-assessment"
+      },
+      {
+        "type": "federal_permit",
+        "description": "DOE issued FONSI and Presidential Permit (PP-412)",
+        "date": "2017-01-12",
+        "agency": "DOE",
+        "source": "DOE press release",
+        "source_type": "government",
+        "source_url": "https://www.energy.gov/oe/articles/energy-department-announces-approval-lake-erie-connector-transmission-line"
+      },
+      {
+        "type": "state_permit",
+        "description": "Pennsylvania DEP issued Water Obstruction/Encroachment Permit and NPDES Stormwater Permit",
+        "date": "2017-05-25",
+        "agency": "PA DEP",
+        "source": "ITC Holdings press release",
+        "source_type": "industry",
+        "source_url": "https://www.prnewswire.com/news-releases/itc-lake-erie-connector-project-receives-approvals-from-canada-and-the-state-of-pennsylvania-300480627.html",
+        "state": "PA"
+      },
+      {
+        "type": "federal_action",
+        "description": "NextEra acquired project; filed to amend Presidential Permit (PP-412-1)",
+        "date": "2024-03-29",
+        "agency": "DOE",
+        "source": "Federal Register 2024-17890",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2024/08/12/2024-17890/application-to-amend-presidential-permit-lake-erie-connector-transmission-llc"
+      },
+      {
+        "type": "federal_permit",
+        "description": "DOD no-objection letter and State Dept favorable recommendation for amended permit",
+        "date": "2025-01-14",
+        "agency": "DOD / State Dept",
+        "source": "DOE order PP-412-1",
+        "source_type": "government",
+        "source_url": "https://www.energy.gov/gdo/pp-412-1-lake-erie-connector-transmission-llc"
+      }
+    ],
+    "southern-spirit": [
+      {
+        "type": "state_permit",
+        "description": "Pattern Energy submitted siting certificate petition to Mississippi PSC",
+        "date": "2017-04-26",
+        "agency": "Mississippi PSC",
+        "source": "Utility Dive; PR Newswire",
+        "source_type": "news",
+        "source_url": "https://www.prnewswire.com/news-releases/southern-cross-transmission-files-route-in-mississippi-300445875.html",
+        "state": "MS"
+      },
+      {
+        "type": "state_permit",
+        "description": "Pattern Energy submitted application to Louisiana PSC for route corridor approval",
+        "date": "2023-02-01",
+        "agency": "Louisiana PSC",
+        "source": "Pattern Energy project page",
+        "source_type": "industry",
+        "date_note": "[ESTIMATE] February 2023",
+        "source_url": "https://patternenergy.com/projects/southern-spirit-transmission/",
+        "state": "LA"
+      },
+      {
+        "type": "state_action",
+        "description": "Louisiana Senate passed SB 108 (36-1) denying eminent domain to transmission lines unless majority of power consumed in-state \u2014 targeted at Southern Spirit",
+        "date": "2024-03-25",
+        "agency": "Louisiana Legislature",
+        "source": "Louisiana Illuminator, April 9, 2024",
+        "source_type": "news",
+        "source_url": "https://lailluminator.com/2024/04/09/louisiana-legislation-could-jeopardize-flow-of-power-from-texas/",
+        "state": "LA"
+      },
+      {
+        "type": "state_action",
+        "description": "Governor Landry signed SB 108 into law, barring Southern Spirit from using eminent domain in Louisiana",
+        "date": "2024-05-01",
+        "agency": "Louisiana Governor",
+        "source": "CleanTechnica; Louisiana Illuminator",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] May 2024",
+        "source_url": "https://lailluminator.com/2024/05/30/power-line/",
+        "state": "LA"
+      },
+      {
+        "type": "state_permit",
+        "description": "Louisiana PSC voted 3-2 to certify Southern Spirit project",
+        "date": "2024-08-01",
+        "agency": "Louisiana PSC",
+        "source": "Louisiana Illuminator, Aug 16, 2024",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] August 2024",
+        "source_url": "https://lailluminator.com/2024/08/16/north-louisiana-power-line-project-revived-after-lawmakers-halted-it/",
+        "state": "LA"
+      },
+      {
+        "type": "federal_permit",
+        "description": "DOE selected Southern Spirit for $360M TFP capacity contract",
+        "date": "2024-10-03",
+        "agency": "DOE GDO",
+        "source": "DOE press release",
+        "source_type": "government",
+        "source_url": "https://www.energy.gov/gdo/transmission-facilitation-program-selections"
+      }
+    ],
+    "southline-transmission": [
+      {
+        "type": "nepa_eis",
+        "description": "BLM/WAPA published NOI to prepare EIS",
+        "date": "2012-04-04",
+        "agency": "BLM / WAPA",
+        "source": "Federal Register",
+        "source_type": "government",
+        "source_url": "https://www.wapa.gov/transmission/transmission-environmental-review-nepa/southline-nepa/"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "Draft EIS and Draft RMP Amendment released",
+        "date": "2014-04-11",
+        "agency": "BLM / WAPA",
+        "source": "Federal Register 2014-08018",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2014/04/11/2014-08018/notice-of-availability-of-the-proposed-southline-transmission-line-project-draft-environmental"
+      },
+      {
+        "type": "esa",
+        "description": "Section 7 ESA consultation with USFWS completed",
+        "date": "2014-11-01",
+        "agency": "USFWS",
+        "source": "WAPA Southline NEPA page",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] November 2014",
+        "source_url": "https://www.wapa.gov/transmission/transmission-environmental-review-nepa/southline-nepa/"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "Final EIS released",
+        "date": "2015-11-06",
+        "agency": "BLM / WAPA",
+        "source": "Federal Register 2015-28676",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2015/11/10/2015-28676/notice-of-availability-of-the-southline-transmission-line-project-final-environmental-impact"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "WAPA issued Record of Decision",
+        "date": "2016-04-05",
+        "agency": "WAPA",
+        "source": "Federal Register 2016-08620",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2016/04/14/2016-08620/southline-transmission-line-project-environmental-impact-statement"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM issued Record of Decision",
+        "date": "2016-05-06",
+        "agency": "BLM",
+        "source": "T&D World",
+        "source_type": "news",
+        "source_url": "https://www.blm.gov/press-release/blm-issues-final-approval-southline-transmission-line-project"
+      },
+      {
+        "type": "esa",
+        "description": "Additional ESA consultation for subsequently listed species concluded",
+        "date": "2017-02-01",
+        "agency": "USFWS",
+        "source": "WAPA Southline NEPA page",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] February 2017",
+        "source_url": "https://www.wapa.gov/transmission/transmission-environmental-review-nepa/southline-nepa/"
+      },
+      {
+        "type": "esa",
+        "description": "USFWS issued concurrence on 'may affect, not likely to adversely affect' for newly listed species",
+        "date": "2024-05-01",
+        "agency": "USFWS",
+        "source": "WAPA Supplement Analysis DOE/EIS-0474-SA-1",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] May 2024",
+        "source_url": "https://www.wapa.gov/transmission/transmission-environmental-review-nepa/southline-nepa/"
+      },
+      {
+        "type": "federal_permit",
+        "description": "DOE selected Southline for TFP Round 1 ($477M Phase 1)",
+        "date": "2023-10-01",
+        "agency": "DOE",
+        "source": "DOE TFP selections page",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] October 2023",
+        "source_url": "https://www.energy.gov/gdo/transmission-facilitation-program-selections"
+      },
+      {
+        "type": "federal_permit",
+        "description": "DOE selected Southline Phase 2 for TFP Round 2",
+        "date": "2024-10-03",
+        "agency": "DOE",
+        "source": "DOE TFP selections; BusinessWire",
+        "source_type": "government",
+        "source_url": "https://southlinetransmission.com/southline-transmission-project-selected-for-second-round-of-transmission-facilitation-program/"
+      }
+    ],
+    "cimarron-link": [
+      {
+        "type": "federal_permit",
+        "description": "DOE selected Cimarron Link for $306M TFP capacity contract",
+        "date": "2024-10-03",
+        "agency": "DOE GDO",
+        "source": "DOE TFP selections page; Invenergy press release",
+        "source_type": "government",
+        "source_url": "https://www.energy.gov/gdo/transmission-facilitation-program-selections"
+      },
+      {
+        "type": "litigation",
+        "description": "Cimarron Link sued Oklahoma landowners who refused to allow surveyors on property",
+        "date": "2024-11-01",
+        "agency": "Oklahoma state courts",
+        "source": "Stillwater News Press",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] November 2024",
+        "source_url": "https://www.stwnewspress.com/oklahoma/news/cimarron-link-drops-lawsuit-against-landowners/article_1bf37916-4bf4-5f8d-b054-6757e0c246b1.html",
+        "state": "OK"
+      },
+      {
+        "type": "litigation",
+        "description": "Cimarron Link dropped landowner survey access lawsuits",
+        "date": "2024-12-01",
+        "agency": "Oklahoma state courts",
+        "source": "Stillwater News Press",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] December 2024",
+        "source_url": "https://www.stwnewspress.com/oklahoma/news/cimarron-link-drops-lawsuit-against-landowners/article_1bf37916-4bf4-5f8d-b054-6757e0c246b1.html",
+        "state": "OK"
+      },
+      {
+        "type": "delay",
+        "description": "Invenergy confirmed project slowdown citing 'evolving market conditions and grid plans'",
+        "date": "2026-01-01",
+        "agency": "N/A",
+        "source": "Oklahoma Energy Today",
+        "source_type": "news",
+        "date_note": "[ESTIMATE] January 2026",
+        "source_url": "https://www.okenergytoday.com/2026/01/cimarron-link-line-slowdown-in-oklahoma-confirmed-by-invenergy/"
+      }
+    ],
+    "gateway-south": [
+      {
+        "type": "nepa_eis",
+        "description": "BLM published NOI to prepare EIS",
+        "date": "2011-04-01",
+        "agency": "BLM",
+        "source": "Federal Register 2011-7736",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2011/04/01/2011-7736/notice-of-intent-to-prepare-an-environmental-impact-statement-for-the-proposed-energy-gateway-south"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "Draft EIS released",
+        "date": "2014-02-21",
+        "agency": "BLM",
+        "source": "Federal Register",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2014/02/21/2014-03683/notice-of-availability-of-the-draft-environmental-impact-statement-and-land-use-plan-amendments-for"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "Final EIS released",
+        "date": "2016-05-13",
+        "agency": "BLM",
+        "source": "Federal Register 2016-11371",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2016/05/13/2016-11371/notice-of-availability-of-the-final-environmental-impact-statement-for-the-energy-gateway-south"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "BLM issued Record of Decision and Approved Land Use Plan Amendments (WY/CO/UT)",
+        "date": "2016-12-16",
+        "agency": "BLM",
+        "source": "Federal Register 2016-30346",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2016/12/16/2016-30346/notice-of-availability-of-the-record-of-decision-for-the-energy-gateway-south-transmission-project"
+      },
+      {
+        "type": "esa",
+        "description": "PacifiCorp paid $34M to NFWF for compensatory sage-grouse mitigation",
+        "date": "2022-01-01",
+        "agency": "BLM / NFWF",
+        "source": "BLM press release",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] 2022",
+        "source_url": "https://www.nfwf.org/mitigating-impacts/colorado-and-utah-lands-wilderness-characteristics-and-greater-sage-grouse-funds"
+      },
+      {
+        "type": "federal_permit",
+        "description": "Biden administration approved construction (amended ROD)",
+        "date": "2022-05-01",
+        "agency": "BLM / DOI",
+        "source": "BLM press release; E&E News",
+        "source_type": "government",
+        "date_note": "[ESTIMATE] May 2022",
+        "source_url": "https://www.blm.gov/press-release/biden-harris-administration-approves-construction-energy-gateway-south-transmission"
+      },
+      {
+        "type": "state_permit",
+        "description": "Utah PSC granted CPCN",
+        "date": "2022-04-08",
+        "agency": "Utah PSC",
+        "source": "PacifiCorp press release",
+        "source_type": "industry",
+        "source_url": "https://www.pacificorp.com/about/newsroom/news-releases/utility-regulators-grant-certificates.html",
+        "state": "UT"
+      },
+      {
+        "type": "state_permit",
+        "description": "Wyoming PSC granted CPCN",
+        "date": "2022-05-10",
+        "agency": "Wyoming PSC",
+        "source": "PacifiCorp press release",
+        "source_type": "industry",
+        "source_url": "https://www.pacificorp.com/about/newsroom/news-releases/utility-regulators-grant-certificates.html",
+        "state": "WY"
+      }
+    ],
+    "twin-states-clean-energy": [
+      {
+        "type": "federal_permit",
+        "description": "DOE selected Twin States for TFP capacity contract negotiations",
+        "date": "2023-10-30",
+        "agency": "DOE",
+        "source": "DOE press release",
+        "source_type": "government",
+        "source_url": "https://www.nationalgridus.com/News/2023/10/Biden-Harris-Administration-selects-National-Grid-8217-s-Twin-States-Clean-Energy-Link-as-part-of-1-3-billion-commitment-to-build-out-nation-8217-s-transmission-infrastructure/"
+      },
+      {
+        "type": "delay",
+        "description": "National Grid withdrew from TFP, stating 'project is not viable at this time'",
+        "date": "2024-03-04",
+        "agency": "National Grid / DOE TFP",
+        "source": "NHPR; InDepthNH.org; T&D World",
+        "source_type": "news",
+        "source_url": "https://www.nhpr.org/environment/2024-03-07/2-billion-twin-state-clean-energy-link-project-canceled"
+      },
+      {
+        "type": "delay",
+        "description": "Vermont DPS Commissioner stated DOE's 'extremely accelerated timelines' contributed to failure \u2014 developers could not secure energy buyers",
+        "date": "2024-03-07",
+        "agency": "Vermont DPS",
+        "source": "NHPR",
+        "source_type": "news",
+        "source_url": "https://www.nhpr.org/environment/2024-03-07/2-billion-twin-state-clean-energy-link-project-canceled",
+        "state": "VT"
+      }
+    ],
+    "north-plains-connector": [
+      {
+        "type": "federal_funding",
+        "description": "DOE announced conditional GRIP award of up to $700M to Montana Department of Commerce for North Plains Connector (Interregional Innovation category)",
+        "date": "2024-08-06",
+        "agency": "DOE Grid Deployment Office",
+        "source": "Governor of North Dakota press release",
+        "source_type": "government",
+        "source_url": "https://www.governor.nd.gov/news/burgum-welcomes-700m-boost-regional-power-grid-capacity-reliability-north-plains-connector"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "DOE Grid Deployment Office and Montana DEQ jointly issued Notice of Intent to prepare Environmental Impact Statement (DOE/EIS-0568)",
+        "date": "2024-10-25",
+        "agency": "DOE / Montana DEQ",
+        "source": "Federal Register 89 FR 85245",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2024/10/25/2024-24879/notice-of-intent-to-prepare-an-environmental-impact-statement-for-the-proposed-north-plains"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "Public scoping meetings held (Colstrip MT, Miles City MT, Bismarck ND); scoping comment period closed Dec 9, 2024",
+        "date": "2024-12-04",
+        "agency": "DOE / Montana DEQ",
+        "source": "DOE scoping meeting transcript",
+        "source_type": "government",
+        "source_url": "https://www.energy.gov/sites/default/files/2024-12/scoping-meeting-transcript-eis-0568-north-plains-connector-2024-12-4.pdf"
+      },
+      {
+        "type": "partnership",
+        "description": "NorthWestern Energy signed MOU for 10% ownership (300 MW)",
+        "date": "2024-12-12",
+        "agency": null,
+        "source": "Montana Free Press",
+        "source_type": "news",
+        "source_url": "https://montanafreepress.org/2024/12/12/northwestern-energy-partners-on-high-voltage-transmission-line/"
+      },
+      {
+        "type": "partnership",
+        "description": "BHE US Transmission signed MOU for 10% ownership (300 MW of 3,000 MW)",
+        "date": "2025-01-08",
+        "agency": null,
+        "source": "BusinessWire / Berkshire Hathaway Energy",
+        "source_type": "industry",
+        "source_url": "https://www.businesswire.com/news/home/20250108279171/en/BHE-U.S.-Transmission-Joins-Grid-United-for-North-Plains-Connector-Transmission-Project"
+      },
+      {
+        "type": "partnership",
+        "description": "Hitachi Energy and Grid United announced Engineering Services Agreement for HVDC converter station design (electrical ratings, valve hall layouts, control systems, harmonic studies)",
+        "date": "2025-10-02",
+        "agency": null,
+        "source": "Hitachi Energy press release",
+        "source_type": "industry",
+        "source_url": "https://www.hitachienergy.com/news-and-events/press-releases/2025/10/hitachi-energy-and-grid-united-announce-key-milestone-in-development-of-north-plains-connector-interregional-transmission-line"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "DOE issued Amended NOI clarifying decision-making role related to GRIP conditional award",
+        "date": "2025-11-19",
+        "agency": "DOE",
+        "source": "Federal Register",
+        "source_type": "government",
+        "source_url": "https://www.federalregister.gov/documents/2025/11/19/2025-20267/amended-notice-of-intent-to-prepare-an-environmental-impact-statement-for-the-proposed-north-plains"
+      },
+      {
+        "type": "nepa_eis",
+        "description": "Draft EIS (DOE/EIS-0568) published; public comment period open through February 23, 2026",
+        "date": "2026-01-01",
+        "agency": "DOE / Montana DEQ / BLM / USFS / ARS",
+        "source": "DOE NEPA page",
+        "source_type": "government",
+        "source_url": "https://www.energy.gov/nepa/articles/doeeis-0568-draft-environmental-impact-statement-january-2026",
+        "date_note": "[ESTIMATE] Published January 2026; exact day not confirmed"
+      }
+    ],
+    "swip-north": [
+      {
+        "type": "nepa_eis",
+        "description": "BLM issued Record of Decision for Southwest Intertie Project (covers SWIP-North corridor on BLM-managed land)",
+        "date": "2013-01-01",
+        "agency": "BLM",
+        "source": "BLM ePlanning / WAPA",
+        "source_type": "government",
+        "source_url": "https://www.wapa.gov/wp-content/uploads/2023/04/SWIPFEISDecisionRecord.pdf",
+        "date_note": "[ESTIMATE] Original SWIP ROD date not precisely identified; approximate based on BLM documents"
+      },
+      {
+        "type": "state_permit",
+        "description": "CAISO approved SWIP-North Participating Transmission Owner (PTO) application",
+        "date": "2023-12-01",
+        "agency": "CAISO",
+        "source": "CAISO Board presentation",
+        "source_type": "government",
+        "source_url": "https://www.caiso.com/documents/decisiononsouthwestintertieprojectnorth-presentation-dec2023.pdf",
+        "date_note": "[ESTIMATE] December 2023; exact date not confirmed"
+      },
+      {
+        "type": "federal_funding",
+        "description": "DOE selected SWIP-North for Transmission Facilitation Program \u2014 up to $331M capacity contract; first project under CITAP framework",
+        "date": "2024-04-25",
+        "agency": "DOE Grid Deployment Office",
+        "source": "LS Power press release",
+        "source_type": "industry",
+        "source_url": "https://www.prnewswire.com/news-releases/us-department-of-energy-selects-ls-powers-swip-north-project-for-the-transmission-facilitation-program-302126928.html"
+      },
+      {
+        "type": "federal_permit",
+        "description": "BLM signed decision record for Robinson Summit Substation Expansion and Interconnection (SWIP-North Nevada endpoint)",
+        "date": "2024-06-01",
+        "agency": "BLM",
+        "source": "BLM press release",
+        "source_type": "government",
+        "source_url": "https://www.blm.gov/announcement/blm-signs-decision-record-robinson-summit-substation-expansion-and-interconnection",
+        "date_note": "[ESTIMATE] 2024; exact date not confirmed from search results"
+      },
+      {
+        "type": "state_permit",
+        "description": "Cassia and Twin Falls county corridors approved for SWIP-North",
+        "date": "2025-01-01",
+        "agency": "Cassia County / Twin Falls County",
+        "source": "Idaho Power SWIP-North page",
+        "source_type": "industry",
+        "source_url": "https://www.idahopower.com/energy-environment/energy/planning-and-electrical-projects/current-projects/swip-north/",
+        "date_note": "[ESTIMATE] Approximate date; county approvals confirmed but exact dates not sourced",
+        "state": "ID"
+      },
+      {
+        "type": "state_permit_conflict",
+        "description": "Jerome County Commission sustained and remanded special-use permit decision to Planning and Zoning Commission \u2014 permit still pending",
+        "date": "2025-07-01",
+        "agency": "Jerome County Commission",
+        "source": "Idaho Power SWIP-North page",
+        "source_type": "industry",
+        "source_url": "https://www.idahopower.com/energy-environment/energy/planning-and-electrical-projects/current-projects/swip-north/",
+        "date_note": "[ESTIMATE] Mid-2025; exact date not confirmed",
+        "state": "ID"
+      },
+      {
+        "type": "state_permit",
+        "description": "Idaho PUC approved Certificate of Public Convenience and Necessity (CPCN) for SWIP-North",
+        "date": "2025-12-01",
+        "agency": "Idaho PUC",
+        "source": "Idaho Power SWIP-North page",
+        "source_type": "industry",
+        "source_url": "https://www.idahopower.com/energy-environment/energy/planning-and-electrical-projects/current-projects/swip-north/",
+        "date_note": "[ESTIMATE] December 2025; exact date not confirmed",
+        "state": "ID"
+      }
+    ],
+    "aroostook-renewable-gateway": [
+      {
+        "type": "state_action",
+        "description": "Maine Legislature tasked PUC with soliciting bids for transmission and generation from northern Maine renewable resources",
+        "date": "2021-01-01",
+        "agency": "Maine Legislature",
+        "source": "Maine PUC docket 2021-00369",
+        "source_type": "government",
+        "source_url": "https://mpuc-cms.maine.gov/CQM.Public.WebUI/Common/CaseMaster.aspx?CaseNumber=2021-00369",
+        "date_note": "[ESTIMATE] 2021 legislative session",
+        "state": "ME"
+      },
+      {
+        "type": "state_permit",
+        "description": "Maine PUC selected LS Power Grid Maine to develop 345 kV transmission line from Aroostook County to ISO-NE grid",
+        "date": "2022-10-01",
+        "agency": "Maine PUC",
+        "source": "LS Power press release",
+        "source_type": "industry",
+        "source_url": "https://www.lspower.com/news/ls-power-grid-maine-receives-bipartisan-legislative-approval-for-aroostook-renewable-gateway/",
+        "date_note": "[ESTIMATE] October 2022; exact date not confirmed",
+        "state": "ME"
+      },
+      {
+        "type": "state_action",
+        "description": "Maine Legislature gave bipartisan approval supporting Aroostook Renewable Gateway",
+        "date": "2023-06-16",
+        "agency": "Maine Legislature",
+        "source": "LS Power press release",
+        "source_type": "industry",
+        "source_url": "https://www.prnewswire.com/news-releases/ls-power-grid-maine-receives-bipartisan-legislative-approval-for-aroostook-renewable-gateway-301862638.html",
+        "state": "ME"
+      },
+      {
+        "type": "opposition",
+        "description": "Multiple towns along proposed route (Unity, Albion, Palermo, others) enacted moratoria on high-voltage power lines; landowner opposition to eminent domain",
+        "date": "2023-07-01",
+        "agency": "Multiple Maine municipalities",
+        "source": "Bangor Daily News",
+        "source_type": "news",
+        "source_url": "https://www.bangordailynews.com/2023/07/25/politics/local-skepticism-threatens-aroostook-wind-line-joam40zk0w/",
+        "date_note": "[ESTIMATE] Mid-2023",
+        "state": "ME"
+      },
+      {
+        "type": "delay",
+        "description": "Maine PUC terminated LS Power Grid Maine contract \u2014 cost escalation and route/landowner disputes; directed new procurement",
+        "date": "2023-12-01",
+        "agency": "Maine PUC",
+        "source": "The Maine Wire",
+        "source_type": "news",
+        "source_url": "https://www.themainewire.com/2023/12/the-heavily-critisized-aroostook-renewable-gateway-suffers-another-setback/",
+        "date_note": "[ESTIMATE] December 2023; exact date not confirmed",
+        "state": "ME"
+      },
+      {
+        "type": "state_action",
+        "description": "Maine PUC issued new RFI for transmission utility and called for developer Indications of Interest",
+        "date": "2024-05-01",
+        "agency": "Maine PUC",
+        "source": "The County (Presque Isle)",
+        "source_type": "news",
+        "source_url": "https://thecounty.me/2024/10/03/business-news/425-million-federal-grant-revives-aroostook-renewable-energy-project/",
+        "date_note": "[ESTIMATE] May 2024",
+        "state": "ME"
+      },
+      {
+        "type": "federal_funding",
+        "description": "DOE awarded Avangrid up to $425M capacity contract under TFP Round 2 for Aroostook Renewable Project",
+        "date": "2024-10-03",
+        "agency": "DOE Grid Deployment Office",
+        "source": "Avangrid press release",
+        "source_type": "industry",
+        "source_url": "https://www.avangrid.com/w/avangrid-awarded-425m-federal-capacity-contract-for-maine-transmission-project"
+      },
+      {
+        "type": "state_action",
+        "description": "Maine PUC gave Aroostook project priority status; extended state power purchase deadline from Dec 2025 to 2027",
+        "date": "2025-10-23",
+        "agency": "Maine PUC",
+        "source": "Bangor Daily News",
+        "source_type": "news",
+        "source_url": "https://www.bangordailynews.com/2025/10/23/aroostook/aroostook-environment/northern-maine-wind-transmission-line-puc-priority-n6hjn1me0n/",
+        "state": "ME"
+      },
+      {
+        "type": "state_action",
+        "description": "Maine restarted push with new RFP for Aroostook County wind and transmission, better coordinated with ISO-NE planning",
+        "date": "2025-11-03",
+        "agency": "Maine PUC / Governor's Energy Office",
+        "source": "Bangor Daily News",
+        "source_type": "news",
+        "source_url": "https://www.bangordailynews.com/2025/11/03/aroostook/aroostook-business/maine-aroostook-renewables-wind-energy-project-transmission-line-rfp/",
+        "state": "ME"
+      }
+    ],
+    "pecos-west": [
+      {
+        "type": "state_permit",
+        "description": "Grid United Texas filed CCN application with PUCT for Pecos West Intertie (Docket 53758)",
+        "date": "2022-07-05",
+        "agency": "PUCT",
+        "source": "PUCT Interchange Docket 53758",
+        "source_type": "government",
+        "source_url": "https://interchange.puc.texas.gov/Search/Filings?ControlNumber=53758",
+        "state": "TX"
+      },
+      {
+        "type": "state_permit_conflict",
+        "description": "PUCT rejected CCN application, ruling Texas right-of-first-refusal (ROFR) law prevents issuing permit to independent transmission developer",
+        "date": "2023-02-16",
+        "agency": "PUCT",
+        "source": "RTO Insider",
+        "source_type": "news",
+        "source_url": "https://www.rtoinsider.com/31670-texas-puc-rejects-ccn-grid-united-pecos-west/",
+        "state": "TX"
+      },
+      {
+        "type": "delay",
+        "description": "Grid United withdrew CCN application following PUCT ROFR ruling",
+        "date": "2023-02-17",
+        "agency": "PUCT",
+        "source": "RTO Insider",
+        "source_type": "news",
+        "source_url": "https://www.rtoinsider.com/31670-texas-puc-rejects-ccn-grid-united-pecos-west/",
+        "state": "TX"
+      },
+      {
+        "type": "state_permit",
+        "description": "Grid United Texas refiled with PUCT seeking public interest determination (not CCN), arguing interregional ERCOT-WECC interconnection falls outside ROFR scope",
+        "date": "2024-01-01",
+        "agency": "PUCT",
+        "source": "Grid United PUCT filings page",
+        "source_type": "industry",
+        "source_url": "https://www.gridunited.com/resource/public-utility-commission-of-texas-filings/",
+        "date_note": "[ESTIMATE] Exact refiling date not confirmed; inferred from ongoing docket activity",
+        "state": "TX"
+      }
+    ],
+    "three-corners-connector": [
+      {
+        "type": "stakeholder_engagement",
+        "description": "Grid United began stakeholder engagement with over 400 participants including ~300 landowners, local/state officials, and community leaders in SE Colorado and OK panhandle",
+        "date": "2022-11-01",
+        "agency": null,
+        "source": "Three Corners Connector project handout (Nov 2022)",
+        "source_type": "industry",
+        "source_url": "https://threecornersconnector.com/wp-content/uploads/2023/06/GU-Three-Corners-Connector-general-handout_Nov22.pdf",
+        "date_note": "[ESTIMATE] November 2022"
+      },
+      {
+        "type": "federal_funding",
+        "description": "DOE Transmission Siting and Economic Development Grants Program awarded $9.5M to Colorado DOLA for communities impacted by Three Corners Connector",
+        "date": "2024-07-01",
+        "agency": "DOE Grid Deployment Office",
+        "source": "Colorado DOLA press release",
+        "source_type": "government",
+        "source_url": "https://cdola.colorado.gov/press-release/the-department-of-local-affairs-receives-nearly-10-million-from-us-department-of-energy-to-support-economic-and-workforce-development-in-southeast-colorado",
+        "date_note": "[ESTIMATE] July 2024; announced as part of TSED program"
+      },
+      {
+        "type": "land_acquisition",
+        "description": "Grid United secured voluntary land option agreements for 100% of proposed route in Texas and Cimarron Counties, OK; 97% survey permissions and 90% site control overall",
+        "date": "2024-11-01",
+        "agency": null,
+        "source": "Grid United comments to WIEB (Nov 2024)",
+        "source_type": "industry",
+        "source_url": "https://static1.squarespace.com/static/6390da3a799a023d4be2c27e/t/6738e983054828791b441dcd/1731783043731/Grid+United+Comments.pdf"
+      },
+      {
+        "type": "state_permit",
+        "description": "Three Corners Connector LLC filed application with Oklahoma Corporation Commission seeking authority to construct 66.24 miles HVDC + 9.04 miles AC in Oklahoma panhandle (Cimarron and Texas Counties)",
+        "date": "2026-01-01",
+        "agency": "Oklahoma Corporation Commission",
+        "source": "Oklahoma Energy Today",
+        "source_type": "news",
+        "source_url": "https://www.okenergytoday.com/2026/01/2-1b-transmission-line-to-stretch-across-oklahoma-panhandle/",
+        "date_note": "[ESTIMATE] January 2026; exact filing date not confirmed",
+        "state": "OK"
+      }
+    ],
+    "wyoming-intertie": [
+      {
+        "type": "stakeholder_engagement",
+        "description": "Grid United announced Wyoming Intertie project; began landowner meetings in Carbon, Albany, and Platte Counties",
+        "date": "2022-10-20",
+        "agency": null,
+        "source": "Cowboy State Daily",
+        "source_type": "news",
+        "source_url": "https://cowboystatedaily.com/2022/10/20/exclusive-new-wyoming-transmission-line-will-bridge-national-grids-together/"
+      },
+      {
+        "type": "stakeholder_engagement",
+        "description": "Landowner meetings held (March 2023) \u2014 route refinement and community engagement in Carbon, Albany, Platte Counties",
+        "date": "2023-03-01",
+        "agency": null,
+        "source": "Wyoming Intertie landowner meeting boards",
+        "source_type": "industry",
+        "source_url": "https://wyomingintertie.com/wp-content/uploads/2023/04/Wyoming-Intertie-Landowner-Meeting-Boards-March-2023.pdf",
+        "date_note": "[ESTIMATE] March 2023"
+      },
+      {
+        "type": "stakeholder_engagement",
+        "description": "Wyoming Intertie Community Investment Program established through Wyoming Community Foundation \u2014 $200,000 in grants awarded to local organizations",
+        "date": "2024-01-01",
+        "agency": "Wyoming Community Foundation",
+        "source": "Wyoming Community Foundation",
+        "source_type": "industry",
+        "source_url": "https://wycf.org/intertie-awards/",
+        "date_note": "[ESTIMATE] 2024; exact award date not confirmed"
+      }
+    ]
+  }
+}
