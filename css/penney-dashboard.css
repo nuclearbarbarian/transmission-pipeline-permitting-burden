@@ -1081,6 +1081,16 @@ body {
   .dashboard-sidebar.drawer--full { top: 60px; }
   .dashboard-sidebar.drawer--collapsed { top: calc(100dvh - 80px); }
 
+  /* Remove nested scroll container — let the drawer itself scroll */
+  .dashboard-sidebar .sidebar-section {
+    flex: none !important;
+    overflow-y: visible !important;
+  }
+  /* Extra bottom padding so last items aren't clipped */
+  .dashboard-sidebar .project-list {
+    padding-bottom: 120px;
+  }
+
   /* Drawer handle */
   .mobile-drawer-handle {
     display: flex !important;
