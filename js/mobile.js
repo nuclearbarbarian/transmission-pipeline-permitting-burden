@@ -7,7 +7,7 @@ var MobileDrawer = {
   startY: 0,
   currentY: 0,
   touchMoved: false,
-  cardExpanded: false,
+  // cardExpanded derived from DOM: card.classList.contains('card--expanded')
   _cardHistoryPushed: false,
   _toastShown: false,
   _scrimHintShown: false,
@@ -100,7 +100,6 @@ var MobileDrawer = {
           MobileDrawer.setState('collapsed');
           MobileDrawer.removeBackdrop();
           MobileDrawer.showBackdrop();
-          MobileDrawer.cardExpanded = false;
           var card = document.getElementById('detail-card');
           if (card) {
             card.classList.remove('card--expanded');
@@ -139,6 +138,7 @@ var MobileDrawer = {
         var card = document.getElementById('detail-card');
         if (card && card.style.display !== 'none') {
           card.style.display = 'none';
+          card.classList.remove('card--expanded');
           MobileDrawer.removeBackdrop();
         }
         MobileDrawer._cardHistoryPushed = false;
@@ -292,23 +292,31 @@ var MobileDrawer = {
       if (!moved) return;
       var delta = currY - startY;
 
+      var isExpanded = card.classList.contains('card--expanded');
+
       // Swipe down to dismiss: only if started from grip OR card is scrolled to top
       if (delta > 100 && (startedFromGrip || startScrollTop === 0)) {
-        card.style.display = 'none';
-        MobileDrawer.removeBackdrop();
-        MobileDrawer.popCardHistory();
+        MobileDrawer.hideCard();
       }
       // Swipe up to expand: only if started from grip OR card is scrolled to top
-      else if (delta < -80 && !MobileDrawer.cardExpanded && (startedFromGrip || startScrollTop === 0)) {
+      else if (delta < -80 && !isExpanded && (startedFromGrip || startScrollTop === 0)) {
         card.classList.add('card--expanded');
-        MobileDrawer.cardExpanded = true;
       }
       // Swipe down from expanded to half: only if started from grip OR scrolled to top
-      else if (delta > 80 && MobileDrawer.cardExpanded && (startedFromGrip || startScrollTop === 0)) {
+      else if (delta > 80 && isExpanded && (startedFromGrip || startScrollTop === 0)) {
         card.classList.remove('card--expanded');
-        MobileDrawer.cardExpanded = false;
       }
     }, { passive: true });
+  },
+
+  hideCard: function() {
+    var card = document.getElementById('detail-card');
+    if (card) {
+      card.style.display = 'none';
+      card.classList.remove('card--expanded');
+    }
+    MobileDrawer.removeBackdrop();
+    MobileDrawer.popCardHistory();
   },
 
   popCardHistory: function() {
@@ -353,10 +361,7 @@ var MobileDrawer = {
     }
 
     backdrop.addEventListener('click', function() {
-      var card = document.getElementById('detail-card');
-      if (card) card.style.display = 'none';
-      MobileDrawer.removeBackdrop();
-      MobileDrawer.popCardHistory();
+      MobileDrawer.hideCard();
     });
     document.body.appendChild(backdrop);
   },

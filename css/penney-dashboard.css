@@ -1040,7 +1040,8 @@ body {
    ============================================ */
 
 @media (max-width: 768px) {
-  /* Base font bump */
+  /* Mobile tokens */
+  :root { --mobile-header-height: 48px; }
   html { font-size: 14px; }
 
   /* Grid: single column, no footer on mobile */
@@ -1059,7 +1060,7 @@ body {
   }
   /* Push map below fixed header */
   .dashboard-main {
-    margin-top: 48px;
+    margin-top: var(--mobile-header-height);
   }
   .dashboard-header h1 {
     font-size: 14px;
@@ -1111,12 +1112,14 @@ body {
     background: var(--color-paper);
     z-index: 1;
   }
-  .drawer-grip {
+  .drawer-grip, .card-grip {
     display: block;
     width: 40px;
     height: 4px;
     background: var(--color-gray-30);
     border-radius: 2px;
+  }
+  .drawer-grip {
     position: absolute;
     top: 4px;
     left: 50%;
@@ -1163,14 +1166,8 @@ body {
     font-size: 20px;
     display: flex; align-items: center; justify-content: center;
   }
-  /* Card grip bar for swipe */
-  .card-grip {
-    display: block;
-    width: 40px; height: 4px;
-    background: var(--color-gray-30);
-    border-radius: 2px;
-    margin: 6px auto 4px;
-  }
+  /* Card grip bar positioning */
+  .card-grip { margin: 6px auto 4px; }
 
   /* Mobile card scrim backdrop */
   .mobile-card-backdrop {
