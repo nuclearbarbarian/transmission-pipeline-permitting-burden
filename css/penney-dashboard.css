@@ -1061,15 +1061,13 @@ body {
   .header-meta { font-size: 11px; }
   .fai-logo { height: 18px; }
 
-  /* Sidebar: fixed bottom drawer — uses top/bottom instead of transform
-     for reliable scroll on mobile Safari */
+  /* Sidebar: fixed bottom drawer */
   .dashboard-sidebar {
     grid-area: unset;
     position: fixed;
     left: 0; right: 0;
-    bottom: 0;
-    padding-bottom: env(safe-area-inset-bottom, 0px);
-    top: calc(100vh - 48px - env(safe-area-inset-bottom, 0px));
+    bottom: env(safe-area-inset-bottom, 0px);
+    top: calc(100dvh - 80px);
     z-index: 2000;
     background: var(--color-paper);
     border-top: var(--border-heavy);
@@ -1079,9 +1077,9 @@ body {
     -webkit-overflow-scrolling: touch;
     transition: top 300ms ease-out;
   }
-  .dashboard-sidebar.drawer--peek { top: 45vh; }
+  .dashboard-sidebar.drawer--peek { top: 40dvh; }
   .dashboard-sidebar.drawer--full { top: 60px; }
-  .dashboard-sidebar.drawer--collapsed { top: calc(100vh - 48px - env(safe-area-inset-bottom, 0px)); }
+  .dashboard-sidebar.drawer--collapsed { top: calc(100dvh - 80px); }
 
   /* Drawer handle */
   .mobile-drawer-handle {
