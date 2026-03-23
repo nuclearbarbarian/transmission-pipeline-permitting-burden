@@ -1086,9 +1086,12 @@ body {
     -webkit-overflow-scrolling: touch;
     transition: top 300ms ease-out;
   }
+  .dashboard-sidebar.drawer--collapsed {
+    top: calc(100vh - 80px); top: calc(100dvh - 80px);
+    overflow-y: hidden;
+  }
   .dashboard-sidebar.drawer--peek { top: 40vh; top: 40dvh; }
   .dashboard-sidebar.drawer--full { top: 60px; }
-  .dashboard-sidebar.drawer--collapsed { top: calc(100vh - 80px); top: calc(100dvh - 80px); }
 
   /* Remove nested scroll container — let the drawer itself scroll */
   .dashboard-sidebar .sidebar-section {

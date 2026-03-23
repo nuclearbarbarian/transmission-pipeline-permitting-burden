@@ -22,12 +22,7 @@ var MobileDrawer = {
 
     MobileDrawer.sidebar.classList.add('drawer--collapsed');
 
-    // Uncheck choropleth on mobile for cleaner first impression
-    var permCb = document.getElementById('layer-state-permitting');
-    if (permCb && permCb.checked) {
-      permCb.checked = false;
-      permCb.dispatchEvent(new Event('change'));
-    }
+    // State permitting layer stays checked (default view setting)
 
     // Drawer handle buttons
     MobileDrawer.filterBtn = document.getElementById('mobile-filter-btn');
