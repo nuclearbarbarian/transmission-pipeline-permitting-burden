@@ -2,7 +2,7 @@
   "_metadata": {
     "description": "Permitting events for proposed transmission projects, researched and vetted per Ultan framework",
     "sources": "FERC eLibrary, Federal Register, DOE/BLM press releases, state PUC orders, court records, Utility Dive, E&E News",
-    "access_date": "2026-03-21",
+    "access_date": "2026-03-22",
     "vetting_notes": [
       "Each event individually sourced with source_type classification",
       "Government sources (tier 1) prioritized; news sources (tier 3) flagged",

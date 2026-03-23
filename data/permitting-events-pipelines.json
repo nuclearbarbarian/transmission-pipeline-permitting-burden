@@ -2,7 +2,7 @@
   "_metadata": {
     "description": "Permitting events for proposed gas pipeline projects, researched and vetted per Ultan framework",
     "sources": "FERC eLibrary, Federal Register, DOE press releases, state DEQ orders, DC Circuit opinions, Utility Dive, Appalachian Voices, SELC",
-    "access_date": "2026-03-21",
+    "access_date": "2026-03-22",
     "vetting_notes": [
       "Each event individually sourced with source_type classification",
       "Government sources (tier 1) prioritized; news sources (tier 3) flagged",
