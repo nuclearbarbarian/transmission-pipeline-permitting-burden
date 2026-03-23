@@ -78,6 +78,14 @@ var MobileDrawer = {
       }, { passive: true });
     }
 
+    // Stop touch events from propagating to the map when touching the drawer
+    MobileDrawer.sidebar.addEventListener('touchstart', function(e) {
+      e.stopPropagation();
+    }, { passive: true });
+    MobileDrawer.sidebar.addEventListener('touchmove', function(e) {
+      e.stopPropagation();
+    }, { passive: true });
+
     // Project list items: collapse drawer on tap
     MobileDrawer.sidebar.addEventListener('click', function(e) {
       if (e.target.closest('.project-list-item')) {
