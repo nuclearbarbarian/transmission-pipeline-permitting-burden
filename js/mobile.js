@@ -389,7 +389,7 @@ var MobileDrawer = {
         var details = document.createElement('details');
         var summary = document.createElement('summary');
         summary.textContent = 'Filters';
-        summary.style.cssText = 'font-family:var(--font-serif);font-size:13px;font-weight:bold;letter-spacing:0.05em;text-transform:uppercase;cursor:pointer;padding:4px 0;';
+        summary.className = 'mobile-filters-summary';
         details.appendChild(summary);
         // Move all filter groups into the details
         var groups = filtersSection.querySelectorAll('.filter-group');

@@ -1300,6 +1300,17 @@ body {
   .mobile-floating-legend { display: block; }
 }
 
+/* Mobile filters summary (inside <details>) */
+.mobile-filters-summary {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
 /* Mobile toast */
 .mobile-toast {
   position: fixed;
