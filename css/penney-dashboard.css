@@ -1205,6 +1205,19 @@ body {
   .leaflet-popup-content { max-width: 240px; }
 }
 
+/* Mobile overlay popups (replacing sticky tooltips on touch) */
+.mobile-overlay-popup .leaflet-popup-content-wrapper {
+  border-radius: 0;
+  font-family: var(--font-serif);
+  font-size: 12px;
+  border: var(--border-medium);
+  max-width: 280px;
+}
+.mobile-overlay-popup .leaflet-popup-content {
+  margin: 8px;
+  max-width: 260px;
+}
+
 /* Desktop: hide drawer handle */
 @media (min-width: 769px) {
   .mobile-drawer-handle { display: none; }
