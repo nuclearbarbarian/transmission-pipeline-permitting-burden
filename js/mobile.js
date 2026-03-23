@@ -201,6 +201,16 @@ var MobileDrawer = {
           if (MobileDrawer.sidebar) {
             MobileDrawer.sidebar.classList.remove('drawer--collapsed', 'drawer--peek', 'drawer--full');
           }
+          // Clean up mobile state when switching to desktop
+          MobileDrawer.removeBackdrop();
+          MobileDrawer._cardHistoryPushed = false;
+          var card = document.getElementById('detail-card');
+          if (card) card.classList.remove('card--expanded');
+          // Re-enable map interaction
+          if (typeof MapView !== 'undefined' && MapView.instance) {
+            MapView.instance.dragging.enable();
+            MapView.instance.touchZoom.enable();
+          }
         } else {
           window._isMobile = true;
           MobileDrawer.state = 'collapsed';
@@ -292,9 +302,26 @@ var MobileDrawer = {
     card.addEventListener('touchmove', function(e) {
       currY = e.touches[0].clientY;
       moved = true;
+      // Visual feedback: card follows finger when swiping from grip or at scroll top
+      if (startedFromGrip || startScrollTop === 0) {
+        var delta = currY - startY;
+        if (delta > 10) {
+          // Swiping down — translate card to follow finger
+          card.style.transition = 'none';
+          card.style.transform = 'translateY(' + delta + 'px)';
+        } else if (delta < -10 && !card.classList.contains('card--expanded')) {
+          // Swiping up — translate card to follow finger (capped)
+          card.style.transition = 'none';
+          card.style.transform = 'translateY(' + Math.max(delta, -200) + 'px)';
+        }
+      }
     }, { passive: true });
 
     card.addEventListener('touchend', function() {
+      // Reset visual transform
+      card.style.transition = 'top 300ms ease-out, transform 200ms ease-out';
+      card.style.transform = '';
+
       if (!moved) return;
       var delta = currY - startY;
 
@@ -302,10 +329,15 @@ var MobileDrawer = {
 
       // Swipe down to dismiss: only if started from grip OR card is scrolled to top
       if (delta > 100 && (startedFromGrip || startScrollTop === 0)) {
-        MobileDrawer.hideCard();
+        card.style.transform = 'translateY(100vh)';
+        setTimeout(function() {
+          card.style.transform = '';
+          MobileDrawer.hideCard();
+        }, 200);
+        return;
       }
       // Swipe up to expand: only if started from grip OR card is scrolled to top
-      else if (delta < -80 && !isExpanded && (startedFromGrip || startScrollTop === 0)) {
+      if (delta < -80 && !isExpanded && (startedFromGrip || startScrollTop === 0)) {
         card.classList.add('card--expanded');
       }
       // Swipe down from expanded to half: only if started from grip OR scrolled to top

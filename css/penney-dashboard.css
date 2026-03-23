@@ -1066,7 +1066,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.02em;
   }
-  .header-meta { font-size: 11px; }
+  .header-meta { font-size: 12px; }
   .fai-logo { height: 18px; }
 
   /* Sidebar: fixed bottom drawer */
@@ -1075,6 +1075,7 @@ body {
     position: fixed;
     left: 0; right: 0;
     bottom: env(safe-area-inset-bottom, 0px);
+    top: calc(100vh - 80px);
     top: calc(100dvh - 80px);
     z-index: 2000;
     background: var(--color-paper);
@@ -1085,9 +1086,9 @@ body {
     -webkit-overflow-scrolling: touch;
     transition: top 300ms ease-out;
   }
-  .dashboard-sidebar.drawer--peek { top: 40dvh; }
+  .dashboard-sidebar.drawer--peek { top: 40vh; top: 40dvh; }
   .dashboard-sidebar.drawer--full { top: 60px; }
-  .dashboard-sidebar.drawer--collapsed { top: calc(100dvh - 80px); }
+  .dashboard-sidebar.drawer--collapsed { top: calc(100vh - 80px); top: calc(100dvh - 80px); }
 
   /* Remove nested scroll container — let the drawer itself scroll */
   .dashboard-sidebar .sidebar-section {
@@ -1150,16 +1151,19 @@ body {
   .detail-card {
     position: fixed !important;
     right: 0 !important; left: 0 !important;
-    bottom: 0 !important; top: 50vh !important;
+    bottom: 0 !important;
+    top: 50vh !important;
+    top: 50dvh !important;
     width: 100% !important;
     max-width: 100% !important;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
     z-index: 3000;
     border-left: none;
     border-top: var(--border-heavy);
     transition: top 300ms ease-out;
   }
   .detail-card.card--expanded {
-    top: 48px !important;
+    top: var(--mobile-header-height) !important;
   }
   .detail-card-close, .detail-card-print {
     width: 44px; height: 44px;

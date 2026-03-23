@@ -62,6 +62,26 @@
   document.addEventListener('focusin', function(e) { showTip(e.target.closest('[data-tip]') || e.target.closest('[data-tip-html]')); });
   document.addEventListener('focusout', function(e) { if (e.target.closest('[data-tip]') || e.target.closest('[data-tip-html]')) delayedHide(); });
 
+  // Touch: tap to show tooltip, tap elsewhere to dismiss
+  var activeTipEl = null;
+  document.addEventListener('touchend', function(e) {
+    var el = e.target.closest('[data-tip]') || e.target.closest('[data-tip-html]');
+    if (el) {
+      if (activeTipEl === el) {
+        // Second tap on same element — hide
+        hideTip();
+        activeTipEl = null;
+      } else {
+        showTip(el);
+        activeTipEl = el;
+      }
+    } else if (activeTipEl) {
+      // Tapped outside any tooltip trigger — dismiss
+      hideTip();
+      activeTipEl = null;
+    }
+  });
+
   // Add tabindex to all [data-tip] elements when card renders
   var observer = new MutationObserver(function() {
     document.querySelectorAll('[data-tip]:not([tabindex]), [data-tip-html]:not([tabindex])').forEach(function(el) {
