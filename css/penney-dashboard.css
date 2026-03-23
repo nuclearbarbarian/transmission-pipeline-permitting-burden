@@ -1075,6 +1075,7 @@ body {
     box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
   }
   .dashboard-sidebar.drawer--peek { transform: translateY(45%); }
   .dashboard-sidebar.drawer--full { transform: translateY(15%); }
