@@ -9,6 +9,8 @@ var MobileDrawer = {
   touchMoved: false,
   cardExpanded: false,
   _cardHistoryPushed: false,
+  _toastShown: false,
+  _scrimHintShown: false,
 
   init: function() {
     if (window.innerWidth > 768) return;
@@ -98,6 +100,7 @@ var MobileDrawer = {
             card.classList.remove('card--expanded');
             card.scrollTop = 0;
             MobileDrawer.addCardGrip(card);
+            MobileDrawer.reorderCardContent(card);
             MobileDrawer.addCardAttribution(card);
             MobileDrawer.addCardSwipe(card);
           }
@@ -201,6 +204,14 @@ var MobileDrawer = {
         }
       }, 250);
     });
+
+    // Onboarding toast — show once on first load
+    if (!MobileDrawer._toastShown) {
+      MobileDrawer._toastShown = true;
+      setTimeout(function() {
+        MobileDrawer.showToast('Tap a project line to see details', 4000);
+      }, 1500);
+    }
   },
 
   fixOverlayLayers: function() {
@@ -309,6 +320,18 @@ var MobileDrawer = {
   showBackdrop: function() {
     var backdrop = document.createElement('div');
     backdrop.className = 'mobile-card-backdrop';
+
+    // Scrim hint — show "Tap map to close" on first card open only
+    if (!MobileDrawer._scrimHintShown) {
+      MobileDrawer._scrimHintShown = true;
+      var hint = document.createElement('div');
+      hint.className = 'scrim-hint';
+      hint.textContent = 'Tap here to close';
+      backdrop.appendChild(hint);
+      setTimeout(function() { hint.classList.add('scrim-hint--fade'); }, 2500);
+      setTimeout(function() { if (hint.parentNode) hint.remove(); }, 3200);
+    }
+
     backdrop.addEventListener('click', function() {
       var card = document.getElementById('detail-card');
       if (card) card.style.display = 'none';
@@ -320,6 +343,29 @@ var MobileDrawer = {
 
   removeBackdrop: function() {
     document.querySelectorAll('.mobile-card-backdrop').forEach(function(b) { b.remove(); });
+  },
+
+  showToast: function(message, duration) {
+    var toast = document.createElement('div');
+    toast.className = 'mobile-toast';
+    toast.textContent = message;
+    document.body.appendChild(toast);
+    // Trigger animation
+    requestAnimationFrame(function() { toast.classList.add('mobile-toast--visible'); });
+    setTimeout(function() {
+      toast.classList.remove('mobile-toast--visible');
+      setTimeout(function() { if (toast.parentNode) toast.remove(); }, 300);
+    }, duration || 3000);
+  },
+
+  // Reorder card content on mobile: move NEPA section above detail table
+  reorderCardContent: function(card) {
+    var nepaSection = card.querySelector('.nepa-progress');
+    var detailTable = card.querySelector('.detail-table');
+    if (nepaSection && detailTable && nepaSection.compareDocumentPosition(detailTable) & Node.DOCUMENT_POSITION_PRECEDING) {
+      // NEPA is after table — move it before
+      detailTable.parentNode.insertBefore(nepaSection, detailTable);
+    }
   }
 };
 
