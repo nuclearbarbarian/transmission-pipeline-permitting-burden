@@ -1,4 +1,5 @@
-/* Mobile layout module — additive layer, no changes to existing JS files */
+/* Mobile layout module — additive layer, no changes to existing JS files
+   (except card.js which gets progressive disclosure wrappers) */
 'use strict';
 
 const MobileDrawer = {
@@ -7,6 +8,7 @@ const MobileDrawer = {
   startY: 0,
   currentY: 0,
   touchMoved: false,
+  cardExpanded: false,
 
   init() {
     if (window.innerWidth > 768) return;
@@ -16,6 +18,13 @@ const MobileDrawer = {
     if (!MobileDrawer.sidebar) return;
 
     MobileDrawer.sidebar.classList.add('drawer--collapsed');
+
+    // FIX #3 (visual density): Uncheck choropleth on mobile for cleaner first impression
+    var permCb = document.getElementById('layer-state-permitting');
+    if (permCb && permCb.checked) {
+      permCb.checked = false;
+      permCb.dispatchEvent(new Event('change'));
+    }
 
     // Drawer handle buttons
     var filterBtn = document.getElementById('mobile-filter-btn');
@@ -46,7 +55,7 @@ const MobileDrawer = {
     if (handle) {
       handle.addEventListener('touchstart', function(e) {
         MobileDrawer.startY = e.touches[0].clientY;
-        MobileDrawer.currentY = e.touches[0].clientY; // FIX #3: reset to prevent stale value
+        MobileDrawer.currentY = e.touches[0].clientY;
         MobileDrawer.touchMoved = false;
       }, { passive: true });
 
@@ -56,7 +65,7 @@ const MobileDrawer = {
       }, { passive: true });
 
       handle.addEventListener('touchend', function(e) {
-        if (!MobileDrawer.touchMoved) return; // FIX #3: ignore taps (no movement)
+        if (!MobileDrawer.touchMoved) return;
         var deltaY = MobileDrawer.currentY - MobileDrawer.startY;
         if (deltaY < -50) {
           if (MobileDrawer.state === 'collapsed') MobileDrawer.setState('peek');
@@ -75,33 +84,52 @@ const MobileDrawer = {
       }
     });
 
-    // Wrap Card.render to collapse drawer and manage backdrop
+    // Wrap Card.render for mobile enhancements
     if (typeof Card !== 'undefined') {
       var _origRender = Card.render;
       Card.render = function(project) {
         _origRender.call(Card, project);
         if (window._isMobile && project) {
           MobileDrawer.setState('collapsed');
-          // FIX #1: Always remove old backdrop first, then create fresh one
           MobileDrawer.removeBackdrop();
           MobileDrawer.showBackdrop();
+          MobileDrawer.cardExpanded = false;
+          var card = document.getElementById('detail-card');
+          if (card) {
+            card.classList.remove('card--expanded');
+            MobileDrawer.addCardGrip(card);
+            MobileDrawer.addCardAttribution(card);
+            MobileDrawer.addCardSwipe(card);
+          }
+          // FIX #2: Push history state so back button closes card
+          history.pushState({ cardOpen: true }, '');
         }
       };
     }
 
-    // FIX #4: Wrap MapView.drawProject to increase tap targets on mobile
+    // FIX #2: Back button closes card
+    window.addEventListener('popstate', function(e) {
+      if (window._isMobile) {
+        var card = document.getElementById('detail-card');
+        if (card && card.style.display !== 'none') {
+          card.style.display = 'none';
+          MobileDrawer.removeBackdrop();
+        }
+      }
+    });
+
+    // Wrap MapView.drawProject for better touch targets
     if (typeof MapView !== 'undefined') {
       var _origDraw = MapView.drawProject;
       MapView.drawProject = function(p, layerGroup) {
         _origDraw.call(MapView, p, layerGroup);
         var line = MapView.markerLookup[p.id];
-        // Suppress tooltips on mobile — taps go straight to card
         if (line && line.unbindTooltip) line.unbindTooltip();
 
-        // Add invisible wider hit line for touch targets
+        // Invisible wider hit line for touch targets
         if (line && line.getLatLngs) {
           var hitLine = L.polyline(line.getLatLngs(), {
-            weight: 20, opacity: 0, interactive: true
+            weight: 30, opacity: 0, interactive: true
           });
           hitLine.on('click', function() {
             Card.render(p);
@@ -111,15 +139,14 @@ const MobileDrawer = {
         }
       };
 
-      // Also suppress tooltips on endpoint markers by wrapping addEndpoint
+      // Larger endpoint markers on mobile
       var _origEndpoint = MapView.addEndpoint;
       MapView.addEndpoint = function(lat, lng, color, radius, layerGroup, tooltipHtml, project) {
-        // Increase marker radius on mobile for better tap targets
-        _origEndpoint.call(MapView, lat, lng, color, Math.max(radius, 8), layerGroup, tooltipHtml, project);
+        _origEndpoint.call(MapView, lat, lng, color, Math.max(radius, 12), layerGroup, tooltipHtml, project);
       };
     }
 
-    // FIX #2: Convert choropleth and capacity need sticky tooltips to popups on mobile
+    // Convert choropleth/capacity sticky tooltips to tap popups
     MobileDrawer.fixOverlayLayers();
 
     // Handle orientation change
@@ -146,49 +173,78 @@ const MobileDrawer = {
     });
   },
 
-  // FIX #2: Replace sticky tooltips with tap-to-popup on overlay layers
   fixOverlayLayers() {
-    // Wait for layers to be initialized, then patch
     setTimeout(function() {
-      // Patch choropleth layer
-      if (typeof Choropleth !== 'undefined' && Choropleth.layer) {
-        Choropleth.layer.eachLayer(function(layer) {
+      [Choropleth, typeof CapacityNeed !== 'undefined' ? CapacityNeed : null].forEach(function(mod) {
+        if (!mod || !mod.layer) return;
+        mod.layer.eachLayer(function(layer) {
           if (layer.eachLayer) {
-            // It's a GeoJSON layer group
-            layer.eachLayer(function(featureLayer) {
-              if (featureLayer.getTooltip && featureLayer.getTooltip()) {
-                var tooltipContent = featureLayer.getTooltip().getContent();
-                featureLayer.unbindTooltip();
-                featureLayer.off('click'); // Remove the stopPropagation handler
-                featureLayer.bindPopup(tooltipContent, {
-                  maxWidth: 280,
-                  className: 'mobile-overlay-popup'
-                });
+            layer.eachLayer(function(fl) {
+              if (fl.getTooltip && fl.getTooltip()) {
+                var content = fl.getTooltip().getContent();
+                fl.unbindTooltip();
+                fl.off('click');
+                fl.bindPopup(content, { maxWidth: 280, className: 'mobile-overlay-popup' });
               }
             });
           }
         });
-      }
+      });
+    }, 500);
+  },
 
-      // Patch capacity need layer
-      if (typeof CapacityNeed !== 'undefined' && CapacityNeed.layer) {
-        CapacityNeed.layer.eachLayer(function(layer) {
-          if (layer.eachLayer) {
-            layer.eachLayer(function(featureLayer) {
-              if (featureLayer.getTooltip && featureLayer.getTooltip()) {
-                var tooltipContent = featureLayer.getTooltip().getContent();
-                featureLayer.unbindTooltip();
-                featureLayer.off('click');
-                featureLayer.bindPopup(tooltipContent, {
-                  maxWidth: 280,
-                  className: 'mobile-overlay-popup'
-                });
-              }
-            });
-          }
-        });
+  // Add grip bar to card for swipe affordance
+  addCardGrip(card) {
+    if (card.querySelector('.card-grip')) return;
+    var grip = document.createElement('div');
+    grip.className = 'card-grip';
+    card.insertBefore(grip, card.firstChild);
+  },
+
+  // Add attribution footer for screenshots
+  addCardAttribution(card) {
+    if (card.querySelector('.card-attribution')) return;
+    var attr = document.createElement('div');
+    attr.className = 'card-attribution';
+    attr.textContent = 'Transmission & Pipeline Permitting Burden · thefai.org';
+    card.appendChild(attr);
+  },
+
+  // Swipe-to-dismiss and swipe-to-expand on detail card
+  addCardSwipe(card) {
+    if (card._swipeAttached) return;
+    card._swipeAttached = true;
+    var startY = 0, currY = 0, moved = false;
+
+    card.addEventListener('touchstart', function(e) {
+      startY = e.touches[0].clientY;
+      currY = startY;
+      moved = false;
+    }, { passive: true });
+
+    card.addEventListener('touchmove', function(e) {
+      currY = e.touches[0].clientY;
+      moved = true;
+    }, { passive: true });
+
+    card.addEventListener('touchend', function(e) {
+      if (!moved) return;
+      var delta = currY - startY;
+      if (delta > 100) {
+        // Swipe down: dismiss card
+        card.style.display = 'none';
+        MobileDrawer.removeBackdrop();
+        if (history.state && history.state.cardOpen) history.back();
+      } else if (delta < -80 && !MobileDrawer.cardExpanded) {
+        // Swipe up: expand card to full height
+        card.classList.add('card--expanded');
+        MobileDrawer.cardExpanded = true;
+      } else if (delta > 80 && MobileDrawer.cardExpanded) {
+        // Swipe down from expanded: collapse to half-sheet
+        card.classList.remove('card--expanded');
+        MobileDrawer.cardExpanded = false;
       }
-    }, 500); // Wait for choropleth/capacity layers to finish loading
+    }, { passive: true });
   },
 
   setState(state) {
@@ -199,7 +255,6 @@ const MobileDrawer = {
     if (btn) btn.textContent = state === 'collapsed' ? 'Filters' : 'Close';
   },
 
-  // FIX #1: Simplified backdrop — always remove old, create fresh
   showBackdrop() {
     var backdrop = document.createElement('div');
     backdrop.className = 'mobile-card-backdrop';
@@ -207,13 +262,13 @@ const MobileDrawer = {
       var card = document.getElementById('detail-card');
       if (card) card.style.display = 'none';
       MobileDrawer.removeBackdrop();
+      if (history.state && history.state.cardOpen) history.back();
     });
     document.body.appendChild(backdrop);
   },
 
   removeBackdrop() {
-    var backdrops = document.querySelectorAll('.mobile-card-backdrop');
-    backdrops.forEach(function(b) { b.remove(); });
+    document.querySelectorAll('.mobile-card-backdrop').forEach(function(b) { b.remove(); });
   }
 };
 

@@ -1125,36 +1125,75 @@ body {
   .dashboard-main { grid-area: main; position: relative; }
   #map { height: 100%; width: 100%; }
 
-  /* Detail card: full-width bottom sheet */
+  /* Detail card: half-sheet bottom sheet */
   .detail-card {
     position: fixed !important;
     right: 0 !important; left: 0 !important;
-    bottom: 0 !important; top: 40px !important;
+    bottom: 0 !important; top: 50vh !important;
     width: 100% !important;
     max-width: 100% !important;
     z-index: 3000;
     border-left: none;
     border-top: var(--border-heavy);
+    transition: top 300ms ease-out;
+  }
+  .detail-card.card--expanded {
+    top: 48px !important;
   }
   .detail-card-close, .detail-card-print {
     width: 44px; height: 44px;
     font-size: 20px;
     display: flex; align-items: center; justify-content: center;
   }
-
-  /* Mobile card backdrop */
-  .mobile-card-backdrop {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    height: 40px;
-    z-index: 2999;
-    background: transparent;
+  /* Card grip bar for swipe */
+  .card-grip {
+    display: block;
+    width: 40px; height: 4px;
+    background: var(--color-gray-30);
+    border-radius: 2px;
+    margin: 6px auto 4px;
   }
 
-  /* Font size floor: nothing below 11px */
+  /* Mobile card scrim backdrop */
+  .mobile-card-backdrop {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 2999;
+    background: rgba(0,0,0,0.3);
+    animation: scrimFadeIn 200ms ease-out;
+  }
+  @keyframes scrimFadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+  /* Card screenshot header */
+  .card-mobile-header {
+    border-top: 4px solid var(--color-pipeline);
+    padding-bottom: var(--space-xs);
+    margin-bottom: var(--space-xs);
+  }
+  .card-mobile-header.card-mobile-header--transmission {
+    border-top-color: var(--color-transmission);
+  }
+  .card-mobile-header h3 {
+    font-size: 18px !important;
+    margin-bottom: 2px;
+  }
+  .card-attribution {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--color-gray-50);
+    text-align: center;
+    padding: var(--space-xs) 0;
+    border-top: var(--border-light);
+    margin-top: var(--space-sm);
+  }
+
+  /* Font size floor: nothing below 12px */
   .nepa-stage-label, .nepa-bench-n, .nepa-bench-flag,
   .state-methodology, .state-reg-explainers,
-  .nepa-source-note, .item-type-badge { font-size: 11px; }
+  .nepa-source-note, .item-type-badge,
+  .nepa-benchmarks, .detail-confidence-note,
+  .state-event-flag, .tooltip-meta,
+  .card-attribution { font-size: 12px; }
 
   .legend-item, .confidence-badge, .status-badge,
   .detail-card-type, .results-count, .item-meta,
@@ -1162,23 +1201,24 @@ body {
   .permitting-timeline, .gap-label,
   .dashboard-footer, .sources-btn, .sources-list,
   .popup-meta, .state-checklist, .capacity-details,
-  .tooltip-permitting { font-size: 12px; }
+  .tooltip-permitting { font-size: 13px; }
 
   .filter-group label, .filter-group select, .filter-group input,
   .detail-table, .detail-table th, .detail-table td,
   .detail-section-heading, .permitting-state-block,
-  .capacity-tier { font-size: 13px; }
+  .capacity-tier { font-size: 14px; }
 
   .layer-toggle, .project-list-item,
   .leaflet-popup-content-wrapper, .leaflet-tooltip,
   .state-tooltip-low, .state-tooltip-medium, .state-tooltip-high,
   .capacity-tooltip-critical, .capacity-tooltip-high,
-  .capacity-tooltip-moderate { font-size: 14px; }
+  .capacity-tooltip-moderate { font-size: 15px; }
 
-  /* Touch targets */
+  /* Touch targets: 44px minimum */
   .layer-toggle { min-height: 44px; padding: 8px 0; }
-  .filter-group select, .filter-group input { padding: 8px 6px; }
-  .project-list-item { padding: 10px var(--space-sm); }
+  .filter-group select, .filter-group input { min-height: 44px; padding: 8px 6px; }
+  .project-list-item { min-height: 44px; padding: 10px var(--space-sm); }
+  .sources-btn { min-height: 44px; padding: 10px 12px; }
 
   /* Leaflet zoom: bottom-right above drawer */
   .leaflet-control-zoom {
@@ -1218,8 +1258,28 @@ body {
   max-width: 260px;
 }
 
-/* Desktop: hide drawer handle */
+/* Floating mini-legend for mobile */
+.mobile-floating-legend {
+  position: fixed;
+  bottom: 56px;
+  left: 8px;
+  background: var(--color-paper);
+  border: var(--border-light);
+  padding: 4px 8px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  z-index: 1000;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-floating-legend { display: block; }
+}
+
+/* Desktop: hide mobile elements */
 @media (min-width: 769px) {
   .mobile-drawer-handle { display: none; }
   .mobile-card-backdrop { display: none; }
+  .card-grip { display: none; }
+  .card-attribution { display: none; }
 }
