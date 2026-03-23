@@ -589,6 +589,21 @@ body {
   border-top: 1px solid rgba(0,0,0,0.1);
   padding-top: 3px;
 }
+.state-reg-explainers {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  color: var(--color-gray-70);
+  margin-top: 4px;
+  line-height: 1.4;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 3px;
+}
+.state-reg-explainers div {
+  margin-bottom: 1px;
+}
+.state-reg-explainers b {
+  color: var(--color-ink);
+}
 .state-checklist {
   display: flex;
   flex-wrap: wrap;
