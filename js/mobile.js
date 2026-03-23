@@ -3,11 +3,12 @@
 
 var MobileDrawer = {
   sidebar: null,
+  filterBtn: null,
+  backdrop: null,
   state: 'collapsed',
   startY: 0,
   currentY: 0,
   touchMoved: false,
-  // cardExpanded derived from DOM: card.classList.contains('card--expanded')
   _cardHistoryPushed: false,
   _toastShown: false,
   _scrimHintShown: false,
@@ -29,9 +30,9 @@ var MobileDrawer = {
     }
 
     // Drawer handle buttons
-    var filterBtn = document.getElementById('mobile-filter-btn');
-    if (filterBtn) {
-      filterBtn.addEventListener('click', function(e) {
+    MobileDrawer.filterBtn = document.getElementById('mobile-filter-btn');
+    if (MobileDrawer.filterBtn) {
+      MobileDrawer.filterBtn.addEventListener('click', function(e) {
         e.stopPropagation();
         if (MobileDrawer.state === 'collapsed') {
           MobileDrawer.setState('peek');
@@ -224,7 +225,7 @@ var MobileDrawer = {
   },
 
   fixOverlayLayers: function() {
-    // Retry up to 5 times at 500ms intervals until layers are populated
+    // Convert tooltip layers to popup layers. Retry up to 5x if layers not ready.
     var attempts = 0;
     var maxAttempts = 5;
     function tryFix() {
@@ -235,6 +236,8 @@ var MobileDrawer = {
         mod.layer.eachLayer(function(layer) {
           if (layer.eachLayer) {
             layer.eachLayer(function(fl) {
+              // Skip already-converted layers (have popup, no tooltip)
+              if (fl.getPopup && fl.getPopup()) return;
               if (fl.getTooltip && fl.getTooltip()) {
                 var content = fl.getTooltip().getContent();
                 fl.unbindTooltip();
@@ -251,7 +254,8 @@ var MobileDrawer = {
         setTimeout(tryFix, 500);
       }
     }
-    setTimeout(tryFix, 500);
+    // Try immediately, then retry at intervals if needed
+    tryFix();
   },
 
   addCardGrip: function(card) {
@@ -330,8 +334,7 @@ var MobileDrawer = {
     MobileDrawer.state = state;
     MobileDrawer.sidebar.classList.remove('drawer--collapsed', 'drawer--peek', 'drawer--full');
     MobileDrawer.sidebar.classList.add('drawer--' + state);
-    var btn = document.getElementById('mobile-filter-btn');
-    if (btn) btn.textContent = state === 'collapsed' ? 'Filters' : 'Close';
+    if (MobileDrawer.filterBtn) MobileDrawer.filterBtn.textContent = state === 'collapsed' ? 'Filters' : 'Close';
 
     // Disable map dragging/zooming when drawer is open so touches go to drawer
     if (typeof MapView !== 'undefined' && MapView.instance) {
@@ -346,28 +349,33 @@ var MobileDrawer = {
   },
 
   showBackdrop: function() {
-    var backdrop = document.createElement('div');
-    backdrop.className = 'mobile-card-backdrop';
+    if (!MobileDrawer.backdrop) {
+      // Create persistent backdrop once
+      MobileDrawer.backdrop = document.createElement('div');
+      MobileDrawer.backdrop.className = 'mobile-card-backdrop';
+      MobileDrawer.backdrop.addEventListener('click', function() {
+        MobileDrawer.hideCard();
+      });
+      document.body.appendChild(MobileDrawer.backdrop);
+    }
+    MobileDrawer.backdrop.style.display = 'block';
 
-    // Scrim hint — show "Tap map to close" on first card open only
+    // Scrim hint — show "Tap here to close" on first card open only
     if (!MobileDrawer._scrimHintShown) {
       MobileDrawer._scrimHintShown = true;
       var hint = document.createElement('div');
       hint.className = 'scrim-hint';
       hint.textContent = 'Tap here to close';
-      backdrop.appendChild(hint);
+      MobileDrawer.backdrop.appendChild(hint);
       setTimeout(function() { hint.classList.add('scrim-hint--fade'); }, 2500);
       setTimeout(function() { if (hint.parentNode) hint.remove(); }, 3200);
     }
-
-    backdrop.addEventListener('click', function() {
-      MobileDrawer.hideCard();
-    });
-    document.body.appendChild(backdrop);
   },
 
   removeBackdrop: function() {
-    document.querySelectorAll('.mobile-card-backdrop').forEach(function(b) { b.remove(); });
+    if (MobileDrawer.backdrop) {
+      MobileDrawer.backdrop.style.display = 'none';
+    }
   },
 
   showToast: function(message, duration) {
