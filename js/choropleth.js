@@ -51,11 +51,11 @@ const Choropleth = {
           layer.bindTooltip(
             '<h4>' + esc(d.name) + ' — <span style="text-transform:capitalize">' + tier + '</span> (' + result.score + '/' + result.max + ')</h4>' +
             '<div class="state-checklist">' +
-            '<span>SEPA: ' + yn(d.sepa.has_sepa) + '</span>' +
-            '<span>§404 assumed: ' + yn(d.clean_water.section_404_assumption) + '</span>' +
-            '<span>NPDES delegated: ' + yn(d.clean_water.npdes_authority) + '</span>' +
-            '<span>SESA: ' + yn(es.has_sesa) + '</span>' +
-            '<span>Dashboard: ' + yn(d.dashboard && d.dashboard.has_dashboard) + '</span>' +
+            '<span title="State Environmental Policy Act — state-level equivalent of federal NEPA. Requires environmental review for projects with state involvement.">SEPA: ' + yn(d.sepa.has_sepa) + '</span>' +
+            '<span title="Clean Water Act §404 — has the state assumed federal wetland fill permitting from the Army Corps? If No, projects face dual federal-state review.">§404 assumed: ' + yn(d.clean_water.section_404_assumption) + '</span>' +
+            '<span title="National Pollutant Discharge Elimination System — has the state assumed EPA\'s water discharge permitting authority? If No, EPA retains direct authority.">NPDES delegated: ' + yn(d.clean_water.npdes_authority) + '</span>' +
+            '<span title="State Endangered Species Act — does the state have its own endangered species law requiring consultation or habitat protections beyond federal ESA?">SESA: ' + yn(es.has_sesa) + '</span>' +
+            '<span title="Does the state operate a centralized permitting dashboard with real-time project tracking?">Dashboard: ' + yn(d.dashboard && d.dashboard.has_dashboard) + '</span>' +
             '</div>' +
             '<div class="state-methodology">Score: +1 if state has SEPA, +1 if federal 404 retained, +1 if federal NPDES retained, +1 if state ESA consultation required, +1 if state-designated critical habitat (state law, not federal ESA). Source: FAI Permitting Playbook.</div>',
             { sticky: true, direction: 'auto', className: 'state-tooltip-' + tier }
