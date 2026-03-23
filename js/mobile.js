@@ -324,6 +324,17 @@ var MobileDrawer = {
     MobileDrawer.sidebar.classList.add('drawer--' + state);
     var btn = document.getElementById('mobile-filter-btn');
     if (btn) btn.textContent = state === 'collapsed' ? 'Filters' : 'Close';
+
+    // Disable map dragging/zooming when drawer is open so touches go to drawer
+    if (typeof MapView !== 'undefined' && MapView.instance) {
+      if (state === 'collapsed') {
+        MapView.instance.dragging.enable();
+        MapView.instance.touchZoom.enable();
+      } else {
+        MapView.instance.dragging.disable();
+        MapView.instance.touchZoom.disable();
+      }
+    }
   },
 
   showBackdrop: function() {
