@@ -48,17 +48,21 @@ const DataLoader = {
   },
 
   computeBurdenScore(d) {
-    let s = 0;
+    let s = 0, max = 3; // SEPA + 404 + NPDES always applicable
     if (d.sepa && d.sepa.has_sepa) s++;
     if (d.clean_water && !d.clean_water.section_404_assumption) s++;
     if (d.clean_water && !d.clean_water.npdes_authority) s++;
     const es = d.endangered_species;
-    if (es && es.has_sesa && es.consultation) s++;
-    if (es && es.has_sesa && es.critical_habitat) s++;
-    return s;
+    if (es && es.has_sesa) {
+      max += 2; // consultation + critical habitat applicable
+      if (es.consultation) s++;
+      if (es.critical_habitat) s++;
+    }
+    return { score: s, max: max };
   },
 
-  burdenTier(score) {
+  burdenTier(result) {
+    var score = typeof result === 'object' ? result.score : result;
     return score <= 1 ? 'low' : score <= 2 ? 'medium' : 'high';
   },
 
