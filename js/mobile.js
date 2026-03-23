@@ -205,6 +205,9 @@ var MobileDrawer = {
       }, 250);
     });
 
+    // Collapse filters section into <details> on mobile for less scroll
+    MobileDrawer.collapseFiltersSection();
+
     // Onboarding toast — show once on first load
     if (!MobileDrawer._toastShown) {
       MobileDrawer._toastShown = true;
@@ -356,6 +359,27 @@ var MobileDrawer = {
       toast.classList.remove('mobile-toast--visible');
       setTimeout(function() { if (toast.parentNode) toast.remove(); }, 300);
     }, duration || 3000);
+  },
+
+  // Collapse filters into a <details> element on mobile
+  collapseFiltersSection: function() {
+    var sections = MobileDrawer.sidebar.querySelectorAll('.sidebar-section');
+    // Second section is Filters (first is Layers)
+    if (sections.length >= 2) {
+      var filtersSection = sections[1];
+      var heading = filtersSection.querySelector('h2');
+      if (heading && heading.textContent.trim() === 'Filters') {
+        var details = document.createElement('details');
+        var summary = document.createElement('summary');
+        summary.textContent = 'Filters';
+        summary.style.cssText = 'font-family:var(--font-serif);font-size:13px;font-weight:bold;letter-spacing:0.05em;text-transform:uppercase;cursor:pointer;padding:4px 0;';
+        details.appendChild(summary);
+        // Move all filter groups into the details
+        var groups = filtersSection.querySelectorAll('.filter-group');
+        groups.forEach(function(g) { details.appendChild(g); });
+        heading.replaceWith(details);
+      }
+    }
   },
 
   // Reorder card content on mobile: move NEPA section above detail table

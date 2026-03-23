@@ -1076,7 +1076,7 @@ body {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
-  .dashboard-sidebar.drawer--peek { transform: translateY(60%); }
+  .dashboard-sidebar.drawer--peek { transform: translateY(45%); }
   .dashboard-sidebar.drawer--full { transform: translateY(15%); }
   .dashboard-sidebar.drawer--collapsed { transform: translateY(calc(100% - 48px)); }
 
