@@ -120,18 +120,20 @@ var MobileDrawer = {
         }
       };
 
-      // FIX: Wrap close button handler to also clean up scrim/history
-      var _origClose = Card._closeCard;
-      if (typeof _origClose === 'function') {
-        Card._closeCard = function() {
-          _origClose.call(Card);
-          if (window._isMobile) {
-            MobileDrawer.removeBackdrop();
-            MobileDrawer.popCardHistory();
-          }
-        };
-      }
     }
+
+    // Intercept close button clicks on the detail card via event delegation
+    // (card.js adds anonymous addEventListener that we can't wrap)
+    document.addEventListener('click', function(e) {
+      if (!window._isMobile) return;
+      if (e.target.id === 'detail-card-close' || e.target.closest('#detail-card-close')) {
+        // card.js handler hides the card; we clean up mobile state
+        setTimeout(function() {
+          MobileDrawer.removeBackdrop();
+          MobileDrawer.popCardHistory();
+        }, 0);
+      }
+    });
 
     // Back button closes card
     window.addEventListener('popstate', function() {
