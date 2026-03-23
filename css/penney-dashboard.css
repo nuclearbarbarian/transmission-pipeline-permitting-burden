@@ -1265,12 +1265,23 @@ body {
   left: 8px;
   background: var(--color-paper);
   border: var(--border-light);
-  padding: 4px 8px;
+  padding: 6px 10px;
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 12px;
+  line-height: 1.6;
   z-index: 1000;
   box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
   display: none;
+}
+.legend-line {
+  display: inline-block;
+  width: 16px;
+  border-top: 2px solid var(--color-ink);
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.legend-line--dashed {
+  border-top-style: dashed;
 }
 @media (max-width: 768px) {
   .mobile-floating-legend { display: block; }

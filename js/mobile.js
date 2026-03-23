@@ -1,16 +1,16 @@
-/* Mobile layout module — additive layer, no changes to existing JS files
-   (except card.js which gets progressive disclosure wrappers) */
+/* Mobile layout module — additive layer, no changes to existing JS files */
 'use strict';
 
-const MobileDrawer = {
+var MobileDrawer = {
   sidebar: null,
   state: 'collapsed',
   startY: 0,
   currentY: 0,
   touchMoved: false,
   cardExpanded: false,
+  _cardHistoryPushed: false,
 
-  init() {
+  init: function() {
     if (window.innerWidth > 768) return;
     window._isMobile = true;
 
@@ -19,7 +19,7 @@ const MobileDrawer = {
 
     MobileDrawer.sidebar.classList.add('drawer--collapsed');
 
-    // FIX #3 (visual density): Uncheck choropleth on mobile for cleaner first impression
+    // Uncheck choropleth on mobile for cleaner first impression
     var permCb = document.getElementById('layer-state-permitting');
     if (permCb && permCb.checked) {
       permCb.checked = false;
@@ -43,10 +43,9 @@ const MobileDrawer = {
     var desktopCount = document.getElementById('results-count');
     var mobileCount = document.getElementById('mobile-results-count');
     if (desktopCount && mobileCount) {
-      var observer = new MutationObserver(function() {
+      new MutationObserver(function() {
         mobileCount.textContent = desktopCount.textContent;
-      });
-      observer.observe(desktopCount, { childList: true, characterData: true, subtree: true });
+      }).observe(desktopCount, { childList: true, characterData: true, subtree: true });
       mobileCount.textContent = desktopCount.textContent;
     }
 
@@ -64,7 +63,7 @@ const MobileDrawer = {
         MobileDrawer.touchMoved = true;
       }, { passive: true });
 
-      handle.addEventListener('touchend', function(e) {
+      handle.addEventListener('touchend', function() {
         if (!MobileDrawer.touchMoved) return;
         var deltaY = MobileDrawer.currentY - MobileDrawer.startY;
         if (deltaY < -50) {
@@ -97,24 +96,43 @@ const MobileDrawer = {
           var card = document.getElementById('detail-card');
           if (card) {
             card.classList.remove('card--expanded');
+            card.scrollTop = 0;
             MobileDrawer.addCardGrip(card);
             MobileDrawer.addCardAttribution(card);
             MobileDrawer.addCardSwipe(card);
           }
-          // FIX #2: Push history state so back button closes card
-          history.pushState({ cardOpen: true }, '');
+          // FIX: Use replaceState if card already open, pushState if not
+          if (MobileDrawer._cardHistoryPushed) {
+            history.replaceState({ cardOpen: true }, '');
+          } else {
+            history.pushState({ cardOpen: true }, '');
+            MobileDrawer._cardHistoryPushed = true;
+          }
         }
       };
+
+      // FIX: Wrap close button handler to also clean up scrim/history
+      var _origClose = Card._closeCard;
+      if (typeof _origClose === 'function') {
+        Card._closeCard = function() {
+          _origClose.call(Card);
+          if (window._isMobile) {
+            MobileDrawer.removeBackdrop();
+            MobileDrawer.popCardHistory();
+          }
+        };
+      }
     }
 
-    // FIX #2: Back button closes card
-    window.addEventListener('popstate', function(e) {
+    // Back button closes card
+    window.addEventListener('popstate', function() {
       if (window._isMobile) {
         var card = document.getElementById('detail-card');
         if (card && card.style.display !== 'none') {
           card.style.display = 'none';
           MobileDrawer.removeBackdrop();
         }
+        MobileDrawer._cardHistoryPushed = false;
       }
     });
 
@@ -146,8 +164,20 @@ const MobileDrawer = {
       };
     }
 
-    // Convert choropleth/capacity sticky tooltips to tap popups
+    // Convert overlay tooltips to popups — with retry
     MobileDrawer.fixOverlayLayers();
+
+    // Re-fix overlays when layer checkboxes are toggled
+    ['layer-state-permitting', 'layer-capacity-need'].forEach(function(id) {
+      var cb = document.getElementById(id);
+      if (cb) {
+        cb.addEventListener('change', function() {
+          if (cb.checked && window._isMobile) {
+            setTimeout(function() { MobileDrawer.fixOverlayLayers(); }, 300);
+          }
+        });
+      }
+    });
 
     // Handle orientation change
     var resizeTimer;
@@ -173,9 +203,14 @@ const MobileDrawer = {
     });
   },
 
-  fixOverlayLayers() {
-    setTimeout(function() {
-      [Choropleth, typeof CapacityNeed !== 'undefined' ? CapacityNeed : null].forEach(function(mod) {
+  fixOverlayLayers: function() {
+    // Retry up to 5 times at 500ms intervals until layers are populated
+    var attempts = 0;
+    var maxAttempts = 5;
+    function tryFix() {
+      var fixed = 0;
+      [typeof Choropleth !== 'undefined' ? Choropleth : null,
+       typeof CapacityNeed !== 'undefined' ? CapacityNeed : null].forEach(function(mod) {
         if (!mod || !mod.layer) return;
         mod.layer.eachLayer(function(layer) {
           if (layer.eachLayer) {
@@ -185,41 +220,47 @@ const MobileDrawer = {
                 fl.unbindTooltip();
                 fl.off('click');
                 fl.bindPopup(content, { maxWidth: 280, className: 'mobile-overlay-popup' });
+                fixed++;
               }
             });
           }
         });
       });
-    }, 500);
+      attempts++;
+      if (fixed === 0 && attempts < maxAttempts) {
+        setTimeout(tryFix, 500);
+      }
+    }
+    setTimeout(tryFix, 500);
   },
 
-  // Add grip bar to card for swipe affordance
-  addCardGrip(card) {
+  addCardGrip: function(card) {
     if (card.querySelector('.card-grip')) return;
     var grip = document.createElement('div');
     grip.className = 'card-grip';
     card.insertBefore(grip, card.firstChild);
   },
 
-  // Add attribution footer for screenshots
-  addCardAttribution(card) {
+  addCardAttribution: function(card) {
     if (card.querySelector('.card-attribution')) return;
     var attr = document.createElement('div');
     attr.className = 'card-attribution';
-    attr.textContent = 'Transmission & Pipeline Permitting Burden · thefai.org';
+    attr.textContent = 'Transmission & Pipeline Permitting Burden \u00b7 thefai.org';
     card.appendChild(attr);
   },
 
-  // Swipe-to-dismiss and swipe-to-expand on detail card
-  addCardSwipe(card) {
+  // FIX: Swipe only from grip bar or when scrollTop === 0
+  addCardSwipe: function(card) {
     if (card._swipeAttached) return;
     card._swipeAttached = true;
-    var startY = 0, currY = 0, moved = false;
+    var startY = 0, currY = 0, moved = false, startedFromGrip = false, startScrollTop = 0;
 
     card.addEventListener('touchstart', function(e) {
       startY = e.touches[0].clientY;
       currY = startY;
       moved = false;
+      startedFromGrip = !!(e.target.closest && e.target.closest('.card-grip'));
+      startScrollTop = card.scrollTop;
     }, { passive: true });
 
     card.addEventListener('touchmove', function(e) {
@@ -227,27 +268,37 @@ const MobileDrawer = {
       moved = true;
     }, { passive: true });
 
-    card.addEventListener('touchend', function(e) {
+    card.addEventListener('touchend', function() {
       if (!moved) return;
       var delta = currY - startY;
-      if (delta > 100) {
-        // Swipe down: dismiss card
+
+      // Swipe down to dismiss: only if started from grip OR card is scrolled to top
+      if (delta > 100 && (startedFromGrip || startScrollTop === 0)) {
         card.style.display = 'none';
         MobileDrawer.removeBackdrop();
-        if (history.state && history.state.cardOpen) history.back();
-      } else if (delta < -80 && !MobileDrawer.cardExpanded) {
-        // Swipe up: expand card to full height
+        MobileDrawer.popCardHistory();
+      }
+      // Swipe up to expand: only if started from grip OR card is scrolled to top
+      else if (delta < -80 && !MobileDrawer.cardExpanded && (startedFromGrip || startScrollTop === 0)) {
         card.classList.add('card--expanded');
         MobileDrawer.cardExpanded = true;
-      } else if (delta > 80 && MobileDrawer.cardExpanded) {
-        // Swipe down from expanded: collapse to half-sheet
+      }
+      // Swipe down from expanded to half: only if started from grip OR scrolled to top
+      else if (delta > 80 && MobileDrawer.cardExpanded && (startedFromGrip || startScrollTop === 0)) {
         card.classList.remove('card--expanded');
         MobileDrawer.cardExpanded = false;
       }
     }, { passive: true });
   },
 
-  setState(state) {
+  popCardHistory: function() {
+    if (MobileDrawer._cardHistoryPushed) {
+      MobileDrawer._cardHistoryPushed = false;
+      if (history.state && history.state.cardOpen) history.back();
+    }
+  },
+
+  setState: function(state) {
     MobileDrawer.state = state;
     MobileDrawer.sidebar.classList.remove('drawer--collapsed', 'drawer--peek', 'drawer--full');
     MobileDrawer.sidebar.classList.add('drawer--' + state);
@@ -255,19 +306,19 @@ const MobileDrawer = {
     if (btn) btn.textContent = state === 'collapsed' ? 'Filters' : 'Close';
   },
 
-  showBackdrop() {
+  showBackdrop: function() {
     var backdrop = document.createElement('div');
     backdrop.className = 'mobile-card-backdrop';
     backdrop.addEventListener('click', function() {
       var card = document.getElementById('detail-card');
       if (card) card.style.display = 'none';
       MobileDrawer.removeBackdrop();
-      if (history.state && history.state.cardOpen) history.back();
+      MobileDrawer.popCardHistory();
     });
     document.body.appendChild(backdrop);
   },
 
-  removeBackdrop() {
+  removeBackdrop: function() {
     document.querySelectorAll('.mobile-card-backdrop').forEach(function(b) { b.remove(); });
   }
 };
