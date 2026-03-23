@@ -1061,25 +1061,25 @@ body {
   .header-meta { font-size: 11px; }
   .fai-logo { height: 18px; }
 
-  /* Sidebar: fixed bottom drawer */
+  /* Sidebar: fixed bottom drawer — uses top/bottom instead of transform
+     for reliable scroll on mobile Safari */
   .dashboard-sidebar {
     grid-area: unset;
     position: fixed;
-    bottom: 0; left: 0; right: 0;
+    left: 0; right: 0; bottom: 0;
+    top: calc(100vh - 48px);
     z-index: 2000;
-    height: 85vh;
-    transform: translateY(calc(100% - 48px));
-    transition: transform 300ms ease-out;
     background: var(--color-paper);
     border-top: var(--border-heavy);
     box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
     overflow-y: auto;
+    overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
-    touch-action: pan-y;
+    transition: top 300ms ease-out;
   }
-  .dashboard-sidebar.drawer--peek { transform: translateY(45%); }
-  .dashboard-sidebar.drawer--full { transform: translateY(15%); }
-  .dashboard-sidebar.drawer--collapsed { transform: translateY(calc(100% - 48px)); }
+  .dashboard-sidebar.drawer--peek { top: 45vh; }
+  .dashboard-sidebar.drawer--full { top: 60px; }
+  .dashboard-sidebar.drawer--collapsed { top: calc(100vh - 48px); }
 
   /* Drawer handle */
   .mobile-drawer-handle {
