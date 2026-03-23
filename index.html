@@ -34,7 +34,14 @@
   </header>
 
   <!-- Sidebar -->
-  <aside class="dashboard-sidebar">
+  <aside class="dashboard-sidebar" id="sidebar">
+
+    <!-- Mobile drawer handle -->
+    <div class="mobile-drawer-handle" id="mobile-drawer-handle">
+      <span class="drawer-grip"></span>
+      <span class="mobile-results-count" id="mobile-results-count">Loading...</span>
+      <button class="mobile-filter-btn" id="mobile-filter-btn">Filters</button>
+    </div>
 
     <!-- Layer Controls -->
     <div class="sidebar-section">
@@ -149,7 +156,7 @@
         <li>RFF (Resources for the Future)</li>
       </ul>
     </details>
-    <span>Data confidence levels indicated per project. Route geometries sourced from BLM Rights-of-Way FeatureServer, FracTracker Alliance, RFF, Idaho Power, Pattern Energy, and ATC where available; approximated from EEIA data otherwise. <span id="last-updated">Last updated: —</span></span>
+    <span class="footer-confidence-text">Data confidence levels indicated per project. Route geometries sourced from BLM Rights-of-Way FeatureServer, FracTracker Alliance, RFF, Idaho Power, Pattern Energy, and ATC where available; approximated from EEIA data otherwise.</span> <span id="last-updated">Last updated: —</span>
   </footer>
 
 </div>
@@ -167,6 +174,7 @@
 <script src="js/sidebar.js?v=2"></script>
 <script src="js/card.js?v=4"></script>
 <script src="js/app.js?v=13"></script>
+<script src="js/mobile.js?v=1"></script>
 
 </body>
 </html>

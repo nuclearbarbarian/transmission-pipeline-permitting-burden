@@ -1033,3 +1033,180 @@ body {
   margin-top: 4px;
   font-style: italic;
 }
+
+/* ============================================
+   MOBILE RESPONSIVE LAYOUT
+   Single breakpoint at 768px
+   ============================================ */
+
+@media (max-width: 768px) {
+  /* Base font bump */
+  html { font-size: 14px; }
+
+  /* Grid: single column, sidebar removed from flow */
+  .dashboard {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "main" "footer";
+  }
+
+  /* Header: compact */
+  .dashboard-header {
+    padding: var(--space-xs) var(--space-sm);
+  }
+  .dashboard-header h1 {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+  }
+  .header-meta { font-size: 11px; }
+  .fai-logo { height: 18px; }
+
+  /* Sidebar: fixed bottom drawer */
+  .dashboard-sidebar {
+    grid-area: unset;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 2000;
+    height: 85vh;
+    transform: translateY(calc(100% - 48px));
+    transition: transform 300ms ease-out;
+    background: var(--color-paper);
+    border-top: var(--border-heavy);
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .dashboard-sidebar.drawer--peek { transform: translateY(60%); }
+  .dashboard-sidebar.drawer--full { transform: translateY(15%); }
+  .dashboard-sidebar.drawer--collapsed { transform: translateY(calc(100% - 48px)); }
+
+  /* Drawer handle */
+  .mobile-drawer-handle {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px var(--space-sm);
+    min-height: 48px;
+    border-bottom: var(--border-light);
+    position: sticky;
+    top: 0;
+    background: var(--color-paper);
+    z-index: 1;
+  }
+  .drawer-grip {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: var(--color-gray-30);
+    border-radius: 2px;
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .mobile-results-count {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--color-gray-70);
+  }
+  .mobile-filter-btn {
+    font-family: var(--font-serif);
+    font-size: 12px;
+    padding: 6px 12px;
+    border: var(--border-light);
+    background: var(--color-newsprint);
+    color: var(--color-ink);
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* Map: full screen */
+  .dashboard-main { grid-area: main; position: relative; }
+  #map { height: 100%; width: 100%; }
+
+  /* Detail card: full-width bottom sheet */
+  .detail-card {
+    position: fixed !important;
+    right: 0 !important; left: 0 !important;
+    bottom: 0 !important; top: 40px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    z-index: 3000;
+    border-left: none;
+    border-top: var(--border-heavy);
+  }
+  .detail-card-close, .detail-card-print {
+    width: 44px; height: 44px;
+    font-size: 20px;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  /* Mobile card backdrop */
+  .mobile-card-backdrop {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 40px;
+    z-index: 2999;
+    background: transparent;
+  }
+
+  /* Font size floor: nothing below 11px */
+  .nepa-stage-label, .nepa-bench-n, .nepa-bench-flag,
+  .state-methodology, .state-reg-explainers,
+  .nepa-source-note, .item-type-badge { font-size: 11px; }
+
+  .legend-item, .confidence-badge, .status-badge,
+  .detail-card-type, .results-count, .item-meta,
+  .permitting-checklist, .detail-sources,
+  .permitting-timeline, .gap-label,
+  .dashboard-footer, .sources-btn, .sources-list,
+  .popup-meta, .state-checklist, .capacity-details,
+  .tooltip-permitting { font-size: 12px; }
+
+  .filter-group label, .filter-group select, .filter-group input,
+  .detail-table, .detail-table th, .detail-table td,
+  .detail-section-heading, .permitting-state-block,
+  .capacity-tier { font-size: 13px; }
+
+  .layer-toggle, .project-list-item,
+  .leaflet-popup-content-wrapper, .leaflet-tooltip,
+  .state-tooltip-low, .state-tooltip-medium, .state-tooltip-high,
+  .capacity-tooltip-critical, .capacity-tooltip-high,
+  .capacity-tooltip-moderate { font-size: 14px; }
+
+  /* Touch targets */
+  .layer-toggle { min-height: 44px; padding: 8px 0; }
+  .filter-group select, .filter-group input { padding: 8px 6px; }
+  .project-list-item { padding: 10px var(--space-sm); }
+
+  /* Leaflet zoom: bottom-right above drawer */
+  .leaflet-control-zoom {
+    bottom: 60px !important;
+    top: auto !important;
+  }
+
+  /* Footer: minimal */
+  .dashboard-footer {
+    flex-direction: column;
+    padding: var(--space-xs) var(--space-sm);
+    font-size: 11px;
+  }
+  .footer-confidence-text { display: none; }
+  .sources-list {
+    position: fixed;
+    bottom: auto; left: var(--space-sm); right: var(--space-sm);
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+
+  /* Leaflet tooltip: constrain width */
+  .leaflet-tooltip { max-width: 240px; }
+  .leaflet-popup-content { max-width: 240px; }
+}
+
+/* Desktop: hide drawer handle */
+@media (min-width: 769px) {
+  .mobile-drawer-handle { display: none; }
+  .mobile-card-backdrop { display: none; }
+}
