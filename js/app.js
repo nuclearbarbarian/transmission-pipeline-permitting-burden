@@ -134,6 +134,9 @@
     searchTimer = setTimeout(renderProjects, 150);
   });
 
+  // Add state permitting layer by default (checkbox is checked)
+  if (Choropleth.layer) MapView.instance.addLayer(Choropleth.layer);
+
   // Layer toggles
   [['layer-pipeline-proposed', MapView.pipelineLayer, true],
    ['layer-transmission-proposed', MapView.transmissionLayer, true],
