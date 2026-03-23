@@ -1135,6 +1135,7 @@ body {
     font-family: var(--font-serif);
     font-size: 12px;
     padding: 6px 12px;
+    min-height: 44px;
     border: var(--border-light);
     background: var(--color-newsprint);
     color: var(--color-ink);
@@ -1212,7 +1213,8 @@ body {
   .nepa-source-note, .item-type-badge,
   .nepa-benchmarks, .detail-confidence-note,
   .state-event-flag, .tooltip-meta,
-  .card-attribution { font-size: 12px; }
+  .card-attribution, .sidebar-section h2,
+  .project-list-item .item-meta { font-size: 12px; }
 
   .legend-item, .confidence-badge, .status-badge,
   .detail-card-type, .results-count, .item-meta,
